@@ -1,6 +1,5 @@
 <template>
-  <div class="typed">
-    <h1>
+  <div class="typed mx-auto text-center ft-26">
       <vue-typer
         :text='msg'
         :repeat='0'
@@ -9,7 +8,7 @@
         :type-delay='80'
         :erase-on-complete='false'
         caret-animation='blink'
-      ></vue-typer></h1>
+      ></vue-typer>
   </div>
 </template>
 
@@ -41,8 +40,6 @@ export default {
 <style scoped>
 .typed {
   max-width: 250px;
-  margin: 0 auto;
-  text-align: center;
 }
 .vue-typer {
   font-family: monospace;

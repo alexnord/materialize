@@ -1,0 +1,36 @@
+.ft-26 {
+	font-size: 26px;
+}
+
+.logo {
+	width: 50px;
+  margin: 10px 0px 0px 10px;
+}
+
+button.hamburger {
+	z-index: 2;
+}
+
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before {
+	background-color: #FFF;
+}
+
+.expanded-nav {
+	height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: rgb(0,0,0); /* Black fallback color */
+  background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}

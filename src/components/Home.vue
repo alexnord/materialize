@@ -42,6 +42,7 @@ export default {
 <style scoped>
 .headline {
   font-size: 31px;
+  padding: 0px 5px;
 }
 .home-block {
   margin: 0 auto;

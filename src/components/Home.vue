@@ -48,12 +48,12 @@ export default {
     /* eslint-disable no-new */
     new Typed('#headline', {
       strings: ['a digital agency <br> dedicated to <br>technical excellence.'],
-      typeSpeed: 40,
+      typeSpeed: 30,
       loop: false,
     });
     new Typed('#description', {
       strings: ['Los Angeles based agency specializing in high-end application development for brands.'],
-      typeSpeed: 20,
+      typeSpeed: 15,
       loop: false,
     });
     /* eslint-enable no-new */
@@ -95,7 +95,7 @@ span.typed-cursor {
 .see-work {
   font-size: 22px;
   margin-top: 60px;
-  transition-delay: 3.3s;
+  transition-delay: 2.5s;
   transition-duration: 4s;
 }
 .see-work a {

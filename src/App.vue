@@ -2,6 +2,24 @@
   <div id="app">
     <Nav></Nav>
     <router-view/>
+    <vue-particles
+      color="#6d6d6d"
+      :particleOpacity="0.4"
+      :particlesNumber="120"
+      shapeType="polygon"
+      :particleSize="2"
+      linesColor="#6d6d6d"
+      :linesWidth="1"
+      :lineLinked="true"
+      :lineOpacity="0.3"
+      :linesDistance="150"
+      :moveSpeed="3"
+      :hoverEffect="false"
+      hoverMode="grab"
+      :clickEffect="false"
+      clickMode="push"
+      >
+    </vue-particles>
   </div>
 </template>
 
@@ -25,4 +43,20 @@ export default {
 
 <style>
 #app {}
+#particles-js {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: transparent;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.body-particles{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
 </style>

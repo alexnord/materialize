@@ -1,5 +1,16 @@
+@font-face {
+	font-family: 'Circular Std Medium';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Circular Std Medium'), url('../fonts/CircularStd-Medium.woff') format('woff');
+}
+
 body {
 	font-family: monospace;
+}
+
+.expanded-nav {
+	font-family:'Circular Std Medium', Helvetica;
 }
 
 .ft-31 {

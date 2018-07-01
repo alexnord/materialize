@@ -1,7 +1,7 @@
 <template>
   <div>
     <nav class="d-flex justify-content-between">
-      <a href="#">
+      <router-link to="/">
         <div class="logo">
           <svg version="1.1"
             xmlns="http://www.w3.org/2000/svg"
@@ -74,7 +74,7 @@
 
           <!-- <img src="../assets/asset2.svg" alt="materialize"> -->
         </div>
-      </a>
+      </router-link>
 
       <button
         class="hamburger hamburger--collapse"
@@ -95,7 +95,7 @@
             <a href="#" id="about" v-if="navExpanded">about</a>
           </transition>
           <transition name="slide-fade">
-            <a href="#" id="work" v-if="navExpanded">work</a>
+            <a href="/work" id="work" v-if="navExpanded">work</a>
           </transition>
           <transition name="slide-fade">
             <a href="#" id="contact" v-if="navExpanded">contact</a>

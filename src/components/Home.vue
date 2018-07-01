@@ -1,10 +1,35 @@
 <template>
-  <div class="typed">
-    <div class="headline">
-      <span id="headline"></span>
-    </div>
-    <div class="home-block">
-      <span id="description"></span>
+  <div>
+    <vue-particles
+        color="#6d6d6d"
+        :particleOpacity="0.4"
+        :particlesNumber="120"
+        shapeType="polygon"
+        :particleSize="2"
+        linesColor="#6d6d6d"
+        :linesWidth="1"
+        :lineLinked="true"
+        :lineOpacity="0.3"
+        :linesDistance="150"
+        :moveSpeed="3"
+        :hoverEffect="false"
+        hoverMode="grab"
+        :clickEffect="false"
+        clickMode="push"
+        >
+      </vue-particles>
+    <div class="typed">
+      <div class="headline">
+        <span id="headline"></span>
+      </div>
+      <div class="home-block">
+        <span id="description"></span>
+      </div>
+      <transition name="fade">
+        <div class="see-work" v-show="fadeLink">
+          <router-link to="/work"><span>See our work ></span></router-link>
+        </div>
+      </transition>
     </div>
   </div>
 </template>
@@ -15,7 +40,9 @@ import Typed from 'typed.js';
 export default {
   name: 'Home',
   data() {
-    return {};
+    return {
+      fadeLink: false,
+    };
   },
   mounted() {
     /* eslint-disable no-new */
@@ -30,6 +57,8 @@ export default {
       loop: false,
     });
     /* eslint-enable no-new */
+
+    this.fadeLink = true;
   },
   methods: {},
   components: {
@@ -62,6 +91,15 @@ export default {
 span.typed-cursor {
   position: relative;
   left: -9px;
+}
+.see-work {
+  font-size: 22px;
+  margin-top: 60px;
+  transition-delay: 3.3s;
+  transition-duration: 4s;
+}
+.see-work a {
+  color: #DF0070;
 }
 
 @media (min-width: 768px) {

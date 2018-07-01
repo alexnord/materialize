@@ -27,7 +27,7 @@
       </div>
       <transition name="fade">
         <div class="see-work" v-show="fadeLink">
-          <router-link to="/work"><span>See our work ></span></router-link>
+          <router-link to="/work"><span>see our work ></span></router-link>
         </div>
       </transition>
     </div>
@@ -70,7 +70,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .headline {
-  font-size: 31px;
+  font-size: 28px;
   padding: 0px 5px;
 }
 .home-block {
@@ -100,6 +100,12 @@ span.typed-cursor {
 }
 .see-work a {
   color: #DF0070;
+}
+
+@media (min-width: 375px) {
+  .headline {
+    font-size: 31px;
+  }
 }
 
 @media (min-width: 768px) {

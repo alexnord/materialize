@@ -1,7 +1,10 @@
 <template>
   <div>
     <nav class="d-flex justify-content-between">
-      <router-link to="/">
+      <router-link
+        to="/"
+        @click.native="navExpanded=false"
+      >
         <div class="logo">
           <svg version="1.1"
             xmlns="http://www.w3.org/2000/svg"
@@ -92,13 +95,32 @@
       <div v-show="navExpanded" class="expanded-nav">
         <div class="nav-content">
           <transition name="slide-fade">
-            <a href="#" id="about" v-if="navExpanded">about</a>
+            <router-link
+              to="/about"
+              id="about"
+              v-if="navExpanded"
+            >
+              about
+            </router-link>
           </transition>
           <transition name="slide-fade">
-            <a href="/work" id="work" v-if="navExpanded">work</a>
+            <router-link
+              to="/work"
+              id="work"
+              v-if="navExpanded"
+              @click.native="navExpanded = !navExpanded"
+            >
+              work
+            </router-link>
           </transition>
           <transition name="slide-fade">
-            <a href="#" id="contact" v-if="navExpanded">contact</a>
+            <router-link
+              to="/contact"
+              id="contact"
+              v-if="navExpanded"
+            >
+              contact
+            </router-link>
           </transition>
         </div>
       </div>

@@ -2,6 +2,7 @@
   <div id="app">
     <Nav></Nav>
     <router-view/>
+    <Footer></Footer>
   </div>
 </template>
 
@@ -11,6 +12,7 @@ import 'bootstrap-vue/dist/bootstrap-vue.css';
 import './assets/css/styles.css';
 import './assets/css/hamburgers.css';
 import Nav from './components/Nav';
+import Footer from './components/Footer';
 
 export default {
   name: 'App',
@@ -19,6 +21,7 @@ export default {
   },
   components: {
     Nav,
+    Footer,
   },
 };
 </script>

@@ -1,37 +1,30 @@
 <template>
-  <div class="typed mx-auto text-center ft-26">
-      <vue-typer
-        :text='msg'
-        :repeat='0'
-        initial-action='typing'
-        :pre-type-delay='1000'
-        :type-delay='80'
-        :erase-on-complete='false'
-        caret-animation='blink'
-      ></vue-typer>
+  <div class="typed ft-31">
+    <span class="typewriter"></span>
   </div>
 </template>
 
 <script>
-import { VueTyper } from 'vue-typer';
+import Typed from 'typed.js';
 
 export default {
   name: 'Home',
   data() {
-    return {
-      msg: 'we build digital experiences.',
-      headline: '',
-    };
+    return {};
   },
-  beforeMount() {
-
+  mounted() {
+    const typed = new Typed('.typewriter', {
+      strings: ['an agency <br> dedicated to <br> digital excellence.'],
+      typeSpeed: 40,
+      loop: false,
+    });
   },
   methods: {
     typewriter() {
     },
   },
   components: {
-    VueTyper,
+    Typed,
   },
 };
 </script>
@@ -39,9 +32,17 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .typed {
-  max-width: 250px;
-}
-.vue-typer {
   font-family: monospace;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+span.typed-cursor {
+  position: relative;
+  left: -9px;
 }
 </style>

@@ -3,7 +3,7 @@
 
     <div class="d-flex justify-content-between">
       <div class="logo">
-        <img src="./assets/asset.svg" alt="materialize">
+        <img src="./assets/asset2.svg" alt="materialize">
       </div>
 
       <button

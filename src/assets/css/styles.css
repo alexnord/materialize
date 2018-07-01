@@ -9,12 +9,16 @@ body {
 	font-family: monospace;
 }
 
-.expanded-nav {
-	font-family:'Circular Std Medium', Helvetica;
+.ft-16 {
+	font-size: 16px;
 }
 
 .ft-31 {
 	font-size: 31px;
+}
+
+.expanded-nav {
+	font-family:'Circular Std Medium', Helvetica;
 }
 
 .fade-enter-active, .fade-leave-active {

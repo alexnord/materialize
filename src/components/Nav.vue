@@ -186,4 +186,10 @@ button.hamburger {
 .expanded-nav .slide-fade-enter-active#contact {
   transition-delay: .2s;
 }
+
+@media (min-width: 768px) {
+  .logo {
+    width: 350px;
+  }
+}
 </style>

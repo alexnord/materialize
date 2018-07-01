@@ -78,7 +78,7 @@
         class="hamburger hamburger--collapse"
         v-bind:class="{ 'is-active': navExpanded }"
         type="button"
-        v-on:click="toggleNav"
+        v-on:click="navExpanded = !navExpanded"
       >
         <span class="hamburger-box">
           <span class="hamburger-inner"></span>
@@ -89,9 +89,15 @@
     <transition name="fade">
       <div v-show="navExpanded" class="expanded-nav">
         <div class="nav-content">
-          <a href="#">about</a>
-          <a href="#">work</a>
-          <a href="#">contact</a>
+          <transition name="slide-fade">
+            <a href="#" id="about" v-if="navExpanded">about</a>
+          </transition>
+          <transition name="slide-fade">
+            <a href="#" id="work" v-if="navExpanded">work</a>
+          </transition>
+          <transition name="slide-fade">
+            <a href="#" id="contact" v-if="navExpanded">contact</a>
+          </transition>
         </div>
       </div>
     </transition>
@@ -107,11 +113,6 @@ export default {
     return {
       navExpanded: false,
     };
-  },
-  methods: {
-    toggleNav() {
-      this.navExpanded = !this.navExpanded;
-    },
   },
 };
 </script>
@@ -145,8 +146,9 @@ button.hamburger {
 .nav-content {
   position: relative;
   top: 25%;
+  left: 25%;
   width: 100%;
-  text-align: center;
+  text-align: left;
   margin-top: 30px;
 }
 .expanded-nav a {
@@ -156,5 +158,27 @@ button.hamburger {
   color: #818181;
   display: block;
   transition: 0.3s;
+}
+
+.expanded-nav a#about {
+  transition-delay: 0s;
+}
+.expanded-nav a#work {
+  transition-delay: .1s;
+}
+.expanded-nav a#contact {
+  transition-delay: .2s;
+}
+
+.slide-fade-enter-active {
+  transition-delay: 2s;
+  transition: all .3s ease;
+}
+.slide-fade-leave-active {
+  transition: all .8s ease;
+}
+.slide-fade-enter, .slide-fade-leave-to {
+  transform: translateX(-130px);
+  opacity: 0;
 }
 </style>

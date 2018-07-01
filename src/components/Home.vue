@@ -13,16 +13,15 @@ export default {
     return {};
   },
   mounted() {
-    const typed = new Typed('.typewriter', {
-      strings: ['an agency <br> dedicated to <br> digital excellence.'],
+    /* eslint-disable no-new */
+    new Typed('.typewriter', {
+      strings: ['a digital agency <br> dedicated to <br>technical excellence.'],
       typeSpeed: 40,
       loop: false,
     });
+    /* eslint-enable no-new */
   },
-  methods: {
-    typewriter() {
-    },
-  },
+  methods: {},
   components: {
     Typed,
   },
@@ -32,7 +31,6 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .typed {
-  font-family: monospace;
   text-align: center;
   position: absolute;
   width: 100%;

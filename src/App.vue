@@ -1,29 +1,7 @@
 <template>
   <div id="app">
-
-    <div class="d-flex justify-content-between">
-      <div class="logo">
-        <img src="./assets/asset2.svg" alt="materialize">
-      </div>
-
-      <button
-        class="hamburger hamburger--collapse"
-        v-bind:class="{ 'is-active': navExpanded }"
-        type="button"
-        v-on:click="toggleNav"
-      >
-        <span class="hamburger-box">
-          <span class="hamburger-inner"></span>
-        </span>
-      </button>
-    </div>
-
-    <transition name="fade">
-      <div v-show="navExpanded" class="expanded-nav"></div>
-    </transition>
-
+    <Nav></Nav>
     <router-view/>
-
   </div>
 </template>
 
@@ -32,18 +10,15 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-vue/dist/bootstrap-vue.css';
 import './assets/css/styles.css';
 import './assets/css/hamburgers.css';
+import Nav from './components/Nav';
 
 export default {
   name: 'App',
   data() {
-    return {
-      navExpanded: false,
-    };
+    return {};
   },
-  methods: {
-    toggleNav() {
-      this.navExpanded = !this.navExpanded;
-    },
+  components: {
+    Nav,
   },
 };
 </script>

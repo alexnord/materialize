@@ -142,13 +142,19 @@ export default {
 </script>
 
 <style>
-.st0{fill:#DF0070;}
-#XMLID_1_.expanded{fill:#FFF;}
+.st0 {
+  fill: #DF0070;
+  transition-duration: 1s;
+}
+#XMLID_1_.expanded {
+  fill: #FFF;
+  transition-duration: 1s;
+}
 nav a {
   z-index: 2;
 }
 .logo {
-  width: 195px;
+  width: 175px;
   margin: 20px 0px 0px 25px;
 }
 button.hamburger {
@@ -200,13 +206,19 @@ button.hamburger {
   opacity: 0;
 }
 .expanded-nav .slide-fade-enter-active#about {
-  transition-delay: 0ss;
+  transition-delay: .2s;
 }
 .expanded-nav .slide-fade-enter-active#work {
-  transition-delay: .1s;
+  transition-delay: .3s;
 }
 .expanded-nav .slide-fade-enter-active#contact {
-  transition-delay: .2s;
+  transition-delay: .4s;
+}
+
+@media (min-width: 375px) {
+  .logo {
+    width: 195px;
+  }
 }
 
 @media (min-width: 768px) {

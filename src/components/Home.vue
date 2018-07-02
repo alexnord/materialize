@@ -27,7 +27,7 @@
       </div>
       <transition name="fade">
         <div class="see-work" v-show="fadeLink">
-          <router-link to="/work"><span>see our work ></span></router-link>
+          <router-link to="/work"><p>see our work <span id="chevron-right">&#62;</span></p></router-link>
         </div>
       </transition>
     </div>
@@ -48,12 +48,12 @@ export default {
     /* eslint-disable no-new */
     new Typed('#headline', {
       strings: ['a digital agency <br> dedicated to <br>technical excellence.'],
-      typeSpeed: 30,
+      typeSpeed: 25,
       loop: false,
     });
     new Typed('#description', {
       strings: ['Los Angeles based agency specializing in high-end application development for brands.'],
-      typeSpeed: 15,
+      typeSpeed: 12,
       loop: false,
     });
     /* eslint-enable no-new */
@@ -76,7 +76,7 @@ export default {
 .home-block {
   margin: 0 auto;
   font-size: 16px;
-  margin-top: 40px;
+  margin-top: 25px;
   padding: 0px 10px;
 }
 .typed {
@@ -94,17 +94,27 @@ span.typed-cursor {
 }
 .see-work {
   font-size: 22px;
-  margin-top: 60px;
+  margin-top: 40px;
   transition-delay: 2.5s;
   transition-duration: 4s;
 }
 .see-work a {
   color: #DF0070;
 }
+#chevron-right {
+  position: relative;
+  top: 2px;
+}
 
 @media (min-width: 375px) {
   .headline {
     font-size: 31px;
+  }
+  .home-block {
+    margin-top: 40px;
+  }
+  .see-work {
+    margin-top: 60px;
   }
 }
 

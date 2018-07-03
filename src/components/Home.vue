@@ -119,9 +119,13 @@ span.typed-cursor {
 .see-work a {
   color: #DF0070;
 }
+.see-work a:hover {
+  text-decoration: none;
+  color: #000;
+}
 #chevron-right {
   position: relative;
-  top: 2px;
+  top: 1px;
 }
 
 @media (min-width: 375px) {

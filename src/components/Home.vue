@@ -18,7 +18,10 @@
         clickMode="push"
         >
       </vue-particles>
-    <div class="typed">
+    <div
+      class="typed d-flex align-content-center flex-wrap"
+      v-bind:style="{ height: viewportHeight }"
+    >
       <div class="headline">
         <span id="headline"></span>
       </div>
@@ -42,7 +45,17 @@ export default {
   data() {
     return {
       fadeLink: false,
+      viewportHeight: '0px',
     };
+  },
+  beforeMount() {
+    this.viewportHeight = `${window.innerHeight}px`;
+  },
+  created() {
+    window.addEventListener('resize', this.handleResize);
+  },
+  destroyed() {
+    window.removeEventListener('resize', this.handleResize);
   },
   mounted() {
     /* eslint-disable no-new */
@@ -60,7 +73,11 @@ export default {
 
     this.fadeLink = true;
   },
-  methods: {},
+  methods: {
+    handleResize() {
+      this.viewportHeight = `${window.innerHeight}px`;
+    },
+  },
   components: {
     Typed,
   },
@@ -72,6 +89,8 @@ export default {
 .headline {
   font-size: 28px;
   padding: 0px 5px;
+  text-align: center;
+  width: 100%;
 }
 .home-block {
   margin: 0 auto;
@@ -81,18 +100,17 @@ export default {
 }
 .typed {
   text-align: center;
-  position: absolute;
+  position: relative;
   width: 100%;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  min-height: 490px;
 }
 span.typed-cursor {
   position: relative;
   left: -9px;
 }
 .see-work {
+  text-align: center;
+  width: 100%;
   font-size: 22px;
   margin-top: 40px;
   transition-delay: 2.5s;
@@ -128,4 +146,5 @@ span.typed-cursor {
     width: 680px;
   }
 }
+
 </style>

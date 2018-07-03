@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="nav-wrap">
     <nav class="d-flex justify-content-between">
       <router-link
         to="/"
@@ -142,6 +142,11 @@ export default {
 </script>
 
 <style>
+.nav-wrap {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
 .st0 {
   fill: #DF0070;
   transition-duration: 1s;
@@ -179,7 +184,7 @@ button.hamburger {
   position: relative;
   top: 25%;
   left: 25%;
-  width: 100%;
+  width: 0px;
   text-align: left;
   margin-top: 30px;
 }

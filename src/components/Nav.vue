@@ -1,5 +1,8 @@
 <template>
-  <div class="nav-wrap">
+  <div
+    class="nav-wrap"
+    v-bind:class="{ 'not-home': notHomeRoute }"
+  >
     <nav class="d-flex justify-content-between">
       <router-link
         to="/"
@@ -138,7 +141,18 @@ export default {
   data() {
     return {
       navExpanded: false,
+      notHomeRoute: false,
     };
+  },
+  watch: {
+    '$route.path': function () {
+      this.notHomeRoute = this.$route.path !== '/';
+      console.log(this.notHomeRoute);
+    },
+  },
+  mounted() {
+    this.notHomeRoute = this.$route.path !== '/';
+    console.log(this.notHomeRoute);
   },
 };
 </script>

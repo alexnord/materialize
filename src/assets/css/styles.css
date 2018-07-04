@@ -59,7 +59,7 @@ h4 {
   text-align: center;
   position: relative;
   width: 100%;
-  min-height: 490px;
+  min-height: 565px;
 }
 span.typed-cursor {
   position: relative;
@@ -83,7 +83,7 @@ span.typed-cursor {
 	color: #000;
 }
 
-.info-block ul li {
+.info-block li {
 	list-style: none;
 	font-size: 16px;
 }

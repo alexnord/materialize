@@ -145,14 +145,13 @@ export default {
     };
   },
   watch: {
+    // eslint-disable-next-line
     '$route.path': function () {
       this.notHomeRoute = this.$route.path !== '/';
-      console.log(this.notHomeRoute);
     },
   },
   mounted() {
     this.notHomeRoute = this.$route.path !== '/';
-    console.log(this.notHomeRoute);
   },
 };
 </script>

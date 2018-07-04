@@ -25,7 +25,7 @@
       <div class="headline">
         <span id="headline"></span>
       </div>
-      <div class="home-block">
+      <div class="description">
         <span id="description"></span>
       </div>
       <transition name="fade">
@@ -86,28 +86,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.headline {
-  font-size: 28px;
-  padding: 0px 5px;
-  text-align: center;
-  width: 100%;
-}
-.home-block {
-  margin: 0 auto;
-  font-size: 16px;
-  margin-top: 25px;
-  padding: 0px 10px;
-}
-.typed {
-  text-align: center;
-  position: relative;
-  width: 100%;
-  min-height: 490px;
-}
-span.typed-cursor {
-  position: relative;
-  left: -9px;
-}
 .see-work {
   text-align: center;
   width: 100%;
@@ -129,26 +107,8 @@ span.typed-cursor {
 }
 
 @media (min-width: 375px) {
-  .headline {
-    font-size: 31px;
-  }
-  .home-block {
-    margin-top: 40px;
-  }
   .see-work {
     margin-top: 60px;
   }
 }
-
-@media (min-width: 768px) {
-  .headline {
-    font-size: 52px;
-  }
-  .home-block {
-    font-size: 24px;
-    margin-top: 60px;
-    width: 680px;
-  }
-}
-
 </style>

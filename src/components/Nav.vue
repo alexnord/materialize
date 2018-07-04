@@ -99,6 +99,7 @@
               to="/about"
               id="about"
               v-if="navExpanded"
+              @click.native="navExpanded = !navExpanded"
             >
               about
             </router-link>
@@ -118,6 +119,7 @@
               to="/contact"
               id="contact"
               v-if="navExpanded"
+              @click.native="navExpanded = !navExpanded"
             >
               contact
             </router-link>

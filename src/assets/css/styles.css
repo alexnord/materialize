@@ -17,6 +17,10 @@ body {
 	font-size: 31px;
 }
 
+h2 {
+	font-size: 20px;
+}
+
 .expanded-nav {
 	font-family:'Circular Std Medium', Helvetica;
 }
@@ -26,4 +30,58 @@ body {
 }
 .fade-enter, .fade-leave-to {
   opacity: 0;
+}
+
+.headline {
+  font-size: 28px;
+  padding: 0px 5px;
+  text-align: center;
+  width: 100%;
+}
+.description {
+  margin: 0 auto;
+  font-size: 16px;
+  margin-top: 25px;
+  padding: 0px 10px;
+}
+.typed {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  min-height: 490px;
+}
+span.typed-cursor {
+  position: relative;
+  left: -9px;
+}
+
+.info-block {
+	padding: 40px;
+}
+.black-bg {
+	background-color: #000;
+	color: #FFF;
+}
+
+@media (min-width: 375px) {
+  .headline {
+    font-size: 31px;
+  }
+  .description {
+    margin-top: 40px;
+  }
+  .see-work {
+    margin-top: 60px;
+  }
+}
+
+@media (min-width: 768px) {
+  .headline {
+    font-size: 52px;
+  }
+  .description {
+    font-size: 24px;
+    margin-top: 60px;
+    width: 680px;
+  }
 }

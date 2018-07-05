@@ -30,7 +30,7 @@
       </div>
       <transition name="fade">
         <div class="see-work" v-show="fadeLink">
-          <router-link to="/work"><p>see our work <span id="chevron-right">&#62;</span></p></router-link>
+          <router-link to="/about"><p>learn about us <span id="chevron-right">&#62;</span></p></router-link>
         </div>
       </transition>
     </div>
@@ -60,7 +60,7 @@ export default {
   mounted() {
     /* eslint-disable no-new */
     new Typed('#headline', {
-      strings: ['a digital agency <br> dedicated to <br>technical excellence.'],
+      strings: ['a digital agency<br>dedicated to<br>technical excellence.'],
       typeSpeed: 25,
       loop: false,
     });

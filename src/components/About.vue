@@ -12,92 +12,96 @@
       </div>
     </div>
     <div class="info-block black-bg">
-      <h2>our method</h2>
-      <p class="mt-35">
-        Materialize analyzes the entire landscape of digital business to draft a calculated plan for effective digital presence. We design and build cutting edge digital solutions tailored to the needs of our clients to achieve maximum impact.
-      </p>
-      <p>
-        Our clients range from small companies launching new digital products to large brands needing a complex range of digital services. We provide the full spectrum of digital development needs and can also provide augmentation to current development teams.
-      </p>
+      <div class="info-wrap">
+        <h2>our method</h2>
+        <p class="mt-35">
+          Materialize analyzes the entire landscape of digital business to draft a calculated plan for effective digital presence. We design and build cutting edge digital solutions tailored to the needs of our clients to achieve maximum impact.
+        </p>
+        <p>
+          Our clients range from small companies launching new digital products to large brands needing a complex range of digital services. We provide the full spectrum of digital development needs and can also provide augmentation to current development teams.
+        </p>
+      </div>
     </div>
     <div class="info-block white-bg">
-      <h2>our services</h2>
-      <div class="mt-35">
-        <!-- <b-container>
-          <b-row>
-            <b-col md=4 lg=12>
-              <p>Production</p>
-              <li>Responsive Websites</li>
-              <li>Web Apps</li>
-              <li>Mobile Apps</li>
-              <li>TV Apps</li>
-              <li>Gaming</li>
-              <li>Shopify</li>
-              <li>Server Infrstructure</li>
-              <li>Ecommerce</li>
-              <li>Retail</li>
-            </b-col>
-            <b-col md=4 lg=12>
-              <p>Technologies</p>
-              <li>iOS / Android</li>
-              <li>tvOS</li>
-              <li>Backend Support</li>
-              <li>VueJS / ReactJS</li>
-              <li>HTML / CSS / JS</li>
-              <li>DevOps / Infrastructure</li>
-              <li>Shopify</li>
-              <li>Magento</li>
-            </b-col>
-            <b-col md=4 lg=12>
-              <p>Creative</p>
-              <li>Web Design</li>
-              <li>App Design</li>
-              <li>UX / UI</li>
-              <li>Research</li>
-              <li>Protoypes</li>
-            </b-col>
-          </b-row>
-        </b-container> -->
-        <div class="d-md-none">
-          <flickity ref="flickity" :options="flickityOptions">
-            <div class="carousel-cell">
-              <div class="cell-container">
+      <div class="info-wrap">
+        <h2>our services</h2>
+        <div class="mt-35">
+          <div class="d-none d-md-block">
+            <div class="d-flex justify-content-between">
+              <div>
                 <p>Production</p>
-                  <li>Responsive Websites</li>
-                  <li>Web Apps</li>
-                  <li>Mobile Apps</li>
-                  <li>TV Apps</li>
-                  <li>Gaming</li>
-                  <li>Shopify</li>
-                  <li>Server Infrstructure</li>
-                  <li>Ecommerce</li>
-                  <li>Retail</li>
+                <li>Responsive Websites</li>
+                <li>Web Apps</li>
+                <li>Mobile Apps</li>
+                <li>TV Apps</li>
+                <li>Gaming</li>
+                <li>Shopify</li>
+                <li>Server Infrstructure</li>
+                <li>Ecommerce</li>
+                <li>Retail</li>
               </div>
-            </div>
-            <div class="carousel-cell">
-              <div class="cell-container">
+              <div>
                 <p>Technologies</p>
-                  <li>iOS / Android</li>
-                  <li>tvOS</li>
-                  <li>Backend Support</li>
-                  <li>VueJS / ReactJS</li>
-                  <li>HTML / CSS / JS</li>
-                  <li>DevOps / Infrastructure</li>
-                  <li>Shopify</li>
-                  <li>Magento</li>
+                <li>iOS / Android</li>
+                <li>tvOS</li>
+                <li>Backend Support</li>
+                <li>VueJS / ReactJS</li>
+                <li>HTML / CSS / JS</li>
+                <li>DevOps / Infrastructure</li>
+                <li>Shopify</li>
+                <li>Magento</li>
               </div>
-            </div>
-            <div class="carousel-cell">
-              <div class="cell-container">
+              <div>
                 <p>Creative</p>
-                  <li>Web Design</li>
-                  <li>App Design</li>
-                  <li>UX / UI</li>
-                  <li>Research</li>
-                  <li>Protoypes</li>
+                <li>Web Design</li>
+                <li>App Design</li>
+                <li>UX / UI</li>
+                <li>Research</li>
+                <li>Protoypes</li>
               </div>
             </div>
-          </flickity>
+          </div>
+          <div class="d-md-none">
+            <flickity ref="flickity" :options="flickityOptions">
+              <div class="carousel-cell">
+                <div class="cell-container">
+                  <p>Production</p>
+                    <li>Responsive Websites</li>
+                    <li>Web Apps</li>
+                    <li>Mobile Apps</li>
+                    <li>TV Apps</li>
+                    <li>Gaming</li>
+                    <li>Shopify</li>
+                    <li>Server Infrstructure</li>
+                    <li>Ecommerce</li>
+                    <li>Retail</li>
+                </div>
+              </div>
+              <div class="carousel-cell">
+                <div class="cell-container">
+                  <p>Technologies</p>
+                    <li>iOS / Android</li>
+                    <li>tvOS</li>
+                    <li>Backend Support</li>
+                    <li>VueJS / ReactJS</li>
+                    <li>HTML / CSS / JS</li>
+                    <li>DevOps / Infrastructure</li>
+                    <li>Shopify</li>
+                    <li>Magento</li>
+                </div>
+              </div>
+              <div class="carousel-cell">
+                <div class="cell-container">
+                  <p>Creative</p>
+                    <li>Web Design</li>
+                    <li>App Design</li>
+                    <li>UX / UI</li>
+                    <li>Research</li>
+                    <li>Protoypes</li>
+                </div>
+              </div>
+            </flickity>
+          </div>
         </div>
       </div>
     </div>
@@ -133,7 +137,7 @@ export default {
   mounted() {
     /* eslint-disable no-new */
     new Typed('#headline', {
-      strings: ['Materialize is a development oriented digital production agency.'],
+      strings: ['Materialize is a</br>development oriented</br>digital production agency.'],
       typeSpeed: 25,
       loop: false,
     });
@@ -143,7 +147,6 @@ export default {
       loop: false,
     });
     /* eslint-enable no-new */
-
     this.fadeLink = true;
   },
   methods: {
@@ -170,4 +173,10 @@ export default {
   margin-left: -8%;
 }
 
+@media (min-width: 1024px) {
+  .info-wrap {
+    width: 65%;
+    margin: 0 auto;
+  }
+}
 </style>

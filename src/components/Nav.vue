@@ -173,6 +173,10 @@ export default {
 nav a {
   z-index: 2;
 }
+.router-link-active {
+  color: #DF0070 !important;
+  text-decoration: line-through !important;
+}
 .logo {
   width: 175px;
   margin: 20px 0px 0px 25px;

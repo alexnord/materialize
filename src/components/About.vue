@@ -1,6 +1,9 @@
 <template>
   <div class="about-page">
-    <div class="fixed-bg">
+    <div
+      class="fixed-bg"
+      v-bind:style="{ top: bgPosition }"
+      >
       <img src="../assets/img/house.jpg" />
     </div>
     <div class="wrapper">
@@ -132,7 +135,7 @@ export default {
   },
   beforeMount() {
     const percentage = window.innerHeight * 0.8;
-    const twentyFive = window.innerHeight * 0.25;
+    const twentyFive = percentage * 0.25;
     this.viewportHeight = `${percentage}px`;
     this.bgPosition = `${twentyFive}px`;
   },
@@ -160,7 +163,7 @@ export default {
   methods: {
     handleResize() {
       const percentage = window.innerHeight * 0.8;
-      const twentyFive = window.innerHeight * 0.25;
+      const twentyFive = percentage * 0.25;
       this.viewportHeight = `${percentage}px`;
       this.bgPosition = `${twentyFive}px`;
     },
@@ -176,7 +179,7 @@ export default {
 .fixed-bg {
   position: fixed;
   z-index: -10;
-  top: 20%;
+  /*top: 200px;*/
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%)
@@ -199,7 +202,6 @@ export default {
 
 @media (min-width: 660px) {
   .fixed-bg {
-    top: 15%;
   }
 }
 

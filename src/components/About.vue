@@ -168,7 +168,7 @@ export default {
 .about-page {
   background: url(../assets/img/house.jpg) top right no-repeat;
   background-attachment: fixed;
-  background-size: 384px;
+  background-size: 100vw;
   background-position: 0% 33%;
 }
 .wrapper {
@@ -185,9 +185,19 @@ export default {
 }
 
 @media (min-width: 1024px) {
+  .about-page {
+    background-size: 65vw;
+    background-position: 50% 25%;
+  }
   .info-wrap {
     width: 65%;
     margin: 0 auto;
+  }
+}
+
+@media (min-width: 1480px) {
+  .about-page {
+    background-size: 900px;
   }
 }
 </style>

@@ -1,5 +1,8 @@
 <template>
-  <div class="about-page">
+  <div
+    class="about-page"
+    v-bind:style="{ 'background-position': bgPosition }"
+  >
     <div class="wrapper">
       <div
         class="typed d-flex align-content-center flex-wrap"
@@ -119,6 +122,7 @@ export default {
   data() {
     return {
       viewportHeight: '0px',
+      bgPosition: '0px 0px',
       flickityOptions: {
         pageDots: true,
         wrapAround: true,
@@ -128,7 +132,9 @@ export default {
   },
   beforeMount() {
     const percentage = window.innerHeight * 0.8;
+    const twentyFive = window.innerHeight * 0.25;
     this.viewportHeight = `${percentage}px`;
+    this.bgPosition = `0px ${twentyFive}px`;
   },
   created() {
     window.addEventListener('resize', this.handleResize);
@@ -154,7 +160,9 @@ export default {
   methods: {
     handleResize() {
       const percentage = window.innerHeight * 0.8;
+      const twentyFive = window.innerHeight * 0.25;
       this.viewportHeight = `${percentage}px`;
+      this.bgPosition = `0px ${twentyFive}px`;
     },
   },
   components: {
@@ -166,10 +174,9 @@ export default {
 
 <style scoped>
 .about-page {
-  background: url(../assets/img/house.jpg) top right no-repeat;
+  background: url(/static/img/house.2246433.jpg) no-repeat;
   background-attachment: fixed;
   background-size: 100vw;
-  background-position: 0% 33%;
 }
 .wrapper {
   background-color: rgba(255, 255, 255, .6);
@@ -194,7 +201,6 @@ export default {
 @media (min-width: 1480px) {
   .about-page {
     background-size: 900px;
-    background-position: 50% 25%;
   }
 }
 </style>

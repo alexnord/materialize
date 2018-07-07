@@ -18,13 +18,26 @@
           <span id="description"></span>
         </div>
       </div>
-      <div class="info-block black-bg">
+      <div
+        class="info-block black-bg"
+        v-scroll-reveal.reset="{ delay: 100, origin: 'right', distance: '100px' }"
+      >
         <div class="info-wrap">
-          <h2>our method</h2>
-          <p class="mt-35 ft-16">
+          <h2
+            v-scroll-reveal.reset="{ delay: 200, origin: 'left', distance: '100px' }"
+          >
+            our method
+          </h2>
+          <p
+            class="mt-35 ft-16"
+            v-scroll-reveal.reset="{ delay: 300, origin: 'left', distance: '100px' }"
+          >
             Materialize analyzes the entire landscape of digital business to draft a calculated plan for effective digital presence. We design and build cutting edge digital solutions tailored to the needs of our clients to achieve maximum impact.
           </p>
-          <p class="ft-16">
+          <p
+            class="ft-16"
+            v-scroll-reveal.reset="{ delay: 400, origin: 'left', distance: '100px' }"
+          >
             Our clients range from small companies launching new digital products to large brands needing a complex range of digital services. We provide the full spectrum of digital development needs and can also provide augmentation to current development teams.
           </p>
         </div>
@@ -179,7 +192,6 @@ export default {
 .fixed-bg {
   position: fixed;
   z-index: -10;
-  /*top: 200px;*/
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%)

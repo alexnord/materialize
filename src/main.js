@@ -3,12 +3,14 @@
 import Vue from 'vue';
 import BootstrapVue from 'bootstrap-vue';
 import VueParticles from 'vue-particles';
+import VueScrollReveal from 'vue-scroll-reveal';
 import App from './App';
 import router from './router';
 
 Vue.config.productionTip = false;
 Vue.use(BootstrapVue);
 Vue.use(VueParticles);
+Vue.use(VueScrollReveal);
 
 /* eslint-disable no-new */
 new Vue({

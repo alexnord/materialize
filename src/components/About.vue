@@ -139,7 +139,7 @@ export default {
   mounted() {
     /* eslint-disable no-new */
     new Typed('#headline', {
-      strings: ['Materialize is a</br>development oriented</br>digital production agency.'],
+      strings: ['Materialize is&nbsp;</br>a development&nbsp;</br>oriented agency.'],
       typeSpeed: 25,
       loop: false,
     });
@@ -166,13 +166,13 @@ export default {
 
 <style scoped>
 .about-page {
-  background: url(/static/img/house.2246433.jpg) top right no-repeat;
+  background: url(../assets/img/house.jpg) top right no-repeat;
   background-attachment: fixed;
   background-size: 384px;
   background-position: 0% 33%;
 }
 .wrapper {
-  background-color: rgba(255, 255, 255, .7);
+  background-color: rgba(255, 255, 255, .6);
 }
 .typed {
   padding: 24px;

@@ -1,9 +1,6 @@
 <template>
   <div class="about-page">
-    <div
-      class="fixed-bg"
-      v-bind:style="{ 'top': '130px' }"
-    >
+    <div class="fixed-bg">
       <img src="../assets/img/house.jpg" />
     </div>
     <div class="wrapper">
@@ -179,9 +176,13 @@ export default {
 .fixed-bg {
   position: fixed;
   z-index: -10;
+  top: 20%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%)
 }
 .fixed-bg img {
-  width: 100vw;
+  width: 100vmin;
 }
 .wrapper {
   background-color: rgba(255, 255, 255, .6);
@@ -194,6 +195,12 @@ export default {
 }
 .cell-container {
   margin-left: -8%;
+}
+
+@media (min-width: 660px) {
+  .fixed-bg {
+    top: 15%;
+  }
 }
 
 @media (min-width: 1024px) {

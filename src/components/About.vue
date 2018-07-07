@@ -185,10 +185,6 @@ export default {
 }
 
 @media (min-width: 1024px) {
-  .about-page {
-    background-size: 65vw;
-    background-position: 50% 25%;
-  }
   .info-wrap {
     width: 65%;
     margin: 0 auto;
@@ -198,6 +194,7 @@ export default {
 @media (min-width: 1480px) {
   .about-page {
     background-size: 900px;
+    background-position: 50% 25%;
   }
 }
 </style>

@@ -24,19 +24,19 @@
       >
         <div class="info-wrap">
           <h2
-            v-scroll-reveal="{ delay: 250, origin: 'left', distance: '100px' }"
+            v-scroll-reveal="{ delay: 175, origin: 'left', distance: '100px' }"
           >
             our method
           </h2>
           <p
             class="mt-35 ft-16"
-            v-scroll-reveal="{ delay: 400, origin: 'left', distance: '100px' }"
+            v-scroll-reveal="{ delay: 175, origin: 'left', distance: '100px' }"
           >
             Materialize analyzes the entire landscape of digital business to draft a calculated plan for effective digital presence. We design and build cutting edge digital solutions tailored to the needs of our clients to achieve maximum impact.
           </p>
           <p
             class="ft-16"
-            v-scroll-reveal="{ delay: 550, origin: 'left', distance: '100px' }"
+            v-scroll-reveal="{ delay: 175, origin: 'left', distance: '100px' }"
           >
             Our clients range from small companies launching new digital products to large brands needing a complex range of digital services. We provide the full spectrum of digital development needs and can also provide augmentation to current development teams.
           </p>
@@ -45,12 +45,12 @@
       <div class="info-block transparent-bg">
         <div class="info-wrap">
           <h2
-            v-scroll-reveal="{ delay: 200, origin: 'left', distance: '100px' }">
+            v-scroll-reveal="{ delay: 175, origin: 'left', distance: '100px' }">
             our services
           </h2>
           <div
             class="mt-35 ft-16"
-            v-scroll-reveal="{ delay: 400, origin: 'bottom', distance: '100px' }"
+            v-scroll-reveal="{ delay: 175, origin: 'bottom', distance: '100px' }"
           >
             <div class="d-none d-md-block">
               <div class="d-flex justify-content-between">
@@ -89,7 +89,7 @@
             </div>
             <div
               class="d-md-none"
-              v-scroll-reveal="{ delay: 300, origin: 'bottom', distance: '100px' }"
+              v-scroll-reveal="{ delay: 175, origin: 'bottom', distance: '100px' }"
             >
               <flickity ref="flickity" :options="flickityOptions">
                 <div class="carousel-cell">
@@ -158,8 +158,9 @@ export default {
   beforeMount() {
     const percentage = window.innerHeight * 0.8;
     const twentyFive = percentage * 0.25;
+    const seventeen = percentage * 0.17;
     this.viewportHeight = `${percentage}px`;
-    this.bgPosition = `${twentyFive}px`;
+    this.bgPosition = window.innerWidth >= 768 ? `${seventeen}px` : `${twentyFive}px`;
   },
   created() {
     window.addEventListener('resize', this.handleResize);
@@ -186,8 +187,9 @@ export default {
     handleResize() {
       const percentage = window.innerHeight * 0.8;
       const twentyFive = percentage * 0.25;
+      const seventeen = percentage * 0.17;
       this.viewportHeight = `${percentage}px`;
-      this.bgPosition = `${twentyFive}px`;
+      this.bgPosition = window.innerWidth >= 768 ? `${seventeen}px` : `${twentyFive}px`;
     },
   },
   components: {

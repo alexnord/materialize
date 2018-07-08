@@ -43,7 +43,7 @@ export default {
     });
     new Typed('#description', {
       strings: [
-        'Please reach out with any inquiries, questions, or even just say say hello.</br></br><a class="pink-font" href="mailto:hello@materializelabs.com" target="_top">hello@materializelabs.com</a>',
+        'Please reach out with any inquiries, questions, or even just say say hello.</br></br><a class="pink-font ft-20" href="mailto:hello@materializelabs.com" target="_top">hello@materializelabs.com</a></br><span class="pink-font ft-20">310.699.0125</span>',
       ],
       typeSpeed: 12,
       loop: false,

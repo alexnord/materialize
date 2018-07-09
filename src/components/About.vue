@@ -20,7 +20,6 @@
       </div>
       <div
         class="info-block black-bg"
-        v-scroll-reveal="{ delay: 100, origin: 'right', distance: '100px' }"
       >
         <div class="info-wrap">
           <h2

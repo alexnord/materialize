@@ -4,7 +4,8 @@
       class="fixed-bg"
       v-bind:style="{ top: bgPosition }"
       >
-      <img src="../assets/img/house.jpg" />
+      <img src="../assets/img/house_1200px.png" />
+      <!-- <img src="../assets/img/house.jpg" /> -->
     </div>
     <div class="wrapper">
       <div
@@ -207,10 +208,10 @@ export default {
   transform: translateX(-50%)
 }
 .fixed-bg img {
-  width: 100vmin;
+  width: 84vmin;
 }
 .wrapper {
-  background-color: rgba(255, 255, 255, .6);
+  background-color: rgba(255, 255, 255, .5);
 }
 .typed {
   padding: 24px;

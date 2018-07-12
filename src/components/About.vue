@@ -208,7 +208,7 @@ export default {
   transform: translateX(-50%)
 }
 .fixed-bg img {
-  width: 84vmin;
+  width: 98vmin;
 }
 .wrapper {
   background-color: rgba(255, 255, 255, .5);
@@ -232,6 +232,9 @@ export default {
   .info-wrap {
     width: 65%;
     margin: 0 auto;
+  }
+  .fixed-bg img {
+    width: 75vmin;
   }
 }
 

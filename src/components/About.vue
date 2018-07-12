@@ -200,13 +200,6 @@ export default {
 </script>
 
 <style scoped>
-.fixed-bg {
-  position: fixed;
-  z-index: -10;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%)
-}
 .fixed-bg img {
   width: 98vmin;
 }
@@ -221,11 +214,6 @@ export default {
 }
 .cell-container {
   margin-left: -8%;
-}
-
-@media (min-width: 660px) {
-  .fixed-bg {
-  }
 }
 
 @media (min-width: 1024px) {

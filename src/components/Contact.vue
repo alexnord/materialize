@@ -1,14 +1,23 @@
 <template>
-  <div>
+  <div class="contact-page">
     <div
-      class="typed d-flex align-content-center flex-wrap"
-      v-bind:style="{ height: viewportHeight }"
-    >
-      <div class="headline">
-        <span id="headline"></span>
-      </div>
-      <div class="description">
-        <span id="description"></span>
+      class="fixed-bg"
+      v-bind:style="{ top: bgPosition }"
+      >
+      <img src="../assets/img/plane.png" />
+      <!-- <img src="../assets/img/house.jpg" /> -->
+    </div>
+    <div class="wrapper">
+      <div
+        class="typed d-flex align-content-center flex-wrap"
+        v-bind:style="{ height: viewportHeight }"
+      >
+        <div class="headline">
+          <span id="headline"></span>
+        </div>
+        <div class="description">
+          <span id="description"></span>
+        </div>
       </div>
     </div>
   </div>
@@ -22,11 +31,15 @@ export default {
   data() {
     return {
       viewportHeight: '0px',
+      bgPosition: '0px',
     };
   },
   beforeMount() {
     const percentage = window.innerHeight * 0.8;
     this.viewportHeight = `${percentage}px`;
+    const twentyFive = percentage * 0.25;
+    const seventeen = percentage * 0.17;
+    this.bgPosition = window.innerWidth >= 768 ? `${seventeen}px` : `${twentyFive}px`;
   },
   created() {
     window.addEventListener('resize', this.handleResize);
@@ -56,6 +69,9 @@ export default {
     handleResize() {
       const percentage = window.innerHeight * 0.8;
       this.viewportHeight = `${percentage}px`;
+      const twentyFive = percentage * 0.25;
+      const seventeen = percentage * 0.17;
+      this.bgPosition = window.innerWidth >= 768 ? `${seventeen}px` : `${twentyFive}px`;
     },
   },
   components: {
@@ -65,4 +81,15 @@ export default {
 </script>
 
 <style scoped>
+.fixed-bg img {
+  width: 98vmin;
+}
+.wrapper {
+  background-color: rgba(255, 255, 255, .7);
+}
+@media (min-width: 1024px) {
+  .fixed-bg img {
+    width: 90vmin;
+  }
+}
 </style>

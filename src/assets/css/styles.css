@@ -96,14 +96,6 @@ span.typed-cursor {
 	font-size: 16px;
 }
 
-.fixed-bg {
-  position: fixed;
-  z-index: -10;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%)
-}
-
 @media (min-width: 375px) {
   .headline {
     font-size: 31px;

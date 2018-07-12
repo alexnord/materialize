@@ -200,6 +200,13 @@ export default {
 </script>
 
 <style scoped>
+.fixed-bg {
+  position: fixed;
+  z-index: -10;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%)
+}
 .fixed-bg img {
   width: 98vmin;
 }

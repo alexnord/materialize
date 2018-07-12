@@ -1,9 +1,6 @@
 <template>
   <div class="contact-page">
-    <div
-      class="fixed-bg"
-      v-bind:style="{ top: bgPosition }"
-      >
+    <div class="fixed-bg">
       <img src="../assets/img/plane.png" />
       <!-- <img src="../assets/img/house.jpg" /> -->
     </div>
@@ -31,15 +28,10 @@ export default {
   data() {
     return {
       viewportHeight: '0px',
-      bgPosition: '0px',
     };
   },
   beforeMount() {
-    const percentage = window.innerHeight * 0.8;
-    this.viewportHeight = `${percentage}px`;
-    const twentyFive = percentage * 0.25;
-    const seventeen = percentage * 0.17;
-    this.bgPosition = window.innerWidth >= 768 ? `${seventeen}px` : `${twentyFive}px`;
+    this.viewportHeight = `${window.innerHeight}px`;
   },
   created() {
     window.addEventListener('resize', this.handleResize);
@@ -67,11 +59,7 @@ export default {
   },
   methods: {
     handleResize() {
-      const percentage = window.innerHeight * 0.8;
-      this.viewportHeight = `${percentage}px`;
-      const twentyFive = percentage * 0.25;
-      const seventeen = percentage * 0.17;
-      this.bgPosition = window.innerWidth >= 768 ? `${seventeen}px` : `${twentyFive}px`;
+      this.viewportHeight = `${window.innerHeight}px`;
     },
   },
   components: {
@@ -81,6 +69,13 @@ export default {
 </script>
 
 <style scoped>
+.fixed-bg {
+  z-index: -10;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .fixed-bg img {
   width: 98vmin;
 }

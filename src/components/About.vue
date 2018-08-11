@@ -19,30 +19,7 @@
           <span id="description"></span>
         </div>
       </div>
-      <div
-        class="info-block black-bg"
-      >
-        <div class="info-wrap">
-          <h2
-            v-scroll-reveal="{ delay: 175, origin: 'left', distance: '100px' }"
-          >
-            our method
-          </h2>
-          <p
-            class="mt-35 ft-16"
-            v-scroll-reveal="{ delay: 175, origin: 'left', distance: '100px' }"
-          >
-            Materialize analyzes the entire landscape of digital business to draft a calculated plan for effective digital presence. We design and build cutting edge digital solutions tailored to the needs of our clients to achieve maximum impact.
-          </p>
-          <p
-            class="ft-16"
-            v-scroll-reveal="{ delay: 175, origin: 'left', distance: '100px' }"
-          >
-            Our clients range from small companies launching new digital products to large brands needing a complex range of digital services. We provide the full spectrum of digital development needs and can also provide augmentation to current development teams.
-          </p>
-        </div>
-      </div>
-      <div class="info-block transparent-bg">
+      <div class="info-block black-bg">
         <div class="info-wrap">
           <h2
             v-scroll-reveal="{ delay: 175, origin: 'left', distance: '100px' }">
@@ -134,7 +111,29 @@
           </div>
         </div>
       </div>
+      <div class="info-block transparent-bg">
+        <div class="info-wrap">
+          <h2
+            v-scroll-reveal="{ delay: 175, origin: 'left', distance: '100px' }"
+          >
+            our method
+          </h2>
+          <p
+            class="mt-35 ft-16"
+            v-scroll-reveal="{ delay: 175, origin: 'left', distance: '100px' }"
+          >
+            We believe form should match function, and can meet your brand’s high-end digital needs inside and out. We can take your ideas and goals from concept to execution, and give you a digital presence that resonates with your clients.
+          </p>
+          <p
+            class="ft-16"
+            v-scroll-reveal="{ delay: 175, origin: 'left', distance: '100px' }"
+          >
+            Our clients range from small companies launching new digital products to large brands needing a complex range of digital services. We provide the full spectrum of digital development needs and can also provide augmentation to current development teams.
+          </p>
+        </div>
+      </div>
     </div>
+    <button class="contact">contact</button>
   </div>
 </template>
 
@@ -171,7 +170,7 @@ export default {
   mounted() {
     /* eslint-disable no-new */
     new Typed('#headline', {
-      strings: ['Materialize is&nbsp;</br>a design and development&nbsp;</br>focused agency.'],
+      strings: ['Materialize is&nbsp;</br>a design and development&nbsp;</br>oriented agency.'],
       typeSpeed: 25,
       loop: false,
     });
@@ -222,7 +221,17 @@ export default {
 .cell-container {
   margin-left: -8%;
 }
-
+.contact {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  background-color: rgba(223, 0, 112, .9);
+  border: 2px solid rgba(0, 0, 0, 0.12);
+  border-radius: 5px;
+  font-size: 15px;
+  color: #FFF;
+}
 @media (min-width: 1024px) {
   .info-wrap {
     width: 65%;

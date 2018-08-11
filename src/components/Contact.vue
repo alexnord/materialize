@@ -2,7 +2,6 @@
   <div class="contact-page">
     <div class="fixed-bg">
       <img src="../assets/img/plane.png" />
-      <!-- <img src="../assets/img/house.jpg" /> -->
     </div>
     <div class="wrapper">
       <div
@@ -15,6 +14,11 @@
         <div class="description">
           <span id="description"></span>
         </div>
+        <transition name="fade">
+          <div class="cta" v-show="fadeLink">
+            <button>reach out</button>
+          </div>
+        </transition>
       </div>
     </div>
   </div>
@@ -28,6 +32,7 @@ export default {
   data() {
     return {
       viewportHeight: '0px',
+      fadeLink: false,
     };
   },
   beforeMount() {
@@ -80,8 +85,23 @@ export default {
   width: 98vmin;
 }
 .wrapper {
-  background-color: rgba(255, 255, 255, .7);
+  background-color: rgba(255, 255, 255, .76);
 }
+.cta {
+  margin: 35px auto;
+  font-size: 22px;
+  cursor: pointer;
+  transition-delay: 2.5s;
+  transition-duration: 3s;
+}
+.cta button {
+  padding: 14px 18px;
+  background-color: rgba(223, 0, 112, .8);
+  border: 2px solid rgba(0, 0, 0, 0.12);
+  border-radius: 5px;
+  color: #FFF;
+}
+
 @media (min-width: 1024px) {
   .fixed-bg img {
     width: 90vmin;

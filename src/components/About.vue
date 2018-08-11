@@ -171,12 +171,12 @@ export default {
   mounted() {
     /* eslint-disable no-new */
     new Typed('#headline', {
-      strings: ['Materialize is&nbsp;</br>a development&nbsp;</br>oriented agency.'],
+      strings: ['Materialize is&nbsp;</br>a design and development&nbsp;</br>focused agency.'],
       typeSpeed: 25,
       loop: false,
     });
     new Typed('#description', {
-      strings: ['Our approach focuses on building and supporting applications that are impactful and on brand.'],
+      strings: ['Our approach focuses on building and supporting digital applications that are impactful and on brand.'],
       typeSpeed: 12,
       loop: false,
     });
@@ -211,7 +211,7 @@ export default {
   width: 98vmin;
 }
 .wrapper {
-  background-color: rgba(255, 255, 255, .5);
+  background-color: rgba(255, 255, 255, .7);
 }
 .typed {
   padding: 24px;

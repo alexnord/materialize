@@ -9,7 +9,7 @@
         linesColor="#6d6d6d"
         :linesWidth="1"
         :lineLinked="true"
-        :lineOpacity="0.3"
+        :lineOpacity="0.2"
         :linesDistance="150"
         :moveSpeed="3"
         :hoverEffect="false"
@@ -31,6 +31,11 @@
       <transition name="fade">
         <div class="see-work" v-show="fadeLink">
           <router-link to="/about"><p>learn about us <span id="chevron-right">&#62;</span></p></router-link>
+        </div>
+      </transition>
+      <transition name="fade">
+        <div class="cta" v-show="fadeLink">
+          <button>reach out</button>
         </div>
       </transition>
     </div>
@@ -60,12 +65,12 @@ export default {
   mounted() {
     /* eslint-disable no-new */
     new Typed('#headline', {
-      strings: ['a digital agency<br>dedicated to<br>technical excellence.'],
+      strings: ['a digital agency dedicated to technical excellence.'],
       typeSpeed: 25,
       loop: false,
     });
     new Typed('#description', {
-      strings: ['Los Angeles based agency specializing in high-end application development for brands.'],
+      strings: ['Specializing in high-end digital design and development for companies and brands.'],
       typeSpeed: 12,
       loop: false,
     });
@@ -104,6 +109,20 @@ export default {
 #chevron-right {
   position: relative;
   top: 1px;
+}
+.cta {
+  margin: 25px auto;
+  font-size: 22px;
+  cursor: pointer;
+  transition-delay: 2.5s;
+  transition-duration: 3s;
+}
+.cta button {
+  padding: 14px 18px;
+  background-color: rgba(223, 0, 112, .8);
+  border: 2px solid rgba(0, 0, 0, 0.12);
+  border-radius: 5px;
+  color: #FFF;
 }
 
 @media (min-width: 375px) {

@@ -132,18 +132,18 @@
             class="mt-35 ft-16"
             v-scroll-reveal="{ delay: 175, origin: 'left', distance: '100px' }"
           >
-            We believe form should match function, and can meet your brand’s high-end digital needs inside and out. We can take your ideas and goals from concept to execution, and give you a digital presence that resonates with your clients.
+            We believe form should match function, and can meet your brand’s high-end digital needs inside and out. We take your ideas and goals from concept to reality, and give you a digital presence that resonates with your clients.
           </p>
           <p
             class="ft-16"
             v-scroll-reveal="{ delay: 175, origin: 'left', distance: '100px' }"
           >
-            Our clients range from small companies launching new digital products to large brands needing a complex range of digital services. We provide the full spectrum of digital development needs and can also provide augmentation to current development teams.
+            Our clients range from small companies launching new digital products to large brands requiring a complex range of digital services. We provide the full spectrum of digital development needs and can also provide augmentation to current development teams.
           </p>
         </div>
       </div>
     </div>
-    <button class="contact">contact</button>
+    <button class="contact" v-b-modal.contact-form>contact</button>
   </div>
 </template>
 

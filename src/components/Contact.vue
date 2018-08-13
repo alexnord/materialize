@@ -16,7 +16,7 @@
         </div>
         <transition name="fade">
           <div class="cta" v-show="fadeLink">
-            <button>say hello</button>
+            <button v-b-modal.contact-form>say hello</button>
           </div>
         </transition>
       </div>
@@ -33,6 +33,14 @@ export default {
     return {
       viewportHeight: '0px',
       fadeLink: false,
+      form: {
+        first_name: '',
+        last_name: '',
+        email: '',
+        company: '',
+        phone: '',
+        message: '',
+      },
     };
   },
   beforeMount() {

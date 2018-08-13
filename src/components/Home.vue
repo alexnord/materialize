@@ -29,13 +29,9 @@
         <span id="description"></span>
       </div>
       <transition name="fade">
-        <div class="see-work" v-show="fadeLink">
-          <router-link to="/about"><p>learn about us <span id="chevron-right">&#62;</span></p></router-link>
-        </div>
-      </transition>
-      <transition name="fade">
         <div class="cta" v-show="fadeLink">
-          <button>reach out</button>
+          <router-link to="/about"><button id="learn-more">learn more</button></router-link>
+          <router-link to="/contact"><button id="reach-out">reach out</button></router-link>
         </div>
       </transition>
     </div>
@@ -112,17 +108,25 @@ export default {
 }
 .cta {
   margin: 25px auto;
-  font-size: 22px;
+  font-size: 18px;
   cursor: pointer;
   transition-delay: 2.5s;
   transition-duration: 3s;
 }
 .cta button {
-  padding: 14px 18px;
-  background-color: rgba(223, 0, 112, .8);
-  border: 2px solid rgba(0, 0, 0, 0.12);
   border-radius: 5px;
   color: #FFF;
+  padding: 8px 18px;
+}
+button#learn-more {
+  /*background-color: rgba(0, 0, 0, .55);*/
+  /*background-color: #17BEBB;*/
+  background-color: #f5a91e;
+  border: 2px solid rgba(0, 0, 0, 0.12);
+}
+button#reach-out {
+  background-color: rgba(223, 0, 112, .8);
+  border: 2px solid rgba(0, 0, 0, 0.12);
 }
 
 @media (min-width: 375px) {

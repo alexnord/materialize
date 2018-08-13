@@ -66,7 +66,7 @@ export default {
       loop: false,
     });
     new Typed('#description', {
-      strings: ['Specializing in high-end digital design and development for companies and brands.'],
+      strings: ['Los Angeles based, specializing in high-end digital design and development for companies and brands.'],
       typeSpeed: 12,
       loop: false,
     });
@@ -107,7 +107,8 @@ export default {
   top: 1px;
 }
 .cta {
-  margin: 25px auto;
+  width: 100%;
+  margin: 40px auto;
   font-size: 18px;
   cursor: pointer;
   transition-delay: 2.5s;

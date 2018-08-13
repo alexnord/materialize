@@ -73,14 +73,16 @@
                   <div class="cell-container">
                     <p class="ft-20">Production</p>
                       <li>Responsive Websites</li>
-                      <li>Web Apps</li>
+                      <li>Single-page Web Apps</li>
                       <li>Mobile Apps</li>
                       <li>TV Apps</li>
+                      <li>DevOps</li>
+                      <li>Cloud Computing</li>
                       <li>Gaming</li>
-                      <li>Shopify</li>
-                      <li>Server Infrstructure</li>
                       <li>Ecommerce</li>
+                      <li>Shopify</li>
                       <li>Retail</li>
+                      <li>Content Management Systems</li>
                   </div>
                 </div>
                 <div class="carousel-cell">
@@ -88,12 +90,13 @@
                     <p class="ft-20">Technologies</p>
                       <li>iOS / Android</li>
                       <li>tvOS</li>
-                      <li>Backend Support</li>
+                      <li>DevOps / Infrastructure</li>
+                      <li>Server Side Support</li>
                       <li>VueJS / ReactJS</li>
                       <li>HTML / CSS / JS</li>
-                      <li>DevOps / Infrastructure</li>
                       <li>Shopify</li>
                       <li>Magento</li>
+                      <li>Wordpress</li>
                   </div>
                 </div>
                 <div class="carousel-cell">
@@ -175,7 +178,7 @@ export default {
       loop: false,
     });
     new Typed('#description', {
-      strings: ['Our approach focuses on building and supporting digital applications that are impactful and on brand.'],
+      strings: ['Our approach focuses on building and supporting websites, apps, and software that are impactful and on brand.'],
       typeSpeed: 12,
       loop: false,
     });

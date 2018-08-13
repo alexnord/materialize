@@ -16,7 +16,7 @@
         </div>
         <transition name="fade">
           <div class="cta" v-show="fadeLink">
-            <button>reach out</button>
+            <button>say hello</button>
           </div>
         </transition>
       </div>
@@ -53,7 +53,7 @@ export default {
     });
     new Typed('#description', {
       strings: [
-        'Please reach out with any inquiries, questions, or even just say say hello.</br></br><a class="pink-font ft-20" href="mailto:hello@materializelabs.com" target="_top">hello@materializelabs.com</a></br><span class="pink-font ft-20">310.699.0125</span>',
+        '<a class="pink-font ft-20" href="mailto:hello@materializelabs.com" target="_top">hello@materializelabs.com</a></br><span class="pink-font ft-20">310.699.0125</span>',
       ],
       typeSpeed: 12,
       loop: false,
@@ -89,13 +89,13 @@ export default {
 }
 .cta {
   margin: 35px auto;
-  font-size: 22px;
+  font-size: 18px;
   cursor: pointer;
-  transition-delay: 2.5s;
-  transition-duration: 3s;
+  transition-delay: 1.5s;
+  transition-duration: 2s;
 }
 .cta button {
-  padding: 14px 18px;
+  padding: 8px 18px;
   background-color: rgba(223, 0, 112, .8);
   border: 2px solid rgba(0, 0, 0, 0.12);
   border-radius: 5px;

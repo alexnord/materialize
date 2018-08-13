@@ -62,12 +62,12 @@ export default {
     /* eslint-disable no-new */
     new Typed('#headline', {
       strings: ['a digital agency dedicated to technical excellence.'],
-      typeSpeed: 25,
+      typeSpeed: 15,
       loop: false,
     });
     new Typed('#description', {
       strings: ['Los Angeles based, specializing in high-end digital design and development for companies and brands.'],
-      typeSpeed: 12,
+      typeSpeed: 10,
       loop: false,
     });
     /* eslint-enable no-new */
@@ -111,8 +111,8 @@ export default {
   margin: 40px auto;
   font-size: 18px;
   cursor: pointer;
-  transition-delay: 2.5s;
-  transition-duration: 3s;
+  transition-delay: 1.7s;
+  transition-duration: 2s;
 }
 .cta button {
   border-radius: 5px;

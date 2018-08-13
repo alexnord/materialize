@@ -7,6 +7,7 @@
       id="contact-form"
       size="lg"
       title="contact us"
+      ref="contactRef"
       :ok-only=true
       ok-title="send"
       @ok="handleOk"
@@ -72,6 +73,16 @@ export default {
   methods: {
     handleOk(e) {
       e.preventDefault();
+      this.clearContactForm();
+      this.$refs.contactRef.hide();
+    },
+    clearContactForm() {
+      this.form.first_name = '';
+      this.form.last_name = '';
+      this.form.email = '';
+      this.form.company = '';
+      this.form.phone = '';
+      this.form.message = '';
     },
   },
   components: {

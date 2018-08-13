@@ -96,6 +96,7 @@ export default {
   background-color: rgba(255, 255, 255, .76);
 }
 .cta {
+  width: 100%;
   margin: 35px auto;
   font-size: 18px;
   cursor: pointer;

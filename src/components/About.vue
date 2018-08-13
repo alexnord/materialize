@@ -242,6 +242,15 @@ export default {
   font-size: 15px;
   color: #FFF;
 }
+@media (min-width: 768px) {
+  .contact {
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    font-size: 24px;
+    color: #FFF;
+  }
+}
 @media (min-width: 1024px) {
   .info-wrap {
     width: 65%;
@@ -250,9 +259,5 @@ export default {
   .fixed-bg img {
     width: 75vmin;
   }
-}
-
-@media (min-width: 1480px) {
-
 }
 </style>

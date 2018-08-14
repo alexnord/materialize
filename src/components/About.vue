@@ -22,107 +22,108 @@
       <div class="container-fluid black-bg">
         <div class="row">
           <div class="tile-grid">
-            <div class="tile">
-              <div class="tile-content fade-left">
+            <div class="tile" v-scroll-reveal="{ delay: 175, origin: 'left', distance: '100px' }" >
+              <div class="tile-content">
                 <picture class="tile-icon">
-                  <img src="../assets/img/icons/web_development.png" alt="web development icon">
+                  <img src="../assets/img/icons/online-shop.png" alt="ecommerce icon">
                 </picture>
                 <div class="title">
-                  <p>Web Development</p>
+                  <p>E-Commerce Stores</p>
                 </div>
                 <div class="sub-title">
-                  <p>Frontend and backend expertise</p>
+                  <p>Improve the buying experience for your customers.</p>
                 </div>
               </div>
             </div>
-            <div class="tile">
-              <div class="tile-content fade-right">
+            <div class="tile" v-scroll-reveal="{ delay: 175, origin: 'right', distance: '100px' }">
+              <div class="tile-content">
                 <picture class="tile-icon">
                   <img src="../assets/img/icons/mobile_apps.png" alt="mobile apps icon">
                 </picture>
                 <div class="title">
-                  <p>Mobile Apps</p>
+                  <p>Apps</p>
                 </div>
                 <div class="sub-title">
-                  <p>iPhone/iPad, Android, Apple TV, Roku</p>
+                  <p>Develop and maintain iOS, Android and TV apps.</p>
                 </div>
               </div>
             </div>
-            <div class="tile">
-              <div class="tile-content fade-left">
+            <div class="tile" v-scroll-reveal="{ delay: 175, origin: 'left', distance: '100px' }">
+              <div class="tile-content">
                 <picture class="tile-icon">
-                  <img src="../assets/img/icons/infrastructure.png" alt="infrastructure icon">
+                  <img src="../assets/img/icons/web_development.png" alt="web devleopment icon">
                 </picture>
                 <div class="title">
-                  <p>Infrastructure</p>
+                  <p>Frontend Web Development</p>
                 </div>
                 <div class="sub-title">
-                  <p>DevOps services and infrastructure tooling</p>
+                  <p>Design and build your digital presence.</p>
                 </div>
               </div>
             </div>
-            <div class="tile">
-              <div class="tile-content fade-right">
-                <picture class="tile-icon">
-                  <img src="../assets/img/icons/strategy.png" alt="strategy icon">
-                </picture>
-                <div class="title">
-                  <p>Strategy</p>
-                </div>
-                <div class="sub-title">
-                  <p>Complete projects on time and within budget</p>
-                </div>
-              </div>
-            </div>
-            <div class="tile">
-              <div class="tile-content fade-left">
-                <picture class="tile-icon">
-                  <img src="../assets/img/icons/innovation.png" alt="innovation icon">
-                </picture>
-                <div class="title">
-                  <p>Innovation</p>
-                </div>
-                <div class="sub-title">
-                  <p>Years of in field experience for best in class execution</p>
-                </div>
-              </div>
-            </div>
-            <div class="tile">
-              <div class="tile-content fade-right">
+            <div class="tile" v-scroll-reveal="{ delay: 175, origin: 'right', distance: '100px' }">
+              <div class="tile-content">
                 <picture class="tile-icon">
                   <img src="../assets/img/icons/content_management.png" alt="content management icon">
                 </picture>
                 <div class="title">
-                  <p>Content Management</p>
+                  <p>Backend Development</p>
                 </div>
                 <div class="sub-title">
-                  <p>Custom administration tools for content management</p>
+                  <p>Built to manage your site and business operations.</p>
                 </div>
               </div>
             </div>
-            <div class="tile">
-              <div class="tile-content fade-left">
+            <div class="tile" v-scroll-reveal="{ delay: 175, origin: 'left', distance: '100px' }">
+              <div class="tile-content">
                 <picture class="tile-icon">
-                  <img src="../assets/img/icons/analytics.png" alt="analytics icon">
+                  <img src="../assets/img/icons/content.png" alt="content icon">
                 </picture>
                 <div class="title">
-                  <p>Analytics</p>
+                  <p>Content Management Systems</p>
                 </div>
                 <div class="sub-title">
-                  <p>Monitoring, insights, and curation</p>
+                  <p>Curate beautiful and engaging content for your site.</p>
                 </div>
               </div>
             </div>
-            <div class="tile">
-              <div class="tile-content fade-right">
+            <div class="tile" v-scroll-reveal="{ delay: 175, origin: 'right', distance: '100px' }">
+              <div class="tile-content">
                 <picture class="tile-icon">
-                  <img src="../assets/img/icons/installation.png" alt="installation icon">
+                  <img src="../assets/img/icons/strategy.png" alt="strategy icon">
                 </picture>
                 <div class="title">
-                  <p>Installation</p>
+                  <p>SEO</p>
                 </div>
                 <div class="sub-title">
-                  <p>Hardware solutions and digital installations</p>
+                  <p>Make your site easy to fine with Search Engine Optimization.</p>
+                </div>
+              </div>
+            </div>
+            <div class="tile" v-scroll-reveal="{ delay: 175, origin: 'left', distance: '100px' }">
+              <div class="tile-content">
+                <picture class="tile-icon">
+                  <!-- <img src="../assets/img/icons/analytics.png" alt="analytics icon"> -->
+                  <img src="../assets/img/icons/infrastructure.png" alt="infrastructure icon">
+                </picture>
+                <div class="title">
+                  <p>Server Infrastructure</p>
+                </div>
+                <div class="sub-title">
+                  <p>Scalable cloud hosting solutions and DevOps.</p>
+                </div>
+              </div>
+            </div>
+            <div class="tile" v-scroll-reveal="{ delay: 175, origin: 'right', distance: '100px' }">
+              <div class="tile-content">
+                <picture class="tile-icon">
+                  <img src="../assets/img/icons/web-design.png" alt="ui/ux design icon">
+                </picture>
+                <div class="title">
+                  <p>UX / UI Design</p>
+                </div>
+                <div class="sub-title">
+                  <p>A seamless interaction with your brand across all devices.</p>
                 </div>
               </div>
             </div>
@@ -351,6 +352,10 @@ export default {
   border-radius: 5px;
   font-size: 15px;
   color: #FFF;
+}
+
+.tile-grid {
+  font-family:'Circular Std Medium', Helvetica;
 }
 
 .tile-grid p {

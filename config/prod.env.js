@@ -1,5 +1,5 @@
 'use strict'
 module.exports = {
   NODE_ENV: '"production"',
-  ROOT_API: '"https://api.materialize.com"'
+  ROOT_API: '"https://api.materializelabs.com"'
 }

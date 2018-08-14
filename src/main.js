@@ -7,6 +7,7 @@ import VueScrollReveal from 'vue-scroll-reveal';
 import axios from 'axios';
 import VueAxios from 'vue-axios';
 import Vuelidate from 'vuelidate';
+import VueAnalytics from 'vue-analytics';
 import App from './App';
 import router from './router';
 
@@ -16,6 +17,11 @@ Vue.use(VueParticles);
 Vue.use(VueScrollReveal);
 Vue.use(VueAxios, axios);
 Vue.use(Vuelidate);
+
+Vue.use(VueAnalytics, {
+  id: 'UA-123965580-1',
+  router,
+});
 
 /* eslint-disable no-new */
 new Vue({

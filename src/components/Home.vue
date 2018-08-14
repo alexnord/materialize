@@ -31,7 +31,7 @@
       <transition name="fade">
         <div class="cta" v-show="fadeLink">
           <router-link to="/about"><button id="learn-more">learn more</button></router-link>
-          <router-link to="/contact"><button id="reach-out">reach out</button></router-link>
+          <button id="reach-out" v-b-modal.contact-form>reach out</button>
         </div>
       </transition>
     </div>
@@ -50,7 +50,7 @@ export default {
     };
   },
   beforeMount() {
-    this.viewportHeight = `${window.innerHeight}px`;
+    this.viewportHeight = `${window.innerHeight+50}px`;
   },
   created() {
     window.addEventListener('resize', this.handleResize);
@@ -66,7 +66,7 @@ export default {
       loop: false,
     });
     new Typed('#description', {
-      strings: ['Los Angeles based, specializing in high-end digital design and development for companies and brands.'],
+      strings: ['Specializing in high-end digital design and development for companies and brands.</br></br>Los Angeles, CA'],
       typeSpeed: 10,
       loop: false,
     });
@@ -76,7 +76,7 @@ export default {
   },
   methods: {
     handleResize() {
-      this.viewportHeight = `${window.innerHeight}px`;
+      this.viewportHeight = `${window.innerHeight+50}px`;
     },
   },
   components: {
@@ -120,8 +120,6 @@ export default {
   padding: 8px 18px;
 }
 button#learn-more {
-  /*background-color: rgba(0, 0, 0, .55);*/
-  /*background-color: #17BEBB;*/
   background-color: #f5a91e;
   border: 2px solid rgba(0, 0, 0, 0.12);
 }

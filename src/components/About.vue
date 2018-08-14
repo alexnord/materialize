@@ -383,7 +383,6 @@ export default {
   justify-content: center;
   color: #fff;
 }
-
 .tile {
   position: relative;
   -webkit-box-align: center;
@@ -400,7 +399,6 @@ export default {
   text-align: center;
 }
 
-      
 .tile .tile-content picture {
   position: relative;
   -webkit-box-align: end;
@@ -410,7 +408,6 @@ export default {
   margin: 20px 0;
   background-color: transparent;
 }
-
 .tile .tile-content img {
   position: absolute;
   top: 0;
@@ -451,7 +448,7 @@ export default {
   .tile {
     width: calc(50% - 0px);
   }
-      
+
   .tile:nth-child(2n) {
     margin-right: 0;
     border-right: none;

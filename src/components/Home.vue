@@ -50,7 +50,7 @@ export default {
     };
   },
   beforeMount() {
-    this.viewportHeight = `${window.innerHeight+50}px`;
+    this.viewportHeight = `${window.innerHeight + 50}px`;
   },
   created() {
     window.addEventListener('resize', this.handleResize);
@@ -76,7 +76,7 @@ export default {
   },
   methods: {
     handleResize() {
-      this.viewportHeight = `${window.innerHeight+50}px`;
+      this.viewportHeight = `${window.innerHeight + 50}px`;
     },
   },
   components: {

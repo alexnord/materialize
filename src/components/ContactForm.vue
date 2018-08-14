@@ -7,6 +7,9 @@
       ref="contactRef"
       :hide-footer=true
     >
+      <div class="error text-center mb-3" v-show="this.error">
+        An error occurred processing your request.
+      </div>
       <form @submit="onSubmit" v-show="!this.success">
         <b-form-input type="text"
                       class="form-control mb-3"
@@ -135,6 +138,7 @@ export default {
         message: '',
       },
       success: false,
+      error: false,
     };
   },
   mixins: [
@@ -178,14 +182,12 @@ export default {
         company: this.form.company,
         phone: this.form.phone,
         message: this.form.message,
-      }).then((response) => {
-        console.log(response);
-      }).catch((error) => {
-        console.log(error);
+      }).then(() => {
+        this.success = true;
+        this.clearContactForm();
+      }).catch(() => {
+        this.error = true;
       });
-
-      this.success = true;
-      this.clearContactForm();
     },
     clearContactForm() {
       this.form.first_name = '';
@@ -194,9 +196,6 @@ export default {
       this.form.company = '';
       this.form.phone = '';
       this.form.message = '';
-    },
-    onModalClose() {
-      alert('hey');
     },
   },
   components: {},
@@ -211,5 +210,8 @@ form button {
 form button:hover {
   background-color: rgba(223, 0, 112, .8);
   width: 100%;
+}
+.error {
+  color: red;
 }
 </style>

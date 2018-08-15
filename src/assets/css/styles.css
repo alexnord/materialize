@@ -73,7 +73,10 @@ span.typed-cursor {
   position: relative;
   left: -9px;
 }
-
+.fixed-width {
+  max-width: 820px;
+  margin: 0 auto;
+}
 .info-block {
 	position: relative;
 	padding: 40px;

@@ -1,6 +1,9 @@
 <template>
   <div class="contact-page">
-    <div class="fixed-bg">
+    <div
+      class="fixed-bg"
+      v-bind:style="{ top: bgPosition }"
+    >
       <img src="../assets/img/plane.png" />
     </div>
     <div class="wrapper">
@@ -9,7 +12,9 @@
         v-bind:style="{ height: viewportHeight }"
       >
         <div class="headline">
-          <span id="headline"></span>
+          <div class="fixed-width">
+            <span id="headline"></span>
+          </div>
         </div>
         <div class="description">
           <span id="description"></span>
@@ -32,6 +37,7 @@ export default {
   data() {
     return {
       viewportHeight: '0px',
+      bgPosition: '0px',
       fadeLink: false,
       form: {
         first_name: '',
@@ -45,6 +51,11 @@ export default {
   },
   beforeMount() {
     this.viewportHeight = `${window.innerHeight}px`;
+
+    const percentage = window.innerHeight;
+    const twentyFive = percentage * 0.35;
+    const seventeen = percentage * 0.25;
+    this.bgPosition = window.innerWidth >= 768 ? `${seventeen}px` : `${twentyFive}px`;
   },
   created() {
     window.addEventListener('resize', this.handleResize);
@@ -55,7 +66,7 @@ export default {
   mounted() {
     /* eslint-disable no-new */
     new Typed('#headline', {
-      strings: ['Don&#39;t be </br>a stranger. We&#39;d</br>love to hear</br>from you.'],
+      strings: ['Don&#39;t be a stranger. We&#39;d love to hear from you.'],
       typeSpeed: 25,
       loop: false,
     });
@@ -73,6 +84,11 @@ export default {
   methods: {
     handleResize() {
       this.viewportHeight = `${window.innerHeight}px`;
+
+      const percentage = window.innerHeight;
+      const twentyFive = percentage * 0.35;
+      const seventeen = percentage * 0.25;
+      this.bgPosition = window.innerWidth >= 768 ? `${seventeen}px` : `${twentyFive}px`;
     },
   },
   components: {
@@ -83,11 +99,11 @@ export default {
 
 <style scoped>
 .fixed-bg {
-  z-index: -10;
   position: fixed;
-  top: 50%;
+  z-index: -10;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 .fixed-bg img {
   width: 98vmin;

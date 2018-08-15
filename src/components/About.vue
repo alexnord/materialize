@@ -5,7 +5,6 @@
       v-bind:style="{ top: bgPosition }"
       >
       <img src="../assets/img/house_1200px.png" />
-      <!-- <img src="../assets/img/house.jpg" /> -->
     </div>
     <div class="wrapper">
       <div
@@ -22,7 +21,7 @@
       <div class="container-fluid black-bg">
         <div class="row">
           <div class="tile-grid">
-            <div class="tile" v-scroll-reveal="{ delay: 175, origin: 'left', distance: '100px' }" >
+            <div class="tile">
               <div class="tile-content">
                 <picture class="tile-icon">
                   <img src="../assets/img/icons/online-shop.png" alt="ecommerce icon">
@@ -35,7 +34,7 @@
                 </div>
               </div>
             </div>
-            <div class="tile" v-scroll-reveal="{ delay: 175, origin: 'right', distance: '100px' }">
+            <div class="tile">
               <div class="tile-content">
                 <picture class="tile-icon">
                   <img src="../assets/img/icons/mobile_apps.png" alt="mobile apps icon">
@@ -48,7 +47,7 @@
                 </div>
               </div>
             </div>
-            <div class="tile" v-scroll-reveal="{ delay: 175, origin: 'left', distance: '100px' }">
+            <div class="tile">
               <div class="tile-content">
                 <picture class="tile-icon">
                   <img src="../assets/img/icons/web_development.png" alt="web devleopment icon">
@@ -61,7 +60,7 @@
                 </div>
               </div>
             </div>
-            <div class="tile" v-scroll-reveal="{ delay: 175, origin: 'right', distance: '100px' }">
+            <div class="tile">
               <div class="tile-content">
                 <picture class="tile-icon">
                   <img src="../assets/img/icons/content_management.png" alt="content management icon">
@@ -74,7 +73,7 @@
                 </div>
               </div>
             </div>
-            <div class="tile" v-scroll-reveal="{ delay: 175, origin: 'left', distance: '100px' }">
+            <div class="tile">
               <div class="tile-content">
                 <picture class="tile-icon">
                   <img src="../assets/img/icons/content.png" alt="content icon">
@@ -87,7 +86,7 @@
                 </div>
               </div>
             </div>
-            <div class="tile" v-scroll-reveal="{ delay: 175, origin: 'right', distance: '100px' }">
+            <div class="tile">
               <div class="tile-content">
                 <picture class="tile-icon">
                   <img src="../assets/img/icons/strategy.png" alt="strategy icon">
@@ -100,7 +99,7 @@
                 </div>
               </div>
             </div>
-            <div class="tile" v-scroll-reveal="{ delay: 175, origin: 'left', distance: '100px' }">
+            <div class="tile">
               <div class="tile-content">
                 <picture class="tile-icon">
                   <!-- <img src="../assets/img/icons/analytics.png" alt="analytics icon"> -->
@@ -114,7 +113,7 @@
                 </div>
               </div>
             </div>
-            <div class="tile" v-scroll-reveal="{ delay: 175, origin: 'right', distance: '100px' }">
+            <div class="tile">
               <div class="tile-content">
                 <picture class="tile-icon">
                   <img src="../assets/img/icons/web-design.png" alt="ui/ux design icon">
@@ -130,7 +129,7 @@
           </div>
         </div>
       </div>
-      <div class="info-block black-bg">
+      <div class="info-block transparent-bg mt-4">
         <div class="info-wrap">
           <h2
             v-scroll-reveal="{ delay: 175, origin: 'left', distance: '100px' }"
@@ -232,7 +231,7 @@
           </div>
         </div>
       </div>
-      <div class="info-block transparent-bg">
+      <div class="info-block black-bg">
         <div class="info-wrap">
           <h2
             v-scroll-reveal="{ delay: 175, origin: 'left', distance: '100px' }"
@@ -292,12 +291,12 @@ export default {
     /* eslint-disable no-new */
     new Typed('#headline', {
       strings: ['Materialize is&nbsp;</br>a design and development&nbsp;</br>oriented agency.'],
-      typeSpeed: 25,
+      typeSpeed: 15,
       loop: false,
     });
     new Typed('#description', {
       strings: ['We focus on building and supporting websites, apps, and software that are impactful and on brand.'],
-      typeSpeed: 12,
+      typeSpeed: 10,
       loop: false,
     });
     /* eslint-enable no-new */
@@ -325,7 +324,7 @@ export default {
   z-index: -10;
   left: 50%;
   -webkit-transform: translateX(-50%);
-  transform: translateX(-50%)
+  transform: translateX(-50%);
 }
 .fixed-bg img {
   width: 98vmin;
@@ -392,11 +391,6 @@ export default {
   position: relative;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
   width: calc(25% - 0px);
   padding: 5% 20px;
   border-right: 1px solid #eaeaea;
@@ -427,6 +421,10 @@ export default {
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   opacity: 1;
+}
+
+.title {
+  height: 100px;
 }
 
 .title p {

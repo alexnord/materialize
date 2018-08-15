@@ -23,7 +23,9 @@
       v-bind:style="{ height: viewportHeight }"
     >
       <div class="headline">
-        <span id="headline"></span>
+        <div class="fixed-width">
+          <span id="headline"></span>
+        </div>
       </div>
       <div class="description">
         <span id="description"></span>
@@ -118,14 +120,21 @@ export default {
   border-radius: 5px;
   color: #FFF;
   padding: 8px 18px;
+  cursor: pointer;
 }
 button#learn-more {
-  background-color: #f5a91e;
+  background-color: rgba(245, 169, 30, .8);
   border: 2px solid rgba(0, 0, 0, 0.12);
+}
+button#learn-more:hover {
+  background-color: rgb(162, 115, 29);
 }
 button#reach-out {
   background-color: rgba(223, 0, 112, .8);
   border: 2px solid rgba(0, 0, 0, 0.12);
+}
+button#reach-out:hover {
+  background-color: rgba(119, 1, 60, 0.8);
 }
 
 @media (min-width: 375px) {

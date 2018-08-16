@@ -23,6 +23,7 @@
     "vue-axios": "^2.1.3",
     "vue-flickity": "^1.1.2",
     "vue-particles": "^1.0.9",
+    "vue-recaptcha": "^1.1.1",
     "vue-router": "^3.0.1",
     "vue-scroll-reveal": "^1.0.8",
     "vuelidate": "^0.7.4"

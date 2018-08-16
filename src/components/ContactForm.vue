@@ -105,6 +105,16 @@
           Message is required.
         </b-form-invalid-feedback>
 
+        <div class="recaptcha-wrapper">
+          <vue-recaptcha
+            ref="invisibleRecaptcha"
+            @verify="onVerify"
+            @expired="onExpired"
+            size="invisible"
+            :sitekey="sitekey">
+          </vue-recaptcha>
+        </div>
+
         <b-button
           class="mt-3"
           type="submit"
@@ -123,6 +133,7 @@
 <script>
 import axios from 'axios';
 import { validationMixin } from 'vuelidate';
+import VueRecaptcha from 'vue-recaptcha';
 import { required, minLength, email } from 'vuelidate/lib/validators';
 
 export default {
@@ -139,6 +150,7 @@ export default {
       },
       success: false,
       error: false,
+      sitekey: '6LcmW2oUAAAAAM4gJE8ovXhDFfWapDKkR5LScQuB',
     };
   },
   mixins: [
@@ -174,20 +186,7 @@ export default {
     onSubmit(e) {
       e.preventDefault();
 
-      const apiUrl = `${process.env.ROOT_API}/inquire`;
-      axios.post(apiUrl, {
-        first_name: this.form.first_name,
-        last_name: this.form.last_name,
-        email: this.form.email,
-        company: this.form.company,
-        phone: this.form.phone,
-        message: this.form.message,
-      }).then(() => {
-        this.success = true;
-        this.clearContactForm();
-      }).catch(() => {
-        this.error = true;
-      });
+      this.$refs.invisibleRecaptcha.execute();
     },
     clearContactForm() {
       this.form.first_name = '';
@@ -197,12 +196,37 @@ export default {
       this.form.phone = '';
       this.form.message = '';
     },
+    onVerify(responseToken) {
+      const apiUrl = `${process.env.ROOT_API}/inquire`;
+      axios.post(apiUrl, {
+        first_name: this.form.first_name,
+        last_name: this.form.last_name,
+        email: this.form.email,
+        company: this.form.company,
+        phone: this.form.phone,
+        message: this.form.message,
+        responseToken: responseToken,
+      }).then(() => {
+        this.success = true;
+        this.clearContactForm();
+      }).catch(() => {
+        this.error = true;
+      });
+    },
+    onExpired() {
+      console.log('Expired');
+    },
   },
-  components: {},
+  components: {
+    VueRecaptcha,
+  },
 };
 </script>
 
 <style scoped>
+.recaptcha-wrapper {
+  display: none;
+}
 form button {
   background-color: rgba(223, 0, 112, .8);
   width: 100%;

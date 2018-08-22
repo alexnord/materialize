@@ -1,5 +1,5 @@
 <template>
-  <div class="about-page">
+  <div id="about-page">
     <div
       class="fixed-bg"
       v-bind:style="{ top: bgPosition }"

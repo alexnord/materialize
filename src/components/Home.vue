@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="overflow-hidden">
     <vue-particles
         color="#6d6d6d"
         :particleOpacity="0.4"
@@ -20,7 +20,7 @@
       </vue-particles>
     <div
       class="typed d-flex align-content-center flex-wrap"
-      v-bind:style="{ height: viewportHeight }"
+      v-bind:style="{ height: viewportHeight, top: 35 + 'px' }"
     >
       <div class="headline">
         <div class="fixed-width">
@@ -52,7 +52,7 @@ export default {
     };
   },
   beforeMount() {
-    this.viewportHeight = `${window.innerHeight + 50}px`;
+    this.viewportHeight = `${window.innerHeight}px`;
   },
   created() {
     window.addEventListener('resize', this.handleResize);
@@ -78,7 +78,7 @@ export default {
   },
   methods: {
     handleResize() {
-      this.viewportHeight = `${window.innerHeight + 50}px`;
+      this.viewportHeight = `${window.innerHeight}px`;
     },
   },
   components: {

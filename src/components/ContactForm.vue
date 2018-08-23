@@ -205,7 +205,7 @@ export default {
         company: this.form.company,
         phone: this.form.phone,
         message: this.form.message,
-        responseToken: responseToken,
+        responseToken,
       }).then(() => {
         this.success = true;
         this.clearContactForm();
@@ -214,7 +214,7 @@ export default {
       });
     },
     onExpired() {
-      console.log('Expired');
+      // console.log('Expired');
     },
   },
   components: {

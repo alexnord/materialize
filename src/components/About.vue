@@ -95,7 +95,7 @@
                   <p>SEO</p>
                 </div>
                 <div class="sub-title">
-                  <p>Make your site easy to fine with Search Engine Optimization.</p>
+                  <p>Make your site easy to find with Search Engine Optimization.</p>
                 </div>
               </div>
             </div>
@@ -137,13 +137,13 @@
             our services
           </h2>
           <div
-            class="mt-35 ft-16"
+            class="mt-35 ft-20"
             v-scroll-reveal="{ delay: 175, origin: 'bottom', distance: '100px' }"
           >
             <div class="d-none d-md-block">
               <div class="d-flex justify-content-between">
                 <div>
-                  <p class="ft-20">Production</p>
+                  <p class="ft-22">Production</p>
                   <li>Responsive Websites</li>
                   <li>E-Commerce Stores</li>
                   <li>Web Apps</li>
@@ -156,8 +156,8 @@
                   <li>Retail</li>
                 </div>
                 <div>
-                  <p class="ft-20">Technologies</p>
-                  <li>Frontend Web Development</li>
+                  <p class="ft-22">Technologies</p>
+                  <li>Frontend Development</li>
                   <li>Backend Development</li>
                   <li>Shopify</li>
                   <li>iOS / Android</li>
@@ -171,7 +171,7 @@
                   <li>Content Management Systems</li>
                 </div>
                 <div>
-                  <p class="ft-20">Creative</p>
+                  <p class="ft-22">Creative</p>
                   <li>Web Design</li>
                   <li>App Design</li>
                   <li>UX / UI</li>
@@ -187,7 +187,7 @@
               <flickity ref="flickity" :options="flickityOptions">
                 <div class="carousel-cell">
                   <div class="cell-container">
-                    <p class="ft-20">Production</p>
+                    <p class="ft-22">Production</p>
                       <li>Responsive Websites</li>
                       <li>E-Commerce Stores</li>
                       <li>Web Apps</li>
@@ -202,8 +202,8 @@
                 </div>
                 <div class="carousel-cell">
                   <div class="cell-container">
-                    <p class="ft-20">Technologies</p>
-                      <li>Frontend Web Development</li>
+                    <p class="ft-22">Technologies</p>
+                      <li>Frontend Development</li>
                       <li>Backend Development</li>
                       <li>Shopify</li>
                       <li>iOS / Android</li>
@@ -218,7 +218,7 @@
                 </div>
                 <div class="carousel-cell">
                   <div class="cell-container">
-                    <p class="ft-20">Creative</p>
+                    <p class="ft-22">Creative</p>
                       <li>Web Design</li>
                       <li>App Design</li>
                       <li>UX / UI</li>
@@ -239,13 +239,13 @@
             our method
           </h2>
           <p
-            class="mt-35 ft-16"
+            class="mt-35 ft-20"
             v-scroll-reveal="{ delay: 175, origin: 'left', distance: '100px' }"
           >
             We believe form should match function, and can meet your brand’s high-end digital needs inside and out. We take your ideas and goals from concept to reality, and give you a digital presence that resonates with your clients.
           </p>
           <p
-            class="ft-16"
+            class="ft-20"
             v-scroll-reveal="{ delay: 175, origin: 'left', distance: '100px' }"
           >
             Our clients range from small companies launching new digital products to large brands requiring a complex range of digital services. We provide the full spectrum of digital development needs and can also provide augmentation to current development teams.

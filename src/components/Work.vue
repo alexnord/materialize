@@ -6,32 +6,11 @@
           <p class="heading">some of our projects</p>
           <div class="d-flex justify-content-start">
             <p class="sub-heading pr-2">-</p>
-            <p class="sub-heading">built for happy clients</p>
+            <p class="sub-heading">built with passion</p>
           </div>
         </div>
       </b-row>
       <div class="projects">
-        <!-- <b-row>
-          <a href="http://www.lfthebrand.com" target="_blank">
-            <b-col xs="12" class="text-center">
-              <b-row>
-                <b-col>
-                  <img src="../assets/img/work/lftb-showcase.jpg" class="img-fluid" alt="LF The Brand" />
-                </b-col>
-              </b-row>
-              <b-row class="mt-2">
-                <b-col>
-                  <div class="work-client"><strong>LF The Brand</strong></div>
-                </b-col>
-              </b-row>
-              <b-row>
-                <b-col>
-                  <div class="work-description mx-auto">Frontend and backend web development services for Shopify hosted e-commerce store for major fashion retailer.</div>
-                </b-col>
-              </b-row>
-            </b-col>
-          </a>
-        </b-row> -->
 
         <b-row v-scroll-reveal="{ delay: 75, origin: 'left', distance: '10px' }">
           <b-col xs="12" class="text-center">
@@ -43,12 +22,12 @@
               </b-row>
               <b-row class="mt-3">
                 <b-col>
-                  <div class="work-client"><strong>LF The Brand</strong></div>
+                  <div class="work-client circular-black">LF The Brand</div>
                 </b-col>
               </b-row>
               <b-row>
                 <b-col>
-                  <div class="work-description mx-auto">Frontend and backend web development services for Shopify hosted e-commerce store for major fashion retailer.</div>
+                  <div class="work-description circular-book mx-auto">Frontend and backend web development services for Shopify hosted e-commerce store for major fashion retailer.</div>
                 </b-col>
               </b-row>
             </a>
@@ -65,12 +44,12 @@
               </b-row>
               <b-row class="mt-2">
                 <b-col>
-                  <div class="work-client"><strong>Carmar Denim</strong></div>
+                  <div class="work-client circular-black"><strong>Carmar Denim</strong></div>
                 </b-col>
               </b-row>
               <b-row>
                 <b-col>
-                  <div class="work-description mx-auto">Frontend and backend web development services for Shopify hosted e-commerce store for major fashion retailer.</div>
+                  <div class="work-description circular-book mx-auto">Frontend and backend web development services for Shopify hosted e-commerce store for major fashion retailer.</div>
                 </b-col>
               </b-row>
             </a>
@@ -87,12 +66,12 @@
               </b-row>
               <b-row class="mt-2">
                 <b-col>
-                  <div class="work-client"><strong>Emma and Sam</strong></div>
+                  <div class="work-client circular-black"><strong>Emma and Sam</strong></div>
                 </b-col>
               </b-row>
               <b-row>
                 <b-col>
-                  <div class="work-description mx-auto">Frontend and backend web development services for Shopify hosted e-commerce store for major fashion retailer.</div>
+                  <div class="work-description circular-book mx-auto">Frontend and backend web development services for Shopify hosted e-commerce store for major fashion retailer.</div>
                 </b-col>
               </b-row>
             </a>
@@ -109,12 +88,12 @@
               </b-row>
               <b-row class="mt-2">
                 <b-col>
-                  <div class="work-client"><strong>Life of the Party Premiere</strong></div>
+                  <div class="work-client circular-black"><strong>Life of the Party Premiere</strong></div>
                 </b-col>
               </b-row>
               <b-row>
                 <b-col>
-                  <div class="work-description mx-auto">Promotional website built for the soon-to-be-released Life of the Party movie. Provided custom built voting functionality for college students to win the world premiere at their college campus.</div>
+                  <div class="work-description circular-book mx-auto">Promotional website built for the soon-to-be-released Life of the Party movie. Provided custom built voting functionality for college students to win the world premiere at their college campus.</div>
                 </b-col>
               </b-row>
             </a>
@@ -140,11 +119,10 @@ export default {
   #work-page {
     position: relative;
     top: 100px;
-    font-family:'Circular Std Medium', Helvetica;
   }
   .header {
     position: relative;
-    left: 9%;
+    margin-left: 9%;
   }
   .heading {
     font-size: 24px;

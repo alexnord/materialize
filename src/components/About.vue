@@ -24,6 +24,32 @@
             <div class="tile">
               <div class="tile-content">
                 <picture class="tile-icon">
+                  <img src="../assets/img/icons/web_development.png" alt="web devleopment icon">
+                </picture>
+                <div class="title">
+                  <p>Frontend Development</p>
+                </div>
+                <div class="sub-title">
+                  <p>Design and build your digital presence.</p>
+                </div>
+              </div>
+            </div>
+            <div class="tile">
+              <div class="tile-content">
+                <picture class="tile-icon">
+                  <img src="../assets/img/icons/content_management.png" alt="content management icon">
+                </picture>
+                <div class="title">
+                  <p>Backend Development</p>
+                </div>
+                <div class="sub-title">
+                  <p>Built to manage your site and business operations.</p>
+                </div>
+              </div>
+            </div>
+            <div class="tile">
+              <div class="tile-content">
+                <picture class="tile-icon">
                   <img src="../assets/img/icons/online-shop.png" alt="ecommerce icon">
                 </picture>
                 <div class="title">
@@ -50,26 +76,13 @@
             <div class="tile">
               <div class="tile-content">
                 <picture class="tile-icon">
-                  <img src="../assets/img/icons/web_development.png" alt="web devleopment icon">
+                  <img src="../assets/img/icons/web-design.png" alt="ui/ux design icon">
                 </picture>
                 <div class="title">
-                  <p>Frontend Web Development</p>
+                  <p>UX / UI Design</p>
                 </div>
                 <div class="sub-title">
-                  <p>Design and build your digital presence.</p>
-                </div>
-              </div>
-            </div>
-            <div class="tile">
-              <div class="tile-content">
-                <picture class="tile-icon">
-                  <img src="../assets/img/icons/content_management.png" alt="content management icon">
-                </picture>
-                <div class="title">
-                  <p>Backend Development</p>
-                </div>
-                <div class="sub-title">
-                  <p>Built to manage your site and business operations.</p>
+                  <p>A seamless interaction with your brand across all devices.</p>
                 </div>
               </div>
             </div>
@@ -113,19 +126,6 @@
                 </div>
               </div>
             </div>
-            <div class="tile">
-              <div class="tile-content">
-                <picture class="tile-icon">
-                  <img src="../assets/img/icons/web-design.png" alt="ui/ux design icon">
-                </picture>
-                <div class="title">
-                  <p>UX / UI Design</p>
-                </div>
-                <div class="sub-title">
-                  <p>A seamless interaction with your brand across all devices.</p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -137,7 +137,7 @@
             our services
           </h2>
           <div
-            class="mt-35 ft-20"
+            class="mt-35"
             v-scroll-reveal="{ delay: 175, origin: 'bottom', distance: '100px' }"
           >
             <div class="d-none d-md-block">
@@ -239,13 +239,12 @@
             our method
           </h2>
           <p
-            class="mt-35 ft-20"
+            class="mt-35"
             v-scroll-reveal="{ delay: 175, origin: 'left', distance: '100px' }"
           >
             We believe form should match function, and can meet your brand’s high-end digital needs inside and out. We take your ideas and goals from concept to reality, and give you a digital presence that resonates with your clients.
           </p>
           <p
-            class="ft-20"
             v-scroll-reveal="{ delay: 175, origin: 'left', distance: '100px' }"
           >
             Our clients range from small companies launching new digital products to large brands requiring a complex range of digital services. We provide the full spectrum of digital development needs and can also provide augmentation to current development teams.
@@ -378,6 +377,19 @@ export default {
   color: #FFF;
 }
 
+.info-block {
+  position: relative;
+  padding: 40px;
+  top: -40px;
+}
+.info-block li {
+  list-style: none;
+  font-size: 16px;
+}
+.info-wrap p {
+  font-size: 16px;
+}
+
 .tile-grid {
   font-family:'Circular Std Medium', Helvetica;
 }
@@ -450,12 +462,22 @@ export default {
 
 .title {
   height: 100px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .title p {
   font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 1.5px;
+}
+
+.sub-title {
+  height: 144px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .sub-title p {
@@ -503,6 +525,10 @@ export default {
     padding: 10px;
     font-size: 24px;
     color: #FFF;
+  }
+  .info-block li,
+  .info-wrap p {
+    font-size: 18px;
   }
 }
 @media (min-width: 1024px) {

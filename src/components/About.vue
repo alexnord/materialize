@@ -259,19 +259,19 @@
             some of our clients
           </h2>
           <div class="d-none d-sm-flex justify-content-between align-self-center mx-auto clients">
-            <div><img src="../assets/img/about/wb.png" alt="Warner Bros." /></div>
-            <div><img src="../assets/img/about/lf.png" alt="LF Stores" /></div>
-            <div><img src="../assets/img/about/fox.png" alt="20th Century Fox" /></div>
-            <div><img src="../assets/img/about/annenberg.png" alt="The Annenberg Foundation" /></div>
+            <div><img src="../assets/img/about/wb.svg" height="65" alt="Warner Bros." /></div>
+            <div><img src="../assets/img/about/lf.svg" height="65" alt="LF Stores" /></div>
+            <div><img src="../assets/img/about/fox.svg" height="65" alt="20th Century Fox" /></div>
+            <div><img src="../assets/img/about/annenberg.svg" height="65" alt="The Annenberg Foundation" /></div>
           </div>
           <div class="d-block d-sm-none clients mt-5">
             <div class="d-flex justify-content-around">
-              <img src="../assets/img/about/wb.png" class="img-fluid" alt="Warner Bros." />
-              <img src="../assets/img/about/lf.png" alt="LF Stores" />
+              <img src="../assets/img/about/wb.svg" height="70" alt="Warner Bros." />
+              <img src="../assets/img/about/lf.svg" height="70" alt="LF Stores" />
             </div>
             <div class="d-flex justify-content-around">
-              <img src="../assets/img/about/fox.png" alt="20th Century Fox" />
-              <img src="../assets/img/about/annenberg.png" alt="The Annenberg Foundation" />
+              <img src="../assets/img/about/fox.svg" height="70" alt="20th Century Fox" />
+              <img src="../assets/img/about/annenberg.svg" height="70" alt="The Annenberg Foundation" />
             </div>
           </div>
         </div>

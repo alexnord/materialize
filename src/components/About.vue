@@ -360,16 +360,16 @@ export default {
 }
 @keyframes spin {
   0%   { transform: rotateY(0deg) rotateX(0deg);   }
-  25%  { transform: rotateY(10deg) rotateX(5deg); }
+  25%  { transform: rotateY(15deg) rotateX(7.5deg); }
   50%  { transform: rotateY(0deg) rotateX(0deg);   }
-  75%  { transform: rotateY(-10deg) rotateX(-5deg); }
+  75%  { transform: rotateY(-15deg) rotateX(-7.5deg); }
   100% { transform: rotateY(0deg) rotateX(0deg);   }
 }
 @-webkit-keyframes spin {
   0%   { -webkit-transform: rotateY(0deg) rotateX(0deg);   }
-  25%  { -webkit-transform: rotateY(10deg) rotateX(5deg); }
+  25%  { -webkit-transform: rotateY(15deg) rotateX(7.5deg); }
   50%  { -webkit-transform: rotateY(0deg) rotateX(0deg);   }
-  75%  { -webkit-transform: rotateY(-10deg) rotateX(-5deg); }
+  75%  { -webkit-transform: rotateY(-15deg) rotateX(-7.5deg); }
   100% { -webkit-transform: rotateY(0deg) rotateX(0deg);   }
 }
 

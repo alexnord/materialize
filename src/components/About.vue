@@ -265,11 +265,11 @@
             <div><img src="../assets/img/about/annenberg.svg" height="65" alt="The Annenberg Foundation" /></div>
           </div>
           <div class="d-block d-sm-none clients mt-5">
-            <div class="d-flex justify-content-around">
+            <div class="d-flex justify-content-between">
               <img src="../assets/img/about/wb.svg" height="70" alt="Warner Bros." />
               <img src="../assets/img/about/lf.svg" height="70" alt="LF Stores" />
             </div>
-            <div class="d-flex justify-content-around">
+            <div class="d-flex justify-content-between">
               <img src="../assets/img/about/fox.svg" height="70" alt="20th Century Fox" />
               <img src="../assets/img/about/annenberg.svg" height="70" alt="The Annenberg Foundation" />
             </div>
@@ -349,10 +349,30 @@ export default {
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
+  perspective: 1000px;
 }
 .fixed-bg img {
   width: 98vmin;
+  transform-style: preserve-3d;
+  animation: spin 4s linear infinite;
+  -webkit-transform-style: preserve-3d;
+  -webkit-animation: spin 4s linear infinite;
 }
+@keyframes spin {
+  0%   { transform: rotateY(0deg) rotateX(0deg);   }
+  25%  { transform: rotateY(10deg) rotateX(5deg); }
+  50%  { transform: rotateY(0deg) rotateX(0deg);   }
+  75%  { transform: rotateY(-10deg) rotateX(-5deg); }
+  100% { transform: rotateY(0deg) rotateX(0deg);   }
+}
+@-webkit-keyframes spin {
+  0%   { -webkit-transform: rotateY(0deg) rotateX(0deg);   }
+  25%  { -webkit-transform: rotateY(10deg) rotateX(5deg); }
+  50%  { -webkit-transform: rotateY(0deg) rotateX(0deg);   }
+  75%  { -webkit-transform: rotateY(-10deg) rotateX(-5deg); }
+  100% { -webkit-transform: rotateY(0deg) rotateX(0deg);   }
+}
+
 .wrapper {
   background-color: rgba(255, 255, 255, .7);
 }

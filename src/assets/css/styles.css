@@ -46,7 +46,7 @@ h4 {
 }
 
 .nav-wrap.not-home {
-	background-color: #FFF;
+	background-color: rgb(255, 255, 255, .9);
 }
 .expanded-nav {
 	font-family:'Circular Std Medium', Helvetica;

@@ -140,6 +140,7 @@ export default {
   #work-page {
     position: relative;
     top: 100px;
+    font-family:'Circular Std Medium', Helvetica;
   }
   .header {
     position: relative;

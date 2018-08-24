@@ -252,6 +252,31 @@
           </p>
         </div>
       </div>
+      <div class="info-block transparent-bg">
+        <div class="info-wrap">
+          <h2
+            v-scroll-reveal="{ delay: 175, origin: 'left', distance: '100px' }"
+          >
+            some of our clients
+          </h2>
+          <div class="d-none d-sm-flex justify-content-between align-self-center mx-auto clients">
+            <div><img src="../assets/img/about/wb.png" alt="Warner Bros." /></div>
+            <div><img src="../assets/img/about/lf.png" alt="LF Stores" /></div>
+            <div><img src="../assets/img/about/fox.png" alt="20th Century Fox" /></div>
+            <div><img src="../assets/img/about/annenberg.png" alt="The Annenberg Foundation" /></div>
+          </div>
+          <div class="d-block d-sm-none clients mt-5">
+            <div class="d-flex justify-content-around">
+              <img src="../assets/img/about/wb.png" class="img-fluid" alt="Warner Bros." />
+              <img src="../assets/img/about/lf.png" alt="LF Stores" />
+            </div>
+            <div class="d-flex justify-content-around">
+              <img src="../assets/img/about/fox.png" alt="20th Century Fox" />
+              <img src="../assets/img/about/annenberg.png" alt="The Annenberg Foundation" />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <button class="contact" v-b-modal.contact-form>contact</button>
   </div>
@@ -443,6 +468,16 @@ export default {
   border-right: none;
 }
 
+.clients {
+  text-align: center;
+  height: 140px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.clients img {
+  opacity: .8;
+}
+
 @media only screen and (max-width: 768px) {
   .tile-grid p {
     padding: 18px 15px 6px 15px;
@@ -455,6 +490,9 @@ export default {
   .tile:nth-child(2n) {
     margin-right: 0;
     border-right: none;
+  }
+  .clients img {
+    margin-bottom: 20px;
   }
 }
 

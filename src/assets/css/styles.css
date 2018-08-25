@@ -74,6 +74,9 @@ h4 {
 .pink-font {
 	color: #DF0070;
 }
+.yellow-font {
+  color: rgba(245, 169, 30, .8);
+}
 
 .nav-wrap.not-home {
 	background-color: rgb(255, 255, 255, .9);

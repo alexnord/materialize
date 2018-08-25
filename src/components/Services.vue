@@ -32,7 +32,7 @@
         <div class="row">
           <div class="tile-grid">
             <div class="tile">
-              <div class="tile-content">
+              <div class="tile-content" v-scroll-reveal="{ delay: 175, origin: 'top', distance: '100px' }">
                 <picture class="tile-icon">
                   <img src="../assets/img/icons/strategy.png" alt="strategy icon">
                 </picture>
@@ -45,7 +45,7 @@
               </div>
             </div>
             <div class="tile">
-              <div class="tile-content">
+              <div class="tile-content" v-scroll-reveal="{ delay: 175, origin: 'bottom', distance: '100px' }">
                 <picture class="tile-icon">
                   <img src="../assets/img/icons/web-design.png" alt="ui/ux design icon">
                 </picture>
@@ -58,7 +58,7 @@
               </div>
             </div>
             <div class="tile">
-              <div class="tile-content">
+              <div class="tile-content" v-scroll-reveal="{ delay: 175, origin: 'top', distance: '100px' }">
                 <picture class="tile-icon">
                   <img src="../assets/img/icons/mobile_apps.png" alt="mobile apps icon">
                 </picture>
@@ -71,7 +71,7 @@
               </div>
             </div>
             <div class="tile">
-              <div class="tile-content">
+              <div class="tile-content" v-scroll-reveal="{ delay: 175, origin: 'bottom', distance: '100px' }">
                 <picture class="tile-icon">
                   <img src="../assets/img/icons/web_development.png" alt="web devleopment icon">
                 </picture>
@@ -84,7 +84,7 @@
               </div>
             </div>
             <div class="tile">
-              <div class="tile-content">
+              <div class="tile-content" v-scroll-reveal="{ delay: 175, origin: 'top', distance: '100px' }">
                 <picture class="tile-icon">
                   <img src="../assets/img/icons/content_management.png" alt="content management icon">
                 </picture>
@@ -97,7 +97,7 @@
               </div>
             </div>
             <div class="tile">
-              <div class="tile-content">
+              <div class="tile-content" v-scroll-reveal="{ delay: 175, origin: 'bottom', distance: '100px' }">
                 <picture class="tile-icon">
                   <img src="../assets/img/icons/infrastructure.png" alt="infrastructure icon">
                 </picture>
@@ -110,7 +110,7 @@
               </div>
             </div>
             <div class="tile">
-              <div class="tile-content">
+              <div class="tile-content" v-scroll-reveal="{ delay: 175, origin: 'top', distance: '100px' }">
                 <picture class="tile-icon">
                   <img src="../assets/img/icons/strategy.png" alt="strategy icon">
                 </picture>
@@ -123,7 +123,7 @@
               </div>
             </div>
             <div class="tile">
-              <div class="tile-content">
+              <div class="tile-content" v-scroll-reveal="{ delay: 175, origin: 'bottom', distance: '100px' }">
                 <picture class="tile-icon">
                   <img src="../assets/img/icons/content.png" alt="content icon">
                 </picture>
@@ -175,7 +175,7 @@
       </div>
       <div class="info-block black-bg">
         <b-row class="">
-          <b-col cols="12" sm="6" md="6" lg="4" class="text-center">
+          <b-col cols="12" sm="6" md="6" lg="4" class="text-center" v-scroll-reveal="{ delay: 275, origin: 'bottom', distance: '100px' }">
             <b-row>
               <b-col class="pink-font circular-black ft-22 mb-2 mt-4">Strategy</b-col>
             </b-row>
@@ -189,7 +189,7 @@
               </b-col>
             </b-row>
           </b-col>
-          <b-col cols="12" sm="6" md="6" lg="4" class="text-center">
+          <b-col cols="12" sm="6" md="6" lg="4" class="text-center" v-scroll-reveal="{ delay: 275, origin: 'top', distance: '100px' }">
             <b-row>
               <b-col class="pink-font circular-black ft-22 mb-2 mt-4">Design and UX</b-col>
             </b-row>
@@ -204,7 +204,7 @@
               </b-col>
             </b-row>
           </b-col>
-          <b-col cols="12" sm="6" md="6" lg="4" class="text-center">
+          <b-col cols="12" sm="6" md="6" lg="4" class="text-center" v-scroll-reveal="{ delay: 275, origin: 'bottom', distance: '100px' }">
             <b-row>
               <b-col class="pink-font circular-black ft-22 mb-2 mt-4">App Development</b-col>
             </b-row>
@@ -216,7 +216,7 @@
               </b-col>
             </b-row>
           </b-col>
-          <b-col cols="12" sm="6" md="6" lg="4" class="text-center">
+          <b-col cols="12" sm="6" md="6" lg="4" class="text-center" v-scroll-reveal="{ delay: 275, origin: 'top', distance: '100px' }">
             <b-row>
               <b-col class="pink-font circular-black ft-22 mb-2 mt-4">Frontend Development</b-col>
             </b-row>
@@ -233,7 +233,7 @@
               </b-col>
             </b-row>
           </b-col>
-          <b-col cols="12" sm="6" md="6" lg="4" class="text-center">
+          <b-col cols="12" sm="6" md="6" lg="4" class="text-center" v-scroll-reveal="{ delay: 275, origin: 'bottom', distance: '100px' }">
             <b-row>
               <b-col class="pink-font circular-black ft-22 mb-2 mt-4">Backend Development</b-col>
             </b-row>
@@ -248,7 +248,7 @@
               </b-col>
             </b-row>
           </b-col>
-          <b-col cols="12" sm="6" md="6" lg="4" class="text-center">
+          <b-col cols="12" sm="6" md="6" lg="4" class="text-center" v-scroll-reveal="{ delay: 275, origin: 'top', distance: '100px' }">
             <b-row>
               <b-col class="pink-font circular-black ft-22 mb-2 mt-4">Systems</b-col>
             </b-row>
@@ -272,20 +272,22 @@
           >
             some of our clients
           </h2>
-          <div class="d-none d-sm-flex justify-content-between align-self-center mx-auto clients">
-            <div><img src="../assets/img/services/wb.svg" height="65" alt="Warner Bros." /></div>
-            <div><img src="../assets/img/services/lf.svg" height="65" alt="LF Stores" /></div>
-            <div><img src="../assets/img/services/fox.svg" height="65" alt="20th Century Fox" /></div>
-            <div><img src="../assets/img/services/annenberg.svg" height="65" alt="The Annenberg Foundation" /></div>
-          </div>
-          <div class="d-block d-sm-none clients mt-5">
-            <div class="d-flex justify-content-between">
-              <img src="../assets/img/services/wb.svg" height="70" alt="Warner Bros." />
-              <img src="../assets/img/services/lf.svg" height="70" alt="LF Stores" />
+          <div v-scroll-reveal="{ delay: 275, origin: 'right', distance: '100px' }">
+            <div class="d-none d-sm-flex justify-content-between align-self-center mx-auto clients">
+              <div><img src="../assets/img/services/wb.svg" height="65" alt="Warner Bros." /></div>
+              <div><img src="../assets/img/services/lf.svg" height="65" alt="LF Stores" /></div>
+              <div><img src="../assets/img/services/fox.svg" height="65" alt="20th Century Fox" /></div>
+              <div><img src="../assets/img/services/annenberg.svg" height="65" alt="The Annenberg Foundation" /></div>
             </div>
-            <div class="d-flex justify-content-between">
-              <img src="../assets/img/services/fox.svg" height="70" alt="20th Century Fox" />
-              <img src="../assets/img/services/annenberg.svg" height="70" alt="The Annenberg Foundation" />
+            <div class="d-block d-sm-none clients mt-5">
+              <div class="d-flex justify-content-between">
+                <img src="../assets/img/services/wb.svg" height="70" alt="Warner Bros." />
+                <img src="../assets/img/services/lf.svg" height="70" alt="LF Stores" />
+              </div>
+              <div class="d-flex justify-content-between">
+                <img src="../assets/img/services/fox.svg" height="70" alt="20th Century Fox" />
+                <img src="../assets/img/services/annenberg.svg" height="70" alt="The Annenberg Foundation" />
+              </div>
             </div>
           </div>
         </div>
@@ -427,7 +429,6 @@ export default {
 
 .tile-grid p {
   font-weight: 700;
-  color: #FFF;
   padding: 24px 15px 12px 15px;
   font-size: 2vw;
   text-transform: uppercase;

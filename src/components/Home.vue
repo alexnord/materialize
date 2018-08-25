@@ -32,7 +32,7 @@
       </div>
       <transition name="fade">
         <div class="cta" v-show="fadeLink">
-          <router-link to="/about"><button id="learn-more">learn more</button></router-link>
+          <router-link to="/services"><button id="learn-more">learn more</button></router-link>
           <button id="reach-out" v-b-modal.contact-form>reach out</button>
         </div>
       </transition>
@@ -63,12 +63,12 @@ export default {
   mounted() {
     /* eslint-disable no-new */
     new Typed('#headline', {
-      strings: ['a digital agency dedicated to technical excellence.'],
+      strings: ['a digital product agency dedicated to technical excellence.'],
       typeSpeed: 15,
       loop: false,
     });
     new Typed('#description', {
-      strings: ['Specializing in high-end digital design and development for companies and brands.</br></br>Los Angeles, CA'],
+      strings: ['Specializing in high-end digital design and engineering for companies and brands.</br></br>Los Angeles, CA'],
       typeSpeed: 10,
       loop: false,
     });

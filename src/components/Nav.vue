@@ -99,6 +99,16 @@
         <div class="nav-content">
           <transition name="slide-fade">
             <router-link
+              to="/services"
+              id="services"
+              v-if="navExpanded"
+              @click.native="navExpanded = !navExpanded"
+            >
+              services
+            </router-link>
+          </transition>
+          <transition name="slide-fade">
+            <router-link
               to="/about"
               id="about"
               v-if="navExpanded"
@@ -228,6 +238,9 @@ button.hamburger {
 .expanded-nav .slide-fade-enter, .slide-fade-leave-to {
   transform: translateX(-130px);
   opacity: 0;
+}
+.expanded-nav .slide-fade-enter-active#services {
+  transition-delay: .2s;
 }
 .expanded-nav .slide-fade-enter-active#about {
   transition-delay: .2s;

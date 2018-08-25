@@ -1,5 +1,5 @@
 <template>
-  <div id="about-page">
+  <div id="services-page">
     <div
       class="fixed-bg"
       v-bind:style="{ top: bgPosition }"
@@ -19,8 +19,57 @@
         </div>
       </div>
       <div class="container-fluid black-bg">
+        <b-row>
+          <b-col cols="12" md="8" offset-md="1">
+            <p
+              class="ft-24 circular-book my-35"
+              v-scroll-reveal="{ delay: 175, origin: 'left', distance: '100px' }"
+            >
+              <span class="pink-font">We work closely with our clients throughout the entire development process.</span> We propose solutions that are tailored specifically for each product we build. There's no project too large or too small.
+            </p>
+          </b-col>
+        </b-row>
         <div class="row">
           <div class="tile-grid">
+            <div class="tile">
+              <div class="tile-content">
+                <picture class="tile-icon">
+                  <img src="../assets/img/icons/strategy.png" alt="strategy icon">
+                </picture>
+                <div class="title">
+                  <p>Strategy &amp; Planning</p>
+                </div>
+                <div class="sub-title">
+                  <p>Understand the needs of our clients and mindfully roadmap product development.</p>
+                </div>
+              </div>
+            </div>
+            <div class="tile">
+              <div class="tile-content">
+                <picture class="tile-icon">
+                  <img src="../assets/img/icons/web-design.png" alt="ui/ux design icon">
+                </picture>
+                <div class="title">
+                  <p>UI / UX Design</p>
+                </div>
+                <div class="sub-title">
+                  <p>From wireframes to polished compositions, a 360&deg; view of the product before engineering begins.</p>
+                </div>
+              </div>
+            </div>
+            <div class="tile">
+              <div class="tile-content">
+                <picture class="tile-icon">
+                  <img src="../assets/img/icons/mobile_apps.png" alt="mobile apps icon">
+                </picture>
+                <div class="title">
+                  <p>Mobile Apps</p>
+                </div>
+                <div class="sub-title">
+                  <p>Develop and maintain cutting edge iOS, Android, and TV apps.</p>
+                </div>
+              </div>
+            </div>
             <div class="tile">
               <div class="tile-content">
                 <picture class="tile-icon">
@@ -30,7 +79,7 @@
                   <p>Frontend Development</p>
                 </div>
                 <div class="sub-title">
-                  <p>Design and build your digital presence.</p>
+                  <p>Beautifully landscaped digital experiences optimized for all browsers, devices, and sizes.</p>
                 </div>
               </div>
             </div>
@@ -43,59 +92,20 @@
                   <p>Backend Development</p>
                 </div>
                 <div class="sub-title">
-                  <p>Built to manage your site and business operations.</p>
+                  <p>The underlying architecture and business logic that makes your product tick.</p>
                 </div>
               </div>
             </div>
             <div class="tile">
               <div class="tile-content">
                 <picture class="tile-icon">
-                  <img src="../assets/img/icons/online-shop.png" alt="ecommerce icon">
+                  <img src="../assets/img/icons/infrastructure.png" alt="infrastructure icon">
                 </picture>
                 <div class="title">
-                  <p>E-Commerce Stores</p>
+                  <p>Infrastructure</p>
                 </div>
                 <div class="sub-title">
-                  <p>Improve the buying experience for your customers.</p>
-                </div>
-              </div>
-            </div>
-            <div class="tile">
-              <div class="tile-content">
-                <picture class="tile-icon">
-                  <img src="../assets/img/icons/mobile_apps.png" alt="mobile apps icon">
-                </picture>
-                <div class="title">
-                  <p>Apps</p>
-                </div>
-                <div class="sub-title">
-                  <p>Develop and maintain iOS, Android and TV apps.</p>
-                </div>
-              </div>
-            </div>
-            <div class="tile">
-              <div class="tile-content">
-                <picture class="tile-icon">
-                  <img src="../assets/img/icons/web-design.png" alt="ui/ux design icon">
-                </picture>
-                <div class="title">
-                  <p>UX / UI Design</p>
-                </div>
-                <div class="sub-title">
-                  <p>A seamless interaction with your brand across all devices.</p>
-                </div>
-              </div>
-            </div>
-            <div class="tile">
-              <div class="tile-content">
-                <picture class="tile-icon">
-                  <img src="../assets/img/icons/content.png" alt="content icon">
-                </picture>
-                <div class="title">
-                  <p>Content Management Systems</p>
-                </div>
-                <div class="sub-title">
-                  <p>Curate beautiful and engaging content for your site.</p>
+                  <p>DevOps services employing the latest technologies in server and hosting solutions.</p>
                 </div>
               </div>
             </div>
@@ -105,173 +115,177 @@
                   <img src="../assets/img/icons/strategy.png" alt="strategy icon">
                 </picture>
                 <div class="title">
-                  <p>SEO</p>
+                  <p>Testing</p>
                 </div>
                 <div class="sub-title">
-                  <p>Make your site easy to find with Search Engine Optimization.</p>
+                  <p>Comprehensive quality assurance testing for 100% peace of mind.</p>
                 </div>
               </div>
             </div>
             <div class="tile">
               <div class="tile-content">
                 <picture class="tile-icon">
-                  <!-- <img src="../assets/img/icons/analytics.png" alt="analytics icon"> -->
-                  <img src="../assets/img/icons/infrastructure.png" alt="infrastructure icon">
+                  <img src="../assets/img/icons/content.png" alt="content icon">
                 </picture>
                 <div class="title">
-                  <p>Server Infrastructure</p>
+                  <p>Project Management</p>
                 </div>
                 <div class="sub-title">
-                  <p>Scalable cloud hosting solutions and DevOps.</p>
+                  <p>Hands-on project oversight and direct communication with our clients.</p>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="info-block transparent-bg mt-4">
-        <div class="info-wrap">
-          <h2
-            v-scroll-reveal="{ delay: 175, origin: 'left', distance: '100px' }"
-            class="text-center">
-            our services
-          </h2>
-          <div
-            class="mt-35"
-            v-scroll-reveal="{ delay: 175, origin: 'bottom', distance: '100px' }"
-          >
-            <div class="d-none d-md-block">
-              <div class="d-flex justify-content-between">
-                <div>
-                  <p class="ft-22">Production</p>
-                  <li>Responsive Websites</li>
-                  <li>E-Commerce Stores</li>
-                  <li>Web Apps</li>
-                  <li>Mobile Apps</li>
-                  <li>TV Apps</li>
-                  <li>Digital Marketing</li>
-                  <li>SEO</li>
-                  <li>Cloud Computing</li>
-                  <li>Server Infrstructure</li>
-                  <li>Retail</li>
-                </div>
-                <div>
-                  <p class="ft-22">Technologies</p>
-                  <li>Frontend Development</li>
-                  <li>Backend Development</li>
-                  <li>Shopify</li>
-                  <li>iOS / Android</li>
-                  <li>tvOS</li>
-                  <li>VueJS / ReactJS</li>
-                  <li>HTML / CSS / JS</li>
-                  <li>Cloud Hosting</li>
-                  <li>DevOps / Infrastructure</li>
-                  <li>Magento</li>
-                  <li>Wordpress</li>
-                  <li>Content Management Systems</li>
-                </div>
-                <div>
-                  <p class="ft-22">Creative</p>
-                  <li>Web Design</li>
-                  <li>App Design</li>
-                  <li>UX / UI</li>
-                  <li>Research</li>
-                  <li>Protoypes</li>
-                </div>
-              </div>
-            </div>
-            <div
-              class="d-md-none"
-              v-scroll-reveal="{ delay: 175, origin: 'bottom', distance: '100px' }"
-            >
-              <flickity ref="flickity" :options="flickityOptions">
-                <div class="carousel-cell">
-                  <div class="cell-container">
-                    <p class="ft-22">Production</p>
-                      <li>Responsive Websites</li>
-                      <li>E-Commerce Stores</li>
-                      <li>Web Apps</li>
-                      <li>Mobile Apps</li>
-                      <li>TV Apps</li>
-                      <li>Digital Marketing</li>
-                      <li>SEO</li>
-                      <li>Cloud Computing</li>
-                      <li>Server Infrstructure</li>
-                      <li>Retail</li>
-                  </div>
-                </div>
-                <div class="carousel-cell">
-                  <div class="cell-container">
-                    <p class="ft-22">Technologies</p>
-                      <li>Frontend Development</li>
-                      <li>Backend Development</li>
-                      <li>Shopify</li>
-                      <li>iOS / Android</li>
-                      <li>tvOS</li>
-                      <li>VueJS / ReactJS</li>
-                      <li>HTML / CSS / JS</li>
-                      <li>DevOps / Infrastructure</li>
-                      <li>Magento</li>
-                      <li>Wordpress</li>
-                      <li>Content Management Systems</li>
-                  </div>
-                </div>
-                <div class="carousel-cell">
-                  <div class="cell-container">
-                    <p class="ft-22">Creative</p>
-                      <li>Web Design</li>
-                      <li>App Design</li>
-                      <li>UX / UI</li>
-                      <li>Research</li>
-                      <li>Protoypes</li>
-                  </div>
-                </div>
-              </flickity>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="info-block black-bg">
-        <div class="info-wrap">
-          <h2
-            v-scroll-reveal="{ delay: 175, origin: 'left', distance: '100px' }"
-          >
-            our method
-          </h2>
-          <p
-            class="mt-35"
-            v-scroll-reveal="{ delay: 175, origin: 'left', distance: '100px' }"
-          >
-            We believe form should match function, and can meet your brand’s high-end digital needs inside and out. We take your ideas and goals from concept to reality, and give you a digital presence that resonates with your clients.
-          </p>
-          <p
-            v-scroll-reveal="{ delay: 175, origin: 'left', distance: '100px' }"
-          >
-            Our clients range from small companies launching new digital products to large brands requiring a complex range of digital services. We provide the full spectrum of digital development needs and can also provide augmentation to current development teams.
-          </p>
         </div>
       </div>
       <div class="info-block transparent-bg">
         <div class="info-wrap">
           <h2
+            class="pink-font mt-35 circular-black"
+            v-scroll-reveal="{ delay: 175, origin: 'left', distance: '100px' }"
+          >
+            our clients
+          </h2>
+          <p
+            class="circular-book"
+            v-scroll-reveal="{ delay: 175, origin: 'left', distance: '100px' }"
+          >
+            Our clients range from startups or small companies launching new digital products to large brands requiring a complex range of digital services. We provide the full spectrum of digital development needs and can also provide augmentation to current development teams.
+          </p>
+
+          <h2
+            class="mt-35 pink-font circular-black"
+            v-scroll-reveal="{ delay: 175, origin: 'left', distance: '100px' }"
+          >
+            our method
+          </h2>
+          <p
+            class="circular-book"
+            v-scroll-reveal="{ delay: 175, origin: 'left', distance: '100px' }"
+          >
+            Our team analyzes the best approach and strategy for your product and team. From the infancy of a project to its ultimate delivery, we ensure the maximum impact with minimum stress. We assess and employ the technologies, languages, and architecture most suitable for each product for a smooth rollout. Client feedback and collaboration is key; we listen and advise on the best strategic action every step of the way.
+          </p>
+          <p
+            class="circular-book"
+            v-scroll-reveal="{ delay: 175, origin: 'left', distance: '100px' }"
+          >
+            Our team uses our expertise in design and development to explore and define the best strategy for your team. We work to grow and maintain a transparent collaboration that extends beyond a launch date. From concept to delivery, we offer solutions that will ensure a successful product.
+          </p>
+        </div>
+      </div>
+      <div class="info-block black-bg">
+        <b-row class="">
+          <b-col cols="12" sm="6" md="6" lg="4" class="text-center">
+            <b-row>
+              <b-col class="pink-font circular-black ft-22 mb-2 mt-4">Strategy</b-col>
+            </b-row>
+            <b-row>
+              <b-col class="circular-book ft-16">
+                <li>Market research</li>
+                <li>Brand expertise</li>
+                <li>Conceptualize</li>
+                <li>Collaborate</li>
+                <li>Product management</li>
+              </b-col>
+            </b-row>
+          </b-col>
+          <b-col cols="12" sm="6" md="6" lg="4" class="text-center">
+            <b-row>
+              <b-col class="pink-font circular-black ft-22 mb-2 mt-4">Design and UX</b-col>
+            </b-row>
+            <b-row>
+              <b-col class="circular-book ft-16">
+                <li>Photoshop / Sketch</li>
+                <li>Wireframing</li>
+                <li>User interface</li>
+                <li>User experience</li>
+                <li>Mobile app design</li>
+                <li>Responsive website design</li>
+              </b-col>
+            </b-row>
+          </b-col>
+          <b-col cols="12" sm="6" md="6" lg="4" class="text-center">
+            <b-row>
+              <b-col class="pink-font circular-black ft-22 mb-2 mt-4">App Development</b-col>
+            </b-row>
+            <b-row>
+              <b-col class="circular-book ft-16">
+                <li>iOS (Objective-C, Swift)</li>
+                <li>Android (Java, Kotlin)</li>
+                <li>Hybrid apps (ReactNative, JS)</li>
+              </b-col>
+            </b-row>
+          </b-col>
+          <b-col cols="12" sm="6" md="6" lg="4" class="text-center">
+            <b-row>
+              <b-col class="pink-font circular-black ft-22 mb-2 mt-4">Frontend Development</b-col>
+            </b-row>
+            <b-row>
+              <b-col class="circular-book ft-16">
+                <li>Responsive websites</li>
+                <li>HTML5</li>
+                <li>CSS3 / SASS</li>
+                <li>Javascript / ES6</li>
+                <li>VueJS</li>
+                <li>ReactJS</li>
+                <li>Shopify</li>
+                <li>Wordpress</li>
+              </b-col>
+            </b-row>
+          </b-col>
+          <b-col cols="12" sm="6" md="6" lg="4" class="text-center">
+            <b-row>
+              <b-col class="pink-font circular-black ft-22 mb-2 mt-4">Backend Development</b-col>
+            </b-row>
+            <b-row>
+              <b-col class="circular-book ft-16">
+                <li>PHP</li>
+                <li>Python</li>
+                <li>GO</li>
+                <li>Ruby</li>
+                <li>MySQL / MongoDB</li>
+                <li>API integration</li>
+              </b-col>
+            </b-row>
+          </b-col>
+          <b-col cols="12" sm="6" md="6" lg="4" class="text-center">
+            <b-row>
+              <b-col class="pink-font circular-black ft-22 mb-2 mt-4">Systems</b-col>
+            </b-row>
+            <b-row>
+              <b-col class="circular-book ft-16">
+                <li>AWS / Cloud hosting</li>
+                <li>Docker</li>
+                <li>Kubernetes</li>
+                <li>Continuous integration</li>
+                <li>Unit / Integration testing</li>
+              </b-col>
+            </b-row>
+          </b-col>
+        </b-row>
+      </div>
+      <div class="info-block transparent-bg">
+        <div class="info-wrap">
+          <h2
+            class="pink-font circular-black"
             v-scroll-reveal="{ delay: 175, origin: 'left', distance: '100px' }"
           >
             some of our clients
           </h2>
           <div class="d-none d-sm-flex justify-content-between align-self-center mx-auto clients">
-            <div><img src="../assets/img/about/wb.svg" height="65" alt="Warner Bros." /></div>
-            <div><img src="../assets/img/about/lf.svg" height="65" alt="LF Stores" /></div>
-            <div><img src="../assets/img/about/fox.svg" height="65" alt="20th Century Fox" /></div>
-            <div><img src="../assets/img/about/annenberg.svg" height="65" alt="The Annenberg Foundation" /></div>
+            <div><img src="../assets/img/services/wb.svg" height="65" alt="Warner Bros." /></div>
+            <div><img src="../assets/img/services/lf.svg" height="65" alt="LF Stores" /></div>
+            <div><img src="../assets/img/services/fox.svg" height="65" alt="20th Century Fox" /></div>
+            <div><img src="../assets/img/services/annenberg.svg" height="65" alt="The Annenberg Foundation" /></div>
           </div>
           <div class="d-block d-sm-none clients mt-5">
             <div class="d-flex justify-content-between">
-              <img src="../assets/img/about/wb.svg" height="70" alt="Warner Bros." />
-              <img src="../assets/img/about/lf.svg" height="70" alt="LF Stores" />
+              <img src="../assets/img/services/wb.svg" height="70" alt="Warner Bros." />
+              <img src="../assets/img/services/lf.svg" height="70" alt="LF Stores" />
             </div>
             <div class="d-flex justify-content-between">
-              <img src="../assets/img/about/fox.svg" height="70" alt="20th Century Fox" />
-              <img src="../assets/img/about/annenberg.svg" height="70" alt="The Annenberg Foundation" />
+              <img src="../assets/img/services/fox.svg" height="70" alt="20th Century Fox" />
+              <img src="../assets/img/services/annenberg.svg" height="70" alt="The Annenberg Foundation" />
             </div>
           </div>
         </div>
@@ -286,7 +300,7 @@ import Typed from 'typed.js';
 import Flickity from 'vue-flickity';
 
 export default {
-  name: 'About',
+  name: 'Services',
   data() {
     return {
       viewportHeight: '0px',
@@ -314,7 +328,8 @@ export default {
   mounted() {
     /* eslint-disable no-new */
     new Typed('#headline', {
-      strings: ['Materialize is&nbsp;</br>a design and development&nbsp;</br>oriented agency.'],
+      // strings: ['Materialize is&nbsp;</br>a design and development&nbsp;</br>oriented agency.'],
+      strings: ['Materialize engineers </br> compelling digital products.'],
       typeSpeed: 15,
       loop: false,
     });
@@ -376,9 +391,7 @@ export default {
 .wrapper {
   background-color: rgba(255, 255, 255, .7);
 }
-.typed {
-  padding: 24px;
-}
+
 .carousel-cell {
   width: 85%;
 }
@@ -404,14 +417,12 @@ export default {
 }
 .info-block li {
   list-style: none;
-  font-size: 16px;
 }
 .info-wrap p {
   font-size: 16px;
 }
 
 .tile-grid {
-  font-family:'Circular Std Medium', Helvetica;
 }
 
 .tile-grid p {
@@ -448,7 +459,7 @@ export default {
   position: relative;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  width: calc(25% - 0px);
+  width: calc(100% - 0px);
   padding: 5% 20px;
   border-right: 1px solid #eaeaea;
   border-top: 1px solid #eaeaea;
@@ -481,6 +492,7 @@ export default {
 }
 
 .title {
+  font-family:'Circular Std Black', Helvetica;
   height: 100px;
   align-items: center;
   display: flex;
@@ -494,14 +506,15 @@ export default {
 }
 
 .sub-title {
-  height: 144px;
+  font-family:'Circular Std Book', Helvetica;
+  height: auto;
   align-items: center;
   display: flex;
   justify-content: center;
 }
 
 .sub-title p {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 100;
 }
 
@@ -520,13 +533,21 @@ export default {
   opacity: .8;
 }
 
+@media (min-width: 576px) {
+  .tile {
+    width: calc(50% - 0px);
+  }
+}
+
+@media (min-width: 768px) {
+  .tile {
+    width: calc(25% - 0px);
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .tile-grid p {
     padding: 18px 15px 6px 15px;
-  }
-
-  .tile {
-    width: calc(50% - 0px);
   }
 
   .tile:nth-child(2n) {
@@ -546,9 +567,11 @@ export default {
     font-size: 24px;
     color: #FFF;
   }
-  .info-block li,
   .info-wrap p {
     font-size: 18px;
+  }
+  .sub-title {
+    height: 200px;
   }
 }
 @media (min-width: 1024px) {
@@ -558,6 +581,9 @@ export default {
   }
   .fixed-bg img {
     width: 75vmin;
+  }
+  .sub-title {
+    height: 144px;
   }
 }
 </style>

@@ -31,6 +31,9 @@ body {
   font-family:'Circular Std Black', Helvetica;
 }
 
+.ft-14 {
+  font-size: 14px;
+}
 .ft-16 {
 	font-size: 16px;
 }
@@ -57,6 +60,11 @@ h4 {
 
 .mt-35 {
 	margin-top: 35px !important;
+}
+
+.my-35 {
+  margin-top: 35px !important;
+  margin-bottom: 35px !important;
 }
 
 .overflow-hidden {
@@ -109,7 +117,7 @@ span.typed-cursor {
 }
 
 .black-bg {
-	background-color: #000;
+	background-color: rgb(0, 0, 0, .9);
 	color: #FFF;
 }
 .transparent-bg {

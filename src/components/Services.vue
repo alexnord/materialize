@@ -32,7 +32,7 @@
         <div class="row">
           <div class="tile-grid">
             <div class="tile">
-              <div class="tile-content" v-scroll-reveal="{ delay: 175, origin: 'top', distance: '100px' }">
+              <div class="tile-content">
                 <picture class="tile-icon">
                   <img src="../assets/img/icons/strategy.png" alt="strategy icon">
                 </picture>
@@ -45,7 +45,7 @@
               </div>
             </div>
             <div class="tile">
-              <div class="tile-content" v-scroll-reveal="{ delay: 175, origin: 'bottom', distance: '100px' }">
+              <div class="tile-content">
                 <picture class="tile-icon">
                   <img src="../assets/img/icons/web-design.png" alt="ui/ux design icon">
                 </picture>
@@ -58,7 +58,7 @@
               </div>
             </div>
             <div class="tile">
-              <div class="tile-content" v-scroll-reveal="{ delay: 175, origin: 'top', distance: '100px' }">
+              <div class="tile-content">
                 <picture class="tile-icon">
                   <img src="../assets/img/icons/mobile_apps.png" alt="mobile apps icon">
                 </picture>
@@ -71,7 +71,7 @@
               </div>
             </div>
             <div class="tile">
-              <div class="tile-content" v-scroll-reveal="{ delay: 175, origin: 'bottom', distance: '100px' }">
+              <div class="tile-content">
                 <picture class="tile-icon">
                   <img src="../assets/img/icons/web_development.png" alt="web devleopment icon">
                 </picture>
@@ -84,7 +84,7 @@
               </div>
             </div>
             <div class="tile">
-              <div class="tile-content" v-scroll-reveal="{ delay: 175, origin: 'top', distance: '100px' }">
+              <div class="tile-content">
                 <picture class="tile-icon">
                   <img src="../assets/img/icons/content_management.png" alt="content management icon">
                 </picture>
@@ -97,7 +97,7 @@
               </div>
             </div>
             <div class="tile">
-              <div class="tile-content" v-scroll-reveal="{ delay: 175, origin: 'bottom', distance: '100px' }">
+              <div class="tile-content">
                 <picture class="tile-icon">
                   <img src="../assets/img/icons/infrastructure.png" alt="infrastructure icon">
                 </picture>
@@ -110,7 +110,7 @@
               </div>
             </div>
             <div class="tile">
-              <div class="tile-content" v-scroll-reveal="{ delay: 175, origin: 'top', distance: '100px' }">
+              <div class="tile-content">
                 <picture class="tile-icon">
                   <img src="../assets/img/icons/strategy.png" alt="strategy icon">
                 </picture>
@@ -123,7 +123,7 @@
               </div>
             </div>
             <div class="tile">
-              <div class="tile-content" v-scroll-reveal="{ delay: 175, origin: 'bottom', distance: '100px' }">
+              <div class="tile-content">
                 <picture class="tile-icon">
                   <img src="../assets/img/icons/content.png" alt="content icon">
                 </picture>

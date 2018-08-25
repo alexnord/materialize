@@ -279,15 +279,23 @@
               <div><img src="../assets/img/services/fox.svg" height="65" alt="20th Century Fox" /></div>
               <div><img src="../assets/img/services/annenberg.svg" height="65" alt="The Annenberg Foundation" /></div>
             </div>
-            <div class="d-block d-sm-none clients mt-5">
-              <div class="d-flex justify-content-between">
+            <div class="d-block d-sm-none clients mt-5 mb-35">
+              <b-row>
+                <b-col cols="6"><img src="../assets/img/services/wb.svg" height="70" alt="Warner Bros." /></b-col>
+                <b-col cols="6"><img src="../assets/img/services/lf.svg" height="70" alt="LF Stores" /></b-col>
+              </b-row>
+              <b-row class="mt-4">
+                <b-col cols="6"><img src="../assets/img/services/fox.svg" height="70" alt="20th Century Fox" /></b-col>
+                <b-col cols="6"><img src="../assets/img/services/annenberg.svg" height="70" alt="The Annenberg Foundation" /></b-col>
+              </b-row>
+              <!-- <div class="d-flex justify-content-between">
                 <img src="../assets/img/services/wb.svg" height="70" alt="Warner Bros." />
                 <img src="../assets/img/services/lf.svg" height="70" alt="LF Stores" />
               </div>
               <div class="d-flex justify-content-between">
                 <img src="../assets/img/services/fox.svg" height="70" alt="20th Century Fox" />
                 <img src="../assets/img/services/annenberg.svg" height="70" alt="The Annenberg Foundation" />
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -462,7 +470,6 @@ export default {
   -ms-flex-align: center;
   width: calc(100% - 0px);
   padding: 5% 20px;
-  border-right: 1px solid #eaeaea;
   border-top: 1px solid #eaeaea;
   text-align: center;
 }
@@ -519,11 +526,6 @@ export default {
   font-weight: 100;
 }
 
-.tile:nth-child(4n) {
-  margin-right: 0;
-  border-right: none;
-}
-
 .clients {
   text-align: center;
   height: 140px;
@@ -533,10 +535,15 @@ export default {
 .clients img {
   opacity: .8;
 }
+.tile:nth-child(4n) {
+  margin-right: 0;
+  border-right: none;
+}
 
 @media (min-width: 576px) {
   .tile {
     width: calc(50% - 0px);
+    border-right: 1px solid #eaeaea;
   }
 }
 

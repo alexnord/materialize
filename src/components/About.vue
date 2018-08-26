@@ -4,7 +4,7 @@
       class="fixed-bg"
       v-bind:style="{ top: bgPosition }"
     >
-      <img src="../assets/img/plane.png" />
+      <img src="../assets/img/ball.png" />
     </div>
     <div class="wrapper">
       <div
@@ -19,6 +19,19 @@
         <div class="description">
           <span id="description"></span>
         </div>
+      </div>
+      <div class="container-fluid black-bg">
+        <b-row>
+          <b-col cols="12" md="8" offset-md="1">
+            <h2 class="ft-24 circular-book mt-35 pink-font">Why work with us?</h2>
+            <p
+              class="ft-24 circular-book mb-35"
+              v-scroll-reveal="{ delay: 175, origin: 'left', distance: '100px' }"
+            >
+              We create solutions that are tailored specifically for each product we build. There's no project too large or too small.
+            </p>
+          </b-col>
+        </b-row>
       </div>
     </div>
     <button class="contact" v-b-modal.contact-form>contact</button>
@@ -46,12 +59,11 @@ export default {
     };
   },
   beforeMount() {
-    this.viewportHeight = `${window.innerHeight}px`;
-
-    const percentage = window.innerHeight;
-    const twentyFive = percentage * 0.35;
-    const seventeen = percentage * 0.25;
-    this.bgPosition = window.innerWidth >= 768 ? `${seventeen}px` : `${twentyFive}px`;
+    const percentage = window.innerHeight * 0.8;
+    const twentyFive = percentage * 0.25;
+    const fourteen = percentage * 0.14;
+    this.viewportHeight = `${percentage}px`;
+    this.bgPosition = window.innerWidth >= 768 ? `${fourteen}px` : `${twentyFive}px`;
   },
   created() {
     window.addEventListener('resize', this.handleResize);
@@ -79,12 +91,11 @@ export default {
   },
   methods: {
     handleResize() {
-      this.viewportHeight = `${window.innerHeight}px`;
-
-      const percentage = window.innerHeight;
-      const twentyFive = percentage * 0.35;
-      const seventeen = percentage * 0.25;
-      this.bgPosition = window.innerWidth >= 768 ? `${seventeen}px` : `${twentyFive}px`;
+      const percentage = window.innerHeight * 0.8;
+      const twentyFive = percentage * 0.25;
+      const fourteen = percentage * 0.14;
+      this.viewportHeight = `${percentage}px`;
+      this.bgPosition = window.innerWidth >= 768 ? `${fourteen}px` : `${twentyFive}px`;
     },
   },
   components: {
@@ -103,7 +114,7 @@ export default {
   perspective: 1000px;
 }
 .fixed-bg img {
-  width: 98vmin;
+  width: 75vmin;
   transform-style: preserve-3d;
   animation: spin 6s linear infinite;
   -webkit-transform-style: preserve-3d;
@@ -111,16 +122,16 @@ export default {
 }
 @keyframes spin {
   0%   { transform: rotateY(0deg) rotateX(0deg);   }
-  25%  { transform: rotateY(15deg) rotateX(7.5deg); }
+  25%  { transform: rotateY(10deg) rotateX(7.5deg); }
   50%  { transform: rotateY(0deg) rotateX(0deg);   }
-  75%  { transform: rotateY(-15deg) rotateX(-7.5deg); }
+  75%  { transform: rotateY(-10deg) rotateX(-7.5deg); }
   100% { transform: rotateY(0deg) rotateX(0deg);   }
 }
 @-webkit-keyframes spin {
   0%   { -webkit-transform: rotateY(0deg) rotateX(0deg);   }
-  25%  { -webkit-transform: rotateY(15deg) rotateX(7.5deg); }
+  25%  { -webkit-transform: rotateY(10deg) rotateX(7.5deg); }
   50%  { -webkit-transform: rotateY(0deg) rotateX(0deg);   }
-  75%  { -webkit-transform: rotateY(-15deg) rotateX(-7.5deg); }
+  75%  { -webkit-transform: rotateY(-10deg) rotateX(-7.5deg); }
   100% { -webkit-transform: rotateY(0deg) rotateX(0deg);   }
 }
 .wrapper {
@@ -144,7 +155,7 @@ export default {
 
 @media (min-width: 1024px) {
   .fixed-bg img {
-    width: 90vmin;
+    width: 63vmin;
   }
 }
 </style>

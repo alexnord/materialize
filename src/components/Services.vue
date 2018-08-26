@@ -235,8 +235,8 @@
               <b-col class="circular-book ft-16">
                 <li>PHP</li>
                 <li>Python</li>
-                <li>GO</li>
-                <li>Ruby</li>
+                <li>Node</li>
+                <li>Go</li>
                 <li>MySQL / MongoDB</li>
                 <li>API integration</li>
               </b-col>

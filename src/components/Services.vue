@@ -25,7 +25,7 @@
               class="ft-24 circular-book my-35"
               v-scroll-reveal="{ delay: 175, origin: 'left', distance: '100px' }"
             >
-              <span class="pink-font">We work closely with our clients throughout the entire development process.</span> We propose solutions that are tailored specifically for each product we build. There's no project too large or too small.
+              <span class="pink-font">We work closely with our clients throughout the entire development process.</span> We create solutions that are tailored specifically for each product we build. There's no project too large or too small.
             </p>
           </b-col>
         </b-row>
@@ -164,12 +164,6 @@
             v-scroll-reveal="{ delay: 175, origin: 'left', distance: '100px' }"
           >
             Our team analyzes the best approach and strategy for your product and team. From the infancy of a project to its ultimate delivery, we ensure the maximum impact with minimum stress. We assess and employ the technologies, languages, and architecture most suitable for each product for a smooth rollout. Client feedback and collaboration is key; we listen and advise on the best strategic action every step of the way.
-          </p>
-          <p
-            class="circular-book"
-            v-scroll-reveal="{ delay: 175, origin: 'left', distance: '100px' }"
-          >
-            Our team uses our expertise in design and development to explore and define the best strategy for your team. We work to grow and maintain a transparent collaboration that extends beyond a launch date. From concept to delivery, we offer solutions that will ensure a successful product.
           </p>
         </div>
       </div>
@@ -408,17 +402,6 @@ export default {
 .cell-container {
   margin-left: -8%;
 }
-.contact {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  padding: 10px;
-  background-color: rgba(223, 0, 112, .9);
-  border: 2px solid rgba(0, 0, 0, 0.12);
-  border-radius: 5px;
-  font-size: 15px;
-  color: #FFF;
-}
 
 .info-block {
   position: relative;
@@ -568,13 +551,6 @@ export default {
 }
 
 @media (min-width: 768px) {
-  .contact {
-    bottom: 20px;
-    right: 20px;
-    padding: 10px;
-    font-size: 24px;
-    color: #FFF;
-  }
   .info-wrap p {
     font-size: 18px;
   }

@@ -13,40 +13,21 @@
       <form @submit="onSubmit" v-show="!this.success">
         <b-form-input type="text"
                       class="form-control mb-3"
-                      placeholder="first name"
-                      @input="$v.form.first_name.$touch()"
-                      :state="$v.form.first_name.$dirty ? !$v.form.first_name.$invalid : null"
-                      v-model="form.first_name">
+                      placeholder="name"
+                      @input="$v.form.name.$touch()"
+                      :state="$v.form.name.$dirty ? !$v.form.name.$invalid : null"
+                      v-model="form.name">
         </b-form-input>
         <b-form-invalid-feedback
           class="my-2"
-          v-if="$v.form.first_name.$dirty && !$v.form.first_name.required">
-          First name is required.
+          v-if="$v.form.name.$dirty && !$v.form.name.required">
+          Name is required.
         </b-form-invalid-feedback>
         <b-form-invalid-feedback
           class="my-2"
-          v-if="$v.form.first_name.$dirty && $v.form.first_name.$invalid">
-          First name must be at least 2 characters.
+          v-if="$v.form.name.$dirty && $v.form.name.$invalid">
+          Name must be at least 2 characters.
         </b-form-invalid-feedback>
-
-        <b-form-input type="text"
-                      class="form-control mb-3"
-                      placeholder="last name"
-                      @input="$v.form.last_name.$touch()"
-                      :state="$v.form.last_name.$dirty ? !$v.form.last_name.$invalid : null"
-                      v-model="form.last_name">
-        </b-form-input>
-        <b-form-invalid-feedback
-          class="my-2"
-          v-if="$v.form.last_name.$dirty && !$v.form.last_name.required">
-          Last name is required.
-        </b-form-invalid-feedback>
-        <b-form-invalid-feedback
-          class="my-2"
-          v-if="$v.form.last_name.$dirty && $v.form.last_name.$invalid">
-          Last name must be at least 2 characters.
-        </b-form-invalid-feedback>
-
 
         <b-form-input type="text"
                       class="form-control mb-3"
@@ -141,8 +122,7 @@ export default {
   data() {
     return {
       form: {
-        first_name: '',
-        last_name: '',
+        name: '',
         email: '',
         company: '',
         phone: '',
@@ -158,11 +138,7 @@ export default {
   ],
   validations: {
     form: {
-      first_name: {
-        required,
-        minLength: minLength(2),
-      },
-      last_name: {
+      name: {
         required,
         minLength: minLength(2),
       },
@@ -189,8 +165,7 @@ export default {
       this.$refs.invisibleRecaptcha.execute();
     },
     clearContactForm() {
-      this.form.first_name = '';
-      this.form.last_name = '';
+      this.form.name = '';
       this.form.email = '';
       this.form.company = '';
       this.form.phone = '';
@@ -199,8 +174,7 @@ export default {
     onVerify(responseToken) {
       const apiUrl = `${process.env.ROOT_API}/inquire`;
       axios.post(apiUrl, {
-        first_name: this.form.first_name,
-        last_name: this.form.last_name,
+        name: this.form.name,
         email: this.form.email,
         company: this.form.company,
         phone: this.form.phone,

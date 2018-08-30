@@ -25,7 +25,7 @@
               class="ft-24 circular-book my-35"
               v-scroll-reveal="{ delay: 175, origin: 'left', distance: '100px' }"
             >
-              <span class="pink-font">We work closely with our clients throughout the entire development process.</span> We create solutions that are tailored specifically for each product we build. There's no project too large or too small.
+              We work closely with our clients through every stage of development and create solutions that are tailored for each product that we build. There's no project too large or too small.
             </p>
           </b-col>
         </b-row>
@@ -79,7 +79,7 @@
                   <p>Frontend Development</p>
                 </div>
                 <div class="sub-title">
-                  <p>Beautifully landscaped digital experiences optimized for all browsers, devices, and sizes.</p>
+                  <p>Beautifully landscaped digital experiences optimized for all browsers, devices, and screen sizes.</p>
                 </div>
               </div>
             </div>
@@ -112,7 +112,7 @@
             <div class="tile">
               <div class="tile-content" v-scroll-reveal="{ delay: 175, origin: 'top', distance: '100px' }">
                 <picture class="tile-icon">
-                  <img src="../assets/img/icons/strategy.png" alt="strategy icon">
+                  <img src="../assets/img/icons/test.png" alt="testing icon">
                 </picture>
                 <div class="title">
                   <p>Testing</p>
@@ -150,7 +150,7 @@
             class="circular-book"
             v-scroll-reveal="{ delay: 175, origin: 'left', distance: '100px' }"
           >
-            Our clients range from startups or small companies launching new digital products to large brands requiring a complex range of digital services. We provide the full spectrum of digital development needs and can also provide augmentation to current development teams.
+            Our clients range from startups and small companies launching digital products to large corporations requiring enterprise level software solutions. We provide the full spectrum of development needs and can also provide augmentation to projects that are already active.
           </p>
 
           <h2
@@ -163,7 +163,7 @@
             class="circular-book"
             v-scroll-reveal="{ delay: 175, origin: 'left', distance: '100px' }"
           >
-            Our team analyzes the best approach and strategy for your product and team. From the infancy of a project to its ultimate delivery, we ensure the maximum impact with minimum stress. We assess and employ the technologies, languages, and architecture most suitable for each product for a smooth rollout. Client feedback and collaboration is key; we listen and advise on the best strategic action every step of the way.
+            After fully understanding your project goals, we provide a roadmap showing the best technologies, languages, and architecture that will ensure a smooth rollout and impactful user-experience. This roadmap allows us to efficiently move from a project’s infancy to its final delivery with full transparency and clear milestones. Client feedback and collaboration is key; we listen and advise on the best strategic action every step of the way.
           </p>
         </div>
       </div>
@@ -333,12 +333,12 @@ export default {
     /* eslint-disable no-new */
     new Typed('#headline', {
       // strings: ['Materialize is&nbsp;</br>a design and development&nbsp;</br>oriented agency.'],
-      strings: ['Materialize engineers </br> compelling digital products.'],
+      strings: ['We make amazing </br> digital products.'],
       typeSpeed: 15,
       loop: false,
     });
     new Typed('#description', {
-      strings: ['We focus on building and supporting websites, apps, and software that are impactful and on brand.'],
+      strings: ['We build and support websites, apps, and software that make an impact.'],
       typeSpeed: 10,
       loop: false,
     });

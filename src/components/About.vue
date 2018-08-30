@@ -74,13 +74,13 @@ export default {
   mounted() {
     /* eslint-disable no-new */
     new Typed('#headline', {
-      strings: ['We&#39;re Materialize, a software development firm based in Los Angeles, CA.'],
+      strings: ['we&#39;re Materialize, a software development firm based in Los Angeles, CA.'],
       typeSpeed: 15,
       loop: false,
     });
     new Typed('#description', {
       strings: [
-        'We are a passionate team of strategists, designers, and developers who love to create sophisticated products.',
+        'we are a passionate team of strategists, designers, and developers who love to create sophisticated products.',
       ],
       typeSpeed: 10,
       loop: false,

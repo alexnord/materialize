@@ -34,7 +34,6 @@
         </b-row>
       </div>
     </div>
-    <button class="contact" v-b-modal.contact-form>contact</button>
   </div>
 </template>
 
@@ -59,11 +58,8 @@ export default {
     };
   },
   beforeMount() {
-    const percentage = window.innerHeight * 0.8;
-    const twentyFive = percentage * 0.25;
-    const fourteen = percentage * 0.14;
-    this.viewportHeight = `${percentage}px`;
-    this.bgPosition = window.innerWidth >= 768 ? `${fourteen}px` : `${twentyFive}px`;
+    this.viewportHeight = `${window.innerHeight}px`;
+    this.bgPosition = `${window.innerHeight / 4}px`;
   },
   created() {
     window.addEventListener('resize', this.handleResize);
@@ -74,7 +70,7 @@ export default {
   mounted() {
     /* eslint-disable no-new */
     new Typed('#headline', {
-      strings: ['we&#39;re Materialize, a software development firm based in Los Angeles, CA.'],
+      strings: ['a software development firm based in Los Angeles, CA.'],
       typeSpeed: 15,
       loop: false,
     });
@@ -91,11 +87,8 @@ export default {
   },
   methods: {
     handleResize() {
-      const percentage = window.innerHeight * 0.8;
-      const twentyFive = percentage * 0.25;
-      const fourteen = percentage * 0.14;
-      this.viewportHeight = `${percentage}px`;
-      this.bgPosition = window.innerWidth >= 768 ? `${fourteen}px` : `${twentyFive}px`;
+      this.viewportHeight = `${window.innerHeight}px`;
+      this.bgPosition = `${window.innerHeight / 4}px`;
     },
   },
   components: {
@@ -136,6 +129,9 @@ export default {
 }
 .wrapper {
   background-color: rgba(255, 255, 255, .76);
+}
+.typed {
+  min-height: 500px;
 }
 .cta {
   width: 100%;

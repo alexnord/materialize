@@ -51,11 +51,7 @@ export default {
   },
   beforeMount() {
     this.viewportHeight = `${window.innerHeight}px`;
-
-    const percentage = window.innerHeight;
-    const twentyFive = percentage * 0.35;
-    const seventeen = percentage * 0.25;
-    this.bgPosition = window.innerWidth >= 768 ? `${seventeen}px` : `${twentyFive}px`;
+    this.bgPosition = `${window.innerHeight / 4}px`;
   },
   created() {
     window.addEventListener('resize', this.handleResize);
@@ -66,7 +62,7 @@ export default {
   mounted() {
     /* eslint-disable no-new */
     new Typed('#headline', {
-      strings: ['Don&#39;t be a stranger. We&#39;d love to hear from you.'],
+      strings: ['We&#39;d love to hear from you.'],
       typeSpeed: 25,
       loop: false,
     });
@@ -84,11 +80,7 @@ export default {
   methods: {
     handleResize() {
       this.viewportHeight = `${window.innerHeight}px`;
-
-      const percentage = window.innerHeight;
-      const twentyFive = percentage * 0.35;
-      const seventeen = percentage * 0.25;
-      this.bgPosition = window.innerWidth >= 768 ? `${seventeen}px` : `${twentyFive}px`;
+      this.bgPosition = `${window.innerHeight / 4}px`;
     },
   },
   components: {
@@ -129,6 +121,9 @@ export default {
 }
 .wrapper {
   background-color: rgba(255, 255, 255, .76);
+}
+.typed {
+  min-height: 500px;
 }
 .cta {
   width: 100%;

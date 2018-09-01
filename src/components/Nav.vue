@@ -77,21 +77,24 @@
               c1.9-1.3,2.9-3.3,2.9-5.7C217.5,70.4,215.2,68.1,210.6,67.7z"/>
           </g>
           </svg>
-
-          <!-- <img src="../assets/asset2.svg" alt="materialize"> -->
         </div>
       </router-link>
 
-      <button
-        class="hamburger hamburger--collapse"
-        v-bind:class="{ 'is-active': navExpanded }"
-        type="button"
-        v-on:click="navExpanded = !navExpanded"
-      >
-        <span class="hamburger-box">
-          <span class="hamburger-inner"></span>
-        </span>
-      </button>
+      <div class="nav-right d-flex justify-content-between">
+        <div class="contact" v-b-modal.contact-form>
+          <img src="../assets/img/icons/contact.png" alt="Contact us icon." />
+        </div>
+        <button
+          class="hamburger hamburger--collapse"
+          v-bind:class="{ 'is-active': navExpanded }"
+          type="button"
+          v-on:click="navExpanded = !navExpanded"
+        >
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+      </div>
     </nav>
 
     <transition name="fade">
@@ -191,6 +194,11 @@ nav a {
   width: 175px;
   margin: 20px 0px 0px 25px;
 }
+.contact img {
+  margin: 28px 6px 0px 0px;
+  width: 34px;
+  height: 34px;
+}
 button.hamburger {
   z-index: 2;
   margin: 20px 20px 0px 0px;
@@ -261,6 +269,11 @@ button.hamburger {
 @media (min-width: 768px) {
   .logo {
     width: 350px;
+  }
+  .contact img {
+    margin: 38px 19px 0px 0px;
+    width: 40px;
+    height: 40px;
   }
 }
 </style>

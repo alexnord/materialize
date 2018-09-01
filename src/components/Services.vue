@@ -18,11 +18,17 @@
           <span id="description"></span>
         </div>
       </div>
-      <div class="container-fluid black-bg">
+      <div class="container-fluid black-bg cut-to-top">
         <b-row>
           <b-col cols="12" md="8" offset-md="1">
+            <h2
+              class="mt-35 pink-font circular-black ft-28"
+              v-scroll-reveal="{ delay: 175, origin: 'left', distance: '100px' }"
+            >
+              our services
+            </h2>
             <p
-              class="ft-24 circular-book my-35"
+              class="ft-24 circular-book mb-35"
               v-scroll-reveal="{ delay: 175, origin: 'left', distance: '100px' }"
             >
               We work closely with our clients through every stage of development and create solutions that are tailored for each product that we build. There's no project too large or too small.
@@ -36,7 +42,7 @@
                 <picture class="tile-icon">
                   <img src="../assets/img/icons/strategy.png" alt="strategy icon">
                 </picture>
-                <div class="title">
+                <div class="title pink-font">
                   <p>Strategy &amp; Planning</p>
                 </div>
                 <div class="sub-title">
@@ -49,7 +55,7 @@
                 <picture class="tile-icon">
                   <img src="../assets/img/icons/web-design.png" alt="ui/ux design icon">
                 </picture>
-                <div class="title">
+                <div class="title pink-font">
                   <p>UI / UX Design</p>
                 </div>
                 <div class="sub-title">
@@ -62,7 +68,7 @@
                 <picture class="tile-icon">
                   <img src="../assets/img/icons/mobile_apps.png" alt="mobile apps icon">
                 </picture>
-                <div class="title">
+                <div class="title pink-font">
                   <p>Mobile Apps</p>
                 </div>
                 <div class="sub-title">
@@ -75,7 +81,7 @@
                 <picture class="tile-icon">
                   <img src="../assets/img/icons/web_development.png" alt="web devleopment icon">
                 </picture>
-                <div class="title">
+                <div class="title pink-font">
                   <p>Frontend Development</p>
                 </div>
                 <div class="sub-title">
@@ -88,7 +94,7 @@
                 <picture class="tile-icon">
                   <img src="../assets/img/icons/content_management.png" alt="content management icon">
                 </picture>
-                <div class="title">
+                <div class="title pink-font">
                   <p>Backend Development</p>
                 </div>
                 <div class="sub-title">
@@ -101,7 +107,7 @@
                 <picture class="tile-icon">
                   <img src="../assets/img/icons/infrastructure.png" alt="infrastructure icon">
                 </picture>
-                <div class="title">
+                <div class="title pink-font">
                   <p>Infrastructure</p>
                 </div>
                 <div class="sub-title">
@@ -114,7 +120,7 @@
                 <picture class="tile-icon">
                   <img src="../assets/img/icons/test.png" alt="testing icon">
                 </picture>
-                <div class="title">
+                <div class="title pink-font">
                   <p>Testing</p>
                 </div>
                 <div class="sub-title">
@@ -127,7 +133,7 @@
                 <picture class="tile-icon">
                   <img src="../assets/img/icons/content.png" alt="content icon">
                 </picture>
-                <div class="title">
+                <div class="title pink-font">
                   <p>Project Management</p>
                 </div>
                 <div class="sub-title">
@@ -171,7 +177,7 @@
         <b-row class="">
           <b-col cols="12" sm="6" md="6" lg="4" class="text-center" v-scroll-reveal="{ delay: 275, origin: 'bottom', distance: '100px' }">
             <b-row>
-              <b-col class="pink-font circular-black ft-22 mb-2 mt-4">Strategy</b-col>
+              <b-col class="pink-font circular-black ft-22 mb-2 mt-4 text-capitalize">Strategy</b-col>
             </b-row>
             <b-row>
               <b-col class="circular-book ft-16">
@@ -185,7 +191,7 @@
           </b-col>
           <b-col cols="12" sm="6" md="6" lg="4" class="text-center" v-scroll-reveal="{ delay: 275, origin: 'top', distance: '100px' }">
             <b-row>
-              <b-col class="pink-font circular-black ft-22 mb-2 mt-4">Design and UX</b-col>
+              <b-col class="pink-font circular-black ft-22 mb-2 mt-4 text-capitalize">Design and UX</b-col>
             </b-row>
             <b-row>
               <b-col class="circular-book ft-16">
@@ -200,7 +206,7 @@
           </b-col>
           <b-col cols="12" sm="6" md="6" lg="4" class="text-center" v-scroll-reveal="{ delay: 275, origin: 'bottom', distance: '100px' }">
             <b-row>
-              <b-col class="pink-font circular-black ft-22 mb-2 mt-4">App Development</b-col>
+              <b-col class="pink-font circular-black ft-22 mb-2 mt-4 text-capitalize">App Development</b-col>
             </b-row>
             <b-row>
               <b-col class="circular-book ft-16">
@@ -212,7 +218,7 @@
           </b-col>
           <b-col cols="12" sm="6" md="6" lg="4" class="text-center" v-scroll-reveal="{ delay: 275, origin: 'top', distance: '100px' }">
             <b-row>
-              <b-col class="pink-font circular-black ft-22 mb-2 mt-4">Frontend Development</b-col>
+              <b-col class="pink-font circular-black ft-22 mb-2 mt-4 text-capitalize">Frontend Development</b-col>
             </b-row>
             <b-row>
               <b-col class="circular-book ft-16">
@@ -229,7 +235,7 @@
           </b-col>
           <b-col cols="12" sm="6" md="6" lg="4" class="text-center" v-scroll-reveal="{ delay: 275, origin: 'bottom', distance: '100px' }">
             <b-row>
-              <b-col class="pink-font circular-black ft-22 mb-2 mt-4">Backend Development</b-col>
+              <b-col class="pink-font circular-black ft-22 mb-2 mt-4 text-capitalize">Backend Development</b-col>
             </b-row>
             <b-row>
               <b-col class="circular-book ft-16">
@@ -244,7 +250,7 @@
           </b-col>
           <b-col cols="12" sm="6" md="6" lg="4" class="text-center" v-scroll-reveal="{ delay: 275, origin: 'top', distance: '100px' }">
             <b-row>
-              <b-col class="pink-font circular-black ft-22 mb-2 mt-4">Systems</b-col>
+              <b-col class="pink-font circular-black ft-22 mb-2 mt-4 text-capitalize">Systems</b-col>
             </b-row>
             <b-row>
               <b-col class="circular-book ft-16">
@@ -282,20 +288,11 @@
                 <b-col cols="6"><img src="../assets/img/services/fox.svg" height="70" alt="20th Century Fox" /></b-col>
                 <b-col cols="6"><img src="../assets/img/services/annenberg.svg" height="70" alt="The Annenberg Foundation" /></b-col>
               </b-row>
-              <!-- <div class="d-flex justify-content-between">
-                <img src="../assets/img/services/wb.svg" height="70" alt="Warner Bros." />
-                <img src="../assets/img/services/lf.svg" height="70" alt="LF Stores" />
-              </div>
-              <div class="d-flex justify-content-between">
-                <img src="../assets/img/services/fox.svg" height="70" alt="20th Century Fox" />
-                <img src="../assets/img/services/annenberg.svg" height="70" alt="The Annenberg Foundation" />
-              </div> -->
             </div>
           </div>
         </div>
       </div>
     </div>
-    <button class="contact" v-b-modal.contact-form>contact</button>
   </div>
 </template>
 
@@ -317,11 +314,8 @@ export default {
     };
   },
   beforeMount() {
-    const percentage = window.innerHeight * 0.8;
-    const twentyFive = percentage * 0.25;
-    const seventeen = percentage * 0.17;
-    this.viewportHeight = `${percentage}px`;
-    this.bgPosition = window.innerWidth >= 768 ? `${seventeen}px` : `${twentyFive}px`;
+    this.viewportHeight = `${window.innerHeight}px`;
+    this.bgPosition = `${window.innerHeight / 4}px`;
   },
   created() {
     window.addEventListener('resize', this.handleResize);
@@ -347,11 +341,8 @@ export default {
   },
   methods: {
     handleResize() {
-      const percentage = window.innerHeight * 0.8;
-      const twentyFive = percentage * 0.25;
-      const seventeen = percentage * 0.17;
-      this.viewportHeight = `${percentage}px`;
-      this.bgPosition = window.innerWidth >= 768 ? `${seventeen}px` : `${twentyFive}px`;
+      this.viewportHeight = `${window.innerHeight}px`;
+      this.bgPosition = `${window.innerHeight / 4}px`;
     },
   },
   components: {
@@ -394,6 +385,10 @@ export default {
 
 .wrapper {
   background-color: rgba(255, 255, 255, .7);
+}
+
+.typed {
+  min-height: 430px;
 }
 
 .carousel-cell {

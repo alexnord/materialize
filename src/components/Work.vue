@@ -116,58 +116,58 @@ export default {
 </script>
 
 <style scoped>
+#work-page {
+  position: relative;
+  top: 100px;
+}
+.header {
+  position: relative;
+  margin-left: 9%;
+}
+.heading {
+  font-size: 24px;
+}
+.sub-heading {
+  font-size: 22px;
+  color: #b1b1b1;
+  margin-top: -18px;
+  line-height: 26px;
+}
+.projects {
+  margin-top: 20px;
+}
+.projects a {
+  color: #000;
+}
+.projects a:hover {
+  text-decoration: none;
+}
+.work-client {
+  font-size: 24px;
+}
+.work-description {
+  font-size: 16px;
+  max-width: 1140px;
+}
+
+@media (min-width: 768px) {
   #work-page {
-    position: relative;
-    top: 100px;
-  }
-  .header {
-    position: relative;
-    margin-left: 9%;
+    top: 160px;
   }
   .heading {
-    font-size: 24px;
+    font-size: 36px;
   }
   .sub-heading {
-    font-size: 22px;
-    color: #b1b1b1;
-    margin-top: -18px;
-    line-height: 26px;
+    font-size: 30px;
   }
   .projects {
-    margin-top: 20px;
-  }
-  .projects a {
-    color: #000;
-  }
-  .projects a:hover {
-    text-decoration: none;
+    margin-top: 50px;
   }
   .work-client {
-    font-size: 24px;
+    font-size: 30px;
   }
   .work-description {
-    font-size: 16px;
-    max-width: 1140px;
+    font-size: 22px;
   }
-
-  @media (min-width: 768px) {
-    #work-page {
-      top: 160px;
-    }
-    .heading {
-      font-size: 36px;
-    }
-    .sub-heading {
-      font-size: 30px;
-    }
-    .projects {
-      margin-top: 50px;
-    }
-    .work-client {
-      font-size: 30px;
-    }
-    .work-description {
-      font-size: 22px;
-    }
-  }
+}
 </style>

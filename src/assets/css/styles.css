@@ -46,6 +46,9 @@ body {
 .ft-24 {
   font-size: 24px;
 }
+.ft-28 {
+  font-size: 28px;
+}
 .ft-31 {
 	font-size: 31px;
 }
@@ -100,6 +103,7 @@ h4 {
   padding: 0px 5px;
   text-align: center;
   width: 100%;
+  color: #DF0070;
 }
 .description {
   margin: 0 auto;
@@ -111,7 +115,6 @@ h4 {
   text-align: center;
   position: relative;
   width: 100%;
-  min-height: 565px;
 }
 span.typed-cursor {
   position: relative;
@@ -130,16 +133,10 @@ span.typed-cursor {
 	background-color: transparent;
 	color: #000;
 }
-.contact {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  padding: 10px;
-  background-color: rgba(223, 0, 112, .9);
-  border: 2px solid rgba(0, 0, 0, 0.12);
-  border-radius: 5px;
-  font-size: 15px;
-  color: #FFF;
+
+.cut-to-top {
+  position: relative;
+  top: -80px;
 }
 
 @media (min-width: 375px) {
@@ -172,11 +169,23 @@ span.typed-cursor {
     margin-top: 60px;
     width: 680px;
   }
-  .contact {
-    bottom: 20px;
-    right: 20px;
-    padding: 10px;
-    font-size: 24px;
-    color: #FFF;
+}
+
+@media (max-height: 770px) and (min-width: 1024px) {
+  .headline {
+    font-size: 44px;
+  }
+  .description {
+    font-size: 16px;
+  }
+}
+
+/* iPhone X */
+@media (height: 375px) and (width: 812px) {
+  .headline {
+    font-size: 38px;
+  }
+  .description {
+    font-size: 16px;
   }
 }

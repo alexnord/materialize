@@ -32,8 +32,7 @@
       </div>
       <transition name="fade">
         <div class="cta" v-show="fadeLink">
-          <router-link to="/services"><button id="learn-more">learn more</button></router-link>
-          <button id="reach-out" v-b-modal.contact-form>reach out</button>
+          <router-link to="/services"><button id="learn-more">our services</button></router-link>
         </div>
       </transition>
     </div>
@@ -89,6 +88,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.typed {
+  min-height: 565px;
+}
 .see-work {
   text-align: center;
   width: 100%;

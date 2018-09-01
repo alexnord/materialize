@@ -25,7 +25,7 @@
               class="mt-35 pink-font circular-black ft-28"
               v-scroll-reveal="{ delay: 175, origin: 'left', distance: '100px' }"
             >
-              our services
+              Our Services
             </h2>
             <p
               class="ft-24 circular-book mb-35"
@@ -147,10 +147,10 @@
       <div class="info-block transparent-bg">
         <div class="info-wrap">
           <h2
-            class="pink-font mt-35 circular-black"
+            class="pink-font circular-black"
             v-scroll-reveal="{ delay: 175, origin: 'left', distance: '100px' }"
           >
-            our clients
+            Our Clients
           </h2>
           <p
             class="circular-book"
@@ -163,7 +163,7 @@
             class="mt-35 pink-font circular-black"
             v-scroll-reveal="{ delay: 175, origin: 'left', distance: '100px' }"
           >
-            our method
+            Our Method
           </h2>
           <p
             class="circular-book"
@@ -270,7 +270,7 @@
             class="pink-font circular-black"
             v-scroll-reveal="{ delay: 175, origin: 'left', distance: '100px' }"
           >
-            some of our clients
+            Some of Our Clients
           </h2>
           <div v-scroll-reveal="{ delay: 275, origin: 'left', distance: '100px' }">
             <div class="d-none d-sm-flex justify-content-between align-self-center mx-auto clients">

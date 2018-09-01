@@ -82,7 +82,7 @@
 
       <div class="nav-right d-flex justify-content-between">
         <div class="contact" v-b-modal.contact-form>
-          <img src="../assets/img/icons/contact.png" alt="Contact us icon." />
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><title>Asset 3</title><g id="Layer_2" data-name="Layer 2" v-bind:class="{ 'expanded': navExpanded }"><g id="Capa_1" data-name="Capa 1"><path d="M437,331a255.08,255.08,0,0,0-97.28-61A147.94,147.94,0,0,0,404,148C404,66.39,337.61,0,256,0S108,66.39,108,148a147.94,147.94,0,0,0,64.26,122A256.41,256.41,0,0,0,0,512H40c0-119.1,96.9-216,216-216s216,96.9,216,216h40A254.33,254.33,0,0,0,437,331ZM256,256A108,108,0,1,1,364,148,108.12,108.12,0,0,1,256,256Z"/></g></g></svg>
         </div>
         <button
           class="hamburger hamburger--collapse"
@@ -194,10 +194,22 @@ nav a {
   width: 175px;
   margin: 20px 0px 0px 25px;
 }
-.contact img {
+.contact {
+  cursor: pointer;
+  z-index: 2;
   margin: 28px 6px 0px 0px;
   width: 34px;
   height: 34px;
+  transition-duration: 1s;
+}
+.contact g#Layer_2 {
+  fill: #DF0070;
+}
+.contact:hover g#Layer_2 {
+  fill: #000;
+}
+.contact:hover g#Layer_2.expanded {
+  fill: #FFF;
 }
 button.hamburger {
   z-index: 2;
@@ -270,8 +282,8 @@ button.hamburger {
   .logo {
     width: 350px;
   }
-  .contact img {
-    margin: 38px 19px 0px 0px;
+  .contact {
+    margin: 37px 12px 0px 0px;
     width: 40px;
     height: 40px;
   }

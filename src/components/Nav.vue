@@ -1,7 +1,8 @@
 <template>
   <div
+    id="nav"
     class="nav-wrap"
-    v-bind:class="{ 'not-home': notHomeRoute }"
+    v-bind:class="{ 'not-home': notHomeRoute, 'add-bg': this.$parent.addBg }"
   >
     <nav class="d-flex justify-content-between">
       <router-link
@@ -82,7 +83,7 @@
 
       <div class="nav-right d-flex justify-content-between">
         <div class="contact" v-b-modal.contact-form>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><title>Asset 3</title><g id="Layer_2" data-name="Layer 2" v-bind:class="{ 'expanded': navExpanded }"><g id="Capa_1" data-name="Capa 1"><path d="M437,331a255.08,255.08,0,0,0-97.28-61A147.94,147.94,0,0,0,404,148C404,66.39,337.61,0,256,0S108,66.39,108,148a147.94,147.94,0,0,0,64.26,122A256.41,256.41,0,0,0,0,512H40c0-119.1,96.9-216,216-216s216,96.9,216,216h40A254.33,254.33,0,0,0,437,331ZM256,256A108,108,0,1,1,364,148,108.12,108.12,0,0,1,256,256Z"/></g></g></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60.06 39.99"><title>Contact Us</title><g id="Layer_2" data-name="Layer 2" v-bind:class="{ 'expanded': navExpanded }"><g id="Capa_1" data-name="Capa 1"><path d="M60.05,1.16s0,0,0-.07a.81.81,0,0,0,0-.22V.81A1,1,0,0,0,60,.52l0-.05h0l0,0A1,1,0,0,0,59.67.2l-.06,0a.74.74,0,0,0-.24-.11.35.35,0,0,0-.11,0L59,0h-.2L.8,12a1,1,0,0,0-.79.84,1,1,0,0,0,.52,1l16.63,8.77,2.92,16.19v0a1,1,0,0,0,0,.24s0,.08,0,.12a.85.85,0,0,0,.11.26s0,0,0,.06a0,0,0,0,1,0,0l.05,0,.15.16,0,0,0,0,.19.1.08,0a1.35,1.35,0,0,0,.28,0h.07a1,1,0,0,0,.71-.32l11.08-7.38,11.6,7.54a1,1,0,0,0,.54.16,1.13,1.13,0,0,0,.32-.05,1,1,0,0,0,.62-.61l14-38,0-.11s0,0,0,0A.06.06,0,0,1,60.05,1.16ZM48.46,7.54l-24,17.65a.43.43,0,0,0-.1.09l0,0-.06.07-.05.07a1.63,1.63,0,0,0-.09.19.05.05,0,0,1,0,0h0l-2.75,8.94-2.18-12.1Zm-25.55,29,2.72-9,4.25,2.75,1.21.79L27,33.85ZM52,3.46l-34,17.4L3.93,13.41Zm-7.48,34-15.41-10-2.33-1.52L57,3.77Z"/></g></g></svg>
         </div>
         <button
           class="hamburger hamburger--collapse"
@@ -147,7 +148,7 @@
 </template>
 
 <script>
-import '../assets/css/hamburgers.css';
+import '../assets/sass/hamburgers.scss';
 
 export default {
   name: 'Nav',
@@ -191,15 +192,15 @@ nav a {
   text-decoration: line-through !important;
 }
 .logo {
-  width: 175px;
+  width: 195px;
   margin: 20px 0px 0px 25px;
 }
 .contact {
   cursor: pointer;
   z-index: 2;
-  margin: 28px 6px 0px 0px;
-  width: 34px;
-  height: 34px;
+  margin: 31px 6px 0px 0px;
+  width: 44px;
+  height: 44px;
   transition-duration: 1s;
 }
 .contact g#Layer_2 {
@@ -272,20 +273,14 @@ button.hamburger {
   transition-delay: .4s;
 }
 
-@media (min-width: 375px) {
-  .logo {
-    width: 195px;
-  }
-}
-
 @media (min-width: 768px) {
   .logo {
     width: 350px;
   }
   .contact {
-    margin: 37px 12px 0px 0px;
-    width: 40px;
-    height: 40px;
+    margin: 44px 12px 0px 0px;
+    width: 46px;
+    height: 46px;
   }
 }
 </style>

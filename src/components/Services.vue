@@ -1,5 +1,8 @@
 <template>
-  <div id="services-page">
+  <div
+    id="services-page"
+    class="page"
+  >
     <div
       class="fixed-bg"
       v-bind:style="{ top: bgPosition }"
@@ -177,7 +180,7 @@
         <b-row class="">
           <b-col cols="12" sm="6" md="6" lg="4" class="text-center" v-scroll-reveal="{ delay: 275, origin: 'bottom', distance: '100px' }">
             <b-row>
-              <b-col class="pink-font circular-black ft-22 mb-2 mt-4 text-capitalize">Strategy</b-col>
+              <b-col class="pink-font circular-black ft-18 mb-2 mt-4 text-uppercase">Strategy</b-col>
             </b-row>
             <b-row>
               <b-col class="circular-book ft-16">
@@ -191,7 +194,7 @@
           </b-col>
           <b-col cols="12" sm="6" md="6" lg="4" class="text-center" v-scroll-reveal="{ delay: 275, origin: 'top', distance: '100px' }">
             <b-row>
-              <b-col class="pink-font circular-black ft-22 mb-2 mt-4 text-capitalize">Design and UX</b-col>
+              <b-col class="pink-font circular-black ft-18 mb-2 mt-4 text-uppercase">Design and UX</b-col>
             </b-row>
             <b-row>
               <b-col class="circular-book ft-16">
@@ -206,7 +209,7 @@
           </b-col>
           <b-col cols="12" sm="6" md="6" lg="4" class="text-center" v-scroll-reveal="{ delay: 275, origin: 'bottom', distance: '100px' }">
             <b-row>
-              <b-col class="pink-font circular-black ft-22 mb-2 mt-4 text-capitalize">App Development</b-col>
+              <b-col class="pink-font circular-black ft-18 mb-2 mt-4 text-uppercase">App Development</b-col>
             </b-row>
             <b-row>
               <b-col class="circular-book ft-16">
@@ -218,7 +221,7 @@
           </b-col>
           <b-col cols="12" sm="6" md="6" lg="4" class="text-center" v-scroll-reveal="{ delay: 275, origin: 'top', distance: '100px' }">
             <b-row>
-              <b-col class="pink-font circular-black ft-22 mb-2 mt-4 text-capitalize">Frontend Development</b-col>
+              <b-col class="pink-font circular-black ft-18 mb-2 mt-4 text-uppercase">Frontend Development</b-col>
             </b-row>
             <b-row>
               <b-col class="circular-book ft-16">
@@ -235,7 +238,7 @@
           </b-col>
           <b-col cols="12" sm="6" md="6" lg="4" class="text-center" v-scroll-reveal="{ delay: 275, origin: 'bottom', distance: '100px' }">
             <b-row>
-              <b-col class="pink-font circular-black ft-22 mb-2 mt-4 text-capitalize">Backend Development</b-col>
+              <b-col class="pink-font circular-black ft-18 mb-2 mt-4 text-uppercase">Backend Development</b-col>
             </b-row>
             <b-row>
               <b-col class="circular-book ft-16">
@@ -250,7 +253,7 @@
           </b-col>
           <b-col cols="12" sm="6" md="6" lg="4" class="text-center" v-scroll-reveal="{ delay: 275, origin: 'top', distance: '100px' }">
             <b-row>
-              <b-col class="pink-font circular-black ft-22 mb-2 mt-4 text-capitalize">Systems</b-col>
+              <b-col class="pink-font circular-black ft-18 mb-2 mt-4 text-uppercase">Systems</b-col>
             </b-row>
             <b-row>
               <b-col class="circular-book ft-16">
@@ -357,6 +360,17 @@ export default {
 </script>
 
 <style scoped>
+/*.services-page {
+  background-color: rgba(255, 255, 255, .5);
+  background-image:
+    linear-gradient(black 1px, transparent 2px),
+    linear-gradient(90deg, black 1px, transparent 2px),
+    linear-gradient(rgba(0,0,0,.3) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,.3) 1px, transparent 1px);
+  background-size: 75px 75px, 75px 75px, 15px 15px, 15px 15px;
+  background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+}*/
+
 .fixed-bg {
   position: fixed;
   z-index: -10;
@@ -388,7 +402,7 @@ export default {
 }
 
 .wrapper {
-  background-color: rgba(255, 255, 255, .7);
+  background-color: rgba(255, 255, 255, .8);
 }
 
 .typed {

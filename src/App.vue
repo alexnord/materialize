@@ -10,8 +10,8 @@
 <script>
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-vue/dist/bootstrap-vue.css';
-import './assets/css/styles.css';
-import './assets/css/hamburgers.css';
+import './assets/sass/styles.scss';
+import './assets/sass/hamburgers.scss';
 import Nav from './components/Nav';
 import Footer from './components/Footer';
 import ContactForm from './components/ContactForm';
@@ -19,9 +19,29 @@ import ContactForm from './components/ContactForm';
 export default {
   name: 'App',
   data() {
-    return {};
+    return {
+      navHeight: 0,
+      addBg: false,
+    };
+  },
+  created() {
+    window.addEventListener('resize', this.handleResize);
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  destroyed() {
+    window.removeEventListener('resize', this.handleResize);
+    window.addEventListener('scroll', this.handleScroll);
   },
   methods: {
+    handleResize() {
+      this.navHeight = document.getElementById('nav').clientHeight;
+    },
+    handleScroll() {
+      this.addBg = scrollY > 50;
+    },
+  },
+  mounted() {
+    this.navHeight = document.getElementById('nav').clientHeight;
   },
   components: {
     Nav,

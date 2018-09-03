@@ -1,5 +1,8 @@
 <template>
-  <div class="contact-page">
+  <div
+    id="contact-page"
+    class="page"
+  >
     <div
       class="fixed-bg"
       v-bind:style="{ top: bgPosition }"
@@ -50,7 +53,7 @@ export default {
     };
   },
   beforeMount() {
-    this.viewportHeight = `${window.innerHeight}px`;
+    this.viewportHeight = `${window.innerHeight - this.$parent.navHeight}px`;
     this.bgPosition = `${window.innerHeight / 4}px`;
   },
   created() {

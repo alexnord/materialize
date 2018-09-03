@@ -13,7 +13,7 @@
         </b-row>
         <div class="projects">
 
-          <b-row v-scroll-reveal="{ delay: 75, origin: 'left', distance: '10px' }">
+          <b-row class="project" v-scroll-reveal="{ delay: 75, origin: 'left', distance: '10px' }">
             <b-col xs="12" class="max-1140 mx-auto">
               <a href="http://www.lfthebrand.com" target="_blank">
                 <b-row>
@@ -35,7 +35,7 @@
             </b-col>
           </b-row>
 
-          <b-row class="mt-35" v-scroll-reveal="{ delay: 75, origin: 'right', distance: '10px' }">
+          <b-row class="mt-35 project" v-scroll-reveal="{ delay: 75, origin: 'right', distance: '10px' }">
             <b-col xs="12" class="max-1140 mx-auto">
               <a href="http://www.carmardenim.com" target="_blank">
                 <b-row>
@@ -57,7 +57,7 @@
             </b-col>
           </b-row>
 
-          <b-row class="mt-35" v-scroll-reveal="{ delay: 75, origin: 'left', distance: '10px' }">
+          <b-row class="mt-35 project" v-scroll-reveal="{ delay: 75, origin: 'left', distance: '10px' }">
             <b-col xs="12" class="max-1140 mx-auto">
               <a href="http://www.emmaandsam.com" target="_blank">
                 <b-row>
@@ -79,7 +79,7 @@
             </b-col>
           </b-row>
 
-          <b-row class="mt-35 mb-5" v-scroll-reveal="{ delay: 75, origin: 'right', distance: '10px' }">
+          <b-row class="mt-35 mb-5 project" v-scroll-reveal="{ delay: 75, origin: 'right', distance: '10px' }">
             <b-col xs="12" class="max-1140 mx-auto">
               <a href="http://www.lifeofthepartypremiere.com" target="_blank">
                 <b-row>
@@ -118,10 +118,21 @@ export default {
 </script>
 
 <style scoped>
+.project::after {
+  border-bottom: 1px solid rgba(0, 0, 0, .6);
+  width: 90%;
+  content: " ";
+  margin: 0 auto;
+  padding-top: 28px;
+}
+.project:last-child:after
+{
+  border-bottom: none;
+}
 .header {
   position: relative;
   margin-left: 9%;
-  margin-top: 130px;
+  margin-top: 90px;
 }
 .sub-heading {
   color: #000;
@@ -149,6 +160,9 @@ export default {
 }
 
 @media (min-width: 768px) {
+  .header {
+    margin-top: 130px;
+  }
   #work-page {
     top: 160px;
   }

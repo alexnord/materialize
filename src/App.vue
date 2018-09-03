@@ -48,7 +48,6 @@ export default {
       this.addBg = scrollY > 50;
     },
     setBgImageSize() {
-      console.log('fired nigga');
       if ((window.innerHeight - 80 - this.navHeight) >= window.innerWidth) {
         this.bgWidth = '100%';
         this.bgHeight = 'unset';

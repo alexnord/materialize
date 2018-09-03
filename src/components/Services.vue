@@ -1,18 +1,20 @@
 <template>
   <div
-    id="services-page"
-    class="page"
+    class="graph-page"
   >
-    <div
-      class="fixed-bg"
-      v-bind:style="{ top: bgPosition }"
-      >
-      <img src="../assets/img/house_1200px.png" />
-    </div>
     <div class="wrapper">
       <div
+        class="headline-img position-absolute"
+        v-bind:style="{ height: this.$parent.bgPosition, top: `${this.$parent.navHeight}px` }"
+      >
+        <img
+          v-bind:style="{ height: this.$parent.bgHeight, width: this.$parent.bgWidth }"
+          src="../assets/img/house_1200px.png"
+        />
+      </div>
+      <div
         class="typed d-flex align-content-center flex-wrap"
-        v-bind:style="{ height: viewportHeight }"
+        v-bind:style="{ height: this.$parent.viewportHeight }"
       >
         <div class="headline">
           <span id="headline"></span>
@@ -311,24 +313,12 @@ export default {
   name: 'Services',
   data() {
     return {
-      viewportHeight: '0px',
-      bgPosition: '0px',
       flickityOptions: {
         pageDots: true,
         wrapAround: true,
         prevNextButtons: false,
       },
     };
-  },
-  beforeMount() {
-    this.viewportHeight = `${window.innerHeight}px`;
-    this.bgPosition = `${window.innerHeight / 4}px`;
-  },
-  created() {
-    window.addEventListener('resize', this.handleResize);
-  },
-  destroyed() {
-    window.removeEventListener('resize', this.handleResize);
   },
   mounted() {
     /* eslint-disable no-new */
@@ -346,12 +336,6 @@ export default {
     /* eslint-enable no-new */
     this.fadeLink = true;
   },
-  methods: {
-    handleResize() {
-      this.viewportHeight = `${window.innerHeight}px`;
-      this.bgPosition = `${window.innerHeight / 4}px`;
-    },
-  },
   components: {
     Typed,
     Flickity,
@@ -359,52 +343,7 @@ export default {
 };
 </script>
 
-<style scoped>
-/*.services-page {
-  background-color: rgba(255, 255, 255, .5);
-  background-image:
-    linear-gradient(black 1px, transparent 2px),
-    linear-gradient(90deg, black 1px, transparent 2px),
-    linear-gradient(rgba(0,0,0,.3) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0,0,0,.3) 1px, transparent 1px);
-  background-size: 75px 75px, 75px 75px, 15px 15px, 15px 15px;
-  background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
-}*/
-
-.fixed-bg {
-  position: fixed;
-  z-index: -10;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  perspective: 1000px;
-}
-.fixed-bg img {
-  width: 98vmin;
-  transform-style: preserve-3d;
-  animation: spin 4s linear infinite;
-  -webkit-transform-style: preserve-3d;
-  -webkit-animation: spin 4s linear infinite;
-}
-@keyframes spin {
-  0%   { transform: rotateY(0deg) rotateX(0deg);   }
-  25%  { transform: rotateY(15deg) rotateX(7.5deg); }
-  50%  { transform: rotateY(0deg) rotateX(0deg);   }
-  75%  { transform: rotateY(-15deg) rotateX(-7.5deg); }
-  100% { transform: rotateY(0deg) rotateX(0deg);   }
-}
-@-webkit-keyframes spin {
-  0%   { -webkit-transform: rotateY(0deg) rotateX(0deg);   }
-  25%  { -webkit-transform: rotateY(15deg) rotateX(7.5deg); }
-  50%  { -webkit-transform: rotateY(0deg) rotateX(0deg);   }
-  75%  { -webkit-transform: rotateY(-15deg) rotateX(-7.5deg); }
-  100% { -webkit-transform: rotateY(0deg) rotateX(0deg);   }
-}
-
-.wrapper {
-  background-color: rgba(255, 255, 255, .8);
-}
-
+<style lang="scss" scoped>
 .typed {
   min-height: 430px;
 }

@@ -1,14 +1,7 @@
 <template>
   <div
-    id="about-page"
-    class="page"
+    class="graph-page"
   >
-<!--     <div
-      class="fixed-bg"
-      v-bind:style="{ top: bgPosition }"
-    >
-      <img src="../assets/img/ball.png" />
-    </div> -->
     <div class="wrapper">
       <div
         class="headline-img position-absolute"
@@ -62,13 +55,6 @@ export default {
       },
     };
   },
-  created() {
-    window.addEventListener('resize', this.handleResize);
-  },
-  destroyed() {
-    window.removeEventListener('resize', this.handleResize);
-  },
-  methods: {},
   mounted() {
     /* eslint-disable no-new */
     new Typed('#headline', {
@@ -94,53 +80,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
-#about-page {
-  background-color: rgba(255, 255, 255, 0);
-  background-image:
-    linear-gradient(rgba(0, 0, 0, .3) 1px, transparent 2px),
-    linear-gradient(90deg, rgba(0, 0, 0, .3) 1px, transparent 2px),
-    linear-gradient(rgba(0,0,0,.3) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0,0,0,.3) 1px, transparent 1px);
-  background-size: 75px 75px, 75px 75px, 15px 15px, 15px 15px;
-  background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
-}
-
-.headline-img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  perspective: 1000px;
-  img {
-    opacity: .2;
-    transform-style: preserve-3d;
-    animation: spin 6s linear infinite;
-    -webkit-transform-style: preserve-3d;
-    -webkit-animation: spin 6s linear infinite;
-  }
-}
-// @keyframes spin {
-//   0%   { transform: rotateY(0deg); }
-//   25%  { transform: rotateY(50deg); }
-//   50%  { transform: rotateY(0deg); }
-//   75%  { transform: rotateY(-50deg); }
-//   100% { transform: rotateY(0deg); }
-// }
-@keyframes spin {
-  0%   { transform: rotateY(0deg) rotateX(0deg);   }
-  25%  { transform: rotateY(10deg) rotateX(7.5deg); }
-  50%  { transform: rotateY(0deg) rotateX(0deg);   }
-  75%  { transform: rotateY(-10deg) rotateX(-7.5deg); }
-  100% { transform: rotateY(0deg) rotateX(0deg);   }
-}
-@-webkit-keyframes spin {
-  0%   { -webkit-transform: rotateY(0deg) rotateX(0deg);   }
-  25%  { -webkit-transform: rotateY(10deg) rotateX(7.5deg); }
-  50%  { -webkit-transform: rotateY(0deg) rotateX(0deg);   }
-  75%  { -webkit-transform: rotateY(-10deg) rotateX(-7.5deg); }
-  100% { -webkit-transform: rotateY(0deg) rotateX(0deg);   }
-}
-
 // .headline-img img {
 //   // background: url(../assets/img/ball.png) no-repeat;
 //   // -webkit-background-size: contain;
@@ -166,10 +105,6 @@ export default {
 //   -webkit-transform-style: preserve-3d;
 //   -webkit-animation: spin 6s linear infinite;
 // }
-
-.wrapper {
-  background-color: rgba(255, 255, 255, .85);
-}
 .typed {
   min-height: 500px;
 }

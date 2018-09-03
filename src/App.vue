@@ -22,6 +22,10 @@ export default {
     return {
       navHeight: 0,
       addBg: false,
+      viewportHeight: '0px',
+      bgPosition: '0px',
+      bgWidth: 'unset',
+      bgHeight: 'unset',
     };
   },
   created() {
@@ -35,13 +39,30 @@ export default {
   methods: {
     handleResize() {
       this.navHeight = document.getElementById('nav').clientHeight;
+      this.viewportHeight = `${window.innerHeight}px`;
+      this.bgPosition = `${window.innerHeight - 80 - this.navHeight}px`;
+
+      this.setBgImageSize(this.navHeight);
     },
     handleScroll() {
       this.addBg = scrollY > 50;
     },
+    setBgImageSize() {
+      console.log('fired nigga');
+      if ((window.innerHeight - 80 - this.navHeight) >= window.innerWidth) {
+        this.bgWidth = '100%';
+        this.bgHeight = 'unset';
+      } else if ((window.innerHeight - 80 - this.navHeight) < window.innerWidth) {
+        this.bgHeight = '80%';
+        this.bgWidth = 'unset';
+      }
+    },
   },
   mounted() {
     this.navHeight = document.getElementById('nav').clientHeight;
+    this.viewportHeight = `${window.innerHeight}px`;
+    this.bgPosition = `${window.innerHeight - 80 - this.navHeight}px`;
+    this.setBgImageSize(this.navHeight);
   },
   components: {
     Nav,

@@ -12,11 +12,17 @@
     <div class="wrapper">
       <div
         class="headline-img position-absolute"
-        v-bind:style="{ height: bgPosition, top: `${this.$parent.navHeight}px` }"
-      ></div>
+        v-bind:style="{ height: this.$parent.bgPosition, top: `${this.$parent.navHeight}px` }"
+      >
+        <img
+          v-bind:style="{ height: this.$parent.bgHeight, width: this.$parent.bgWidth }"
+          src="../assets/img/ball.png"
+          alt="Warner Bros."
+        />
+      </div>
       <div
         class="typed d-flex align-content-center flex-wrap"
-        v-bind:style="{ height: viewportHeight }"
+        v-bind:style="{ height: this.$parent.viewportHeight }"
       >
         <div class="headline">
           <div class="fixed-width">
@@ -45,8 +51,6 @@ export default {
   name: 'About',
   data() {
     return {
-      viewportHeight: '0px',
-      bgPosition: '0px',
       fadeLink: false,
       form: {
         first_name: '',
@@ -64,16 +68,8 @@ export default {
   destroyed() {
     window.removeEventListener('resize', this.handleResize);
   },
-  methods: {
-    handleResize() {
-      this.viewportHeight = `${window.innerHeight}px`;
-      this.bgPosition = `${window.innerHeight - 130 - this.$parent.navHeight}px`;
-    },
-  },
+  methods: {},
   mounted() {
-    this.viewportHeight = `${window.innerHeight}px`;
-    const navHeight = this.$parent.navHeight === 0 ? document.getElementById('nav').clientHeight : null;
-    this.bgPosition = `${window.innerHeight - 130 - navHeight}px`;
     /* eslint-disable no-new */
     new Typed('#headline', {
       strings: ['a software development firm based in Los Angeles.'],
@@ -111,14 +107,49 @@ export default {
 }
 
 .headline-img {
-  background: url(../assets/img/ball.png) no-repeat;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain;
-  background-position: center;
-  opacity: 0.3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+  img {
+    opacity: .2;
+    transform-style: preserve-3d;
+    animation: spin 6s linear infinite;
+    -webkit-transform-style: preserve-3d;
+    -webkit-animation: spin 6s linear infinite;
+  }
 }
+// @keyframes spin {
+//   0%   { transform: rotateY(0deg); }
+//   25%  { transform: rotateY(50deg); }
+//   50%  { transform: rotateY(0deg); }
+//   75%  { transform: rotateY(-50deg); }
+//   100% { transform: rotateY(0deg); }
+// }
+@keyframes spin {
+  0%   { transform: rotateY(0deg) rotateX(0deg);   }
+  25%  { transform: rotateY(10deg) rotateX(7.5deg); }
+  50%  { transform: rotateY(0deg) rotateX(0deg);   }
+  75%  { transform: rotateY(-10deg) rotateX(-7.5deg); }
+  100% { transform: rotateY(0deg) rotateX(0deg);   }
+}
+@-webkit-keyframes spin {
+  0%   { -webkit-transform: rotateY(0deg) rotateX(0deg);   }
+  25%  { -webkit-transform: rotateY(10deg) rotateX(7.5deg); }
+  50%  { -webkit-transform: rotateY(0deg) rotateX(0deg);   }
+  75%  { -webkit-transform: rotateY(-10deg) rotateX(-7.5deg); }
+  100% { -webkit-transform: rotateY(0deg) rotateX(0deg);   }
+}
+
+// .headline-img img {
+//   // background: url(../assets/img/ball.png) no-repeat;
+//   // -webkit-background-size: contain;
+//   // -moz-background-size: contain;
+//   // -o-background-size: contain;
+//   // background-size: contain;
+//   // background-position: center;
+//   // opacity: 0.3;
+// }
 
 // .fixed-bg {
 //   position: fixed;
@@ -135,41 +166,12 @@ export default {
 //   -webkit-transform-style: preserve-3d;
 //   -webkit-animation: spin 6s linear infinite;
 // }
-// @keyframes spin {
-//   0%   { transform: rotateY(0deg) rotateX(0deg);   }
-//   25%  { transform: rotateY(10deg) rotateX(7.5deg); }
-//   50%  { transform: rotateY(0deg) rotateX(0deg);   }
-//   75%  { transform: rotateY(-10deg) rotateX(-7.5deg); }
-//   100% { transform: rotateY(0deg) rotateX(0deg);   }
-// }
-// @-webkit-keyframes spin {
-//   0%   { -webkit-transform: rotateY(0deg) rotateX(0deg);   }
-//   25%  { -webkit-transform: rotateY(10deg) rotateX(7.5deg); }
-//   50%  { -webkit-transform: rotateY(0deg) rotateX(0deg);   }
-//   75%  { -webkit-transform: rotateY(-10deg) rotateX(-7.5deg); }
-//   100% { -webkit-transform: rotateY(0deg) rotateX(0deg);   }
-// }
 
 .wrapper {
   background-color: rgba(255, 255, 255, .85);
 }
 .typed {
   min-height: 500px;
-}
-.cta {
-  width: 100%;
-  margin: 35px auto;
-  font-size: 18px;
-  cursor: pointer;
-  transition-delay: 1.5s;
-  transition-duration: 2s;
-}
-.cta button {
-  padding: 8px 18px;
-  background-color: rgba(223, 0, 112, .8);
-  border: 2px solid rgba(0, 0, 0, 0.12);
-  border-radius: 5px;
-  color: #FFF;
 }
 
 @media (min-width: 1024px) {

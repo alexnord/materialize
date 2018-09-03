@@ -35,7 +35,32 @@
           <router-link to="/services"><button id="learn-more">our services</button></router-link>
         </div>
       </transition>
-      <div></div>
+      <!-- <div class="clients-block">
+        <h2
+          class="pink-font mb-4 text-left text-lowercase"
+          v-scroll-reveal="{ delay: 175, origin: 'left', distance: '100px' }"
+        >
+          some happy clients
+        </h2>
+        <div v-scroll-reveal="{ delay: 275, origin: 'left', distance: '100px' }">
+          <div class="d-none d-sm-flex justify-content-between align-self-center mx-auto clients">
+            <div><img src="../assets/img/services/wb.svg" height="55" alt="Warner Bros." /></div>
+            <div><img src="../assets/img/services/lf.svg" height="55" alt="LF Stores" /></div>
+            <div><img src="../assets/img/services/fox.svg" height="55" alt="20th Century Fox" /></div>
+            <div><img src="../assets/img/services/annenberg.svg" height="55" alt="The Annenberg Foundation" /></div>
+          </div>
+          <div class="d-block d-sm-none clients mt-5 mb-35">
+            <b-row>
+              <b-col cols="6"><img src="../assets/img/services/wb.svg" height="70" alt="Warner Bros." /></b-col>
+              <b-col cols="6"><img src="../assets/img/services/lf.svg" height="70" alt="LF Stores" /></b-col>
+            </b-row>
+            <b-row class="mt-4">
+              <b-col cols="6"><img src="../assets/img/services/fox.svg" height="70" alt="20th Century Fox" /></b-col>
+              <b-col cols="6"><img src="../assets/img/services/annenberg.svg" height="70" alt="The Annenberg Foundation" /></b-col>
+            </b-row>
+          </div>
+        </div>
+      </div> -->
     </div>
   </div>
 </template>
@@ -116,5 +141,13 @@ button#learn-more {
 }
 button#learn-more:hover {
   background-color: rgba(12, 154, 154, 1)
+}
+.clients-block {
+  width: 600px;
+  height: 140px;
+  margin: 0 auto;
+}
+.clients img {
+  opacity: .8;
 }
 </style>

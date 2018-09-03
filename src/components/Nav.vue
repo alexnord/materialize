@@ -192,15 +192,15 @@ nav a {
   text-decoration: line-through !important;
 }
 .logo {
-  width: 195px;
-  margin: 20px 0px 0px 25px;
+  width: 165px;
+  margin: 20px 0px 0px 20px;
 }
 .contact {
   cursor: pointer;
   z-index: 2;
-  margin: 31px 6px 0px 0px;
-  width: 44px;
-  height: 44px;
+  margin: 27px 6px 0px 0px;
+  width: 38px;
+  height: 38px;
   transition-duration: 1s;
 }
 .contact g#Layer_2 {
@@ -214,7 +214,7 @@ nav a {
 }
 button.hamburger {
   z-index: 2;
-  margin: 20px 20px 0px 0px;
+  margin: 15px 6px 0px 0px;
 }
 .hamburger.is-active .hamburger-inner,
 .hamburger.is-active .hamburger-inner::before {
@@ -271,6 +271,20 @@ button.hamburger {
 }
 .expanded-nav .slide-fade-enter-active#contact {
   transition-delay: .4s;
+}
+
+@media (min-width: 375px) {
+  .logo {
+    width: 195px;
+  }
+  .contact {
+    margin: 31px 6px 0px 0px;
+    width: 44px;
+    height: 44px;
+  }
+  button.hamburger {
+    margin: 20px 20px 0px 0px;
+  }
 }
 
 @media (min-width: 768px) {

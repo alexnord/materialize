@@ -1,7 +1,6 @@
 <template>
   <div
-    id="contact-page"
-    class="page"
+    class="graph-page"
   >
     <div
       class="fixed-bg"

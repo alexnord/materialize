@@ -201,7 +201,6 @@ nav a {
   margin: 27px 6px 0px 0px;
   width: 38px;
   height: 38px;
-  transition-duration: 1s;
 }
 .contact g#Layer_2 {
   fill: #DF0070;
@@ -283,7 +282,7 @@ button.hamburger {
     height: 44px;
   }
   button.hamburger {
-    margin: 20px 20px 0px 0px;
+    margin: 20px 8px 0px 0px;
   }
 }
 

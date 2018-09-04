@@ -41,7 +41,7 @@ export default {
     color: #DF0070;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .footer {
     bottom: 20px;
   }

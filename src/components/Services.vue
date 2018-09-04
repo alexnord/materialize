@@ -27,13 +27,13 @@
         <b-row>
           <b-col cols="12" md="8" offset-md="1">
             <h2
-              class="mt-35 pink-font circular-black ft-28"
+              class="mt-35 pink-font circular-black our-services"
               v-scroll-reveal="{ delay: 175, origin: 'left', distance: '100px' }"
             >
               Our Services
             </h2>
             <p
-              class="ft-24 circular-book mb-35"
+              class="ft-24 circular-book mb-35 our-services-copy"
               v-scroll-reveal="{ delay: 175, origin: 'left', distance: '100px' }"
             >
               We work closely with our clients through every stage of development and create solutions that are tailored for each product that we build. There's no project too large or too small.
@@ -392,6 +392,13 @@ export default {
   text-decoration: none;
 }
 
+.our-services {
+  font-size: 24px;
+}
+.our-services-copy {
+  font-size: 16px;
+}
+
 .tile-grid p {
   font-weight: 700;
   padding: 24px 15px 12px 15px;
@@ -509,6 +516,12 @@ export default {
 @media (min-width: 768px) {
   .tile {
     width: calc(25% - 0px);
+  }
+  .our-services {
+    font-size: 22px;
+  }
+  .our-services-copy {
+    font-size: 22px;
   }
 }
 

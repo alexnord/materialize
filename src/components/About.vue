@@ -32,14 +32,14 @@
           </b-col>
         </b-row>
         <b-row class="mt-3 leadership pb-4">
-          <b-col cols="12" offset-md="3" md="3">
+          <b-col cols="12" offset-md="2" md="4" offset-lg="3" lg="3">
             <div class="person">
               <img src="../assets/img/headshots/alex.jpg" class="img-fluid" alt="Founder - Alex Nordlinger">
               <div class="name circular-med pink-font">Alex Nordlinger</div>
               <div class="position circular-book mb-3">Founder</div>
             </div>
           </b-col>
-          <b-col cols="12" md="3">
+          <b-col cols="12" md="4" lg="3">
             <div class="person">
               <img src="../assets/img/headshots/cody.jpg" class="img-fluid" alt="Managing Director - Cody Rasmus">
               <div class="name circular-med pink-font">Cody Rasmus</div>

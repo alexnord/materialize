@@ -141,6 +141,25 @@
               contact
             </router-link>
           </transition>
+          <transition name="slide-fade">
+            <div
+              class="d-flex justify-content-center"
+              id="social"
+              v-if="navExpanded"
+              @click.native="navExpanded = !navExpanded"
+            >
+              <div>
+                <a href="https://www.facebook.com/materializelabs/" target="_blank">
+                  <i class="fab fa-facebook-square"></i>
+                </a>
+              </div>
+              <div>
+                <a href="https://www.linkedin.com/company/materialize/" target="_blank">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+              </div>
+            </div>
+          </transition>
         </div>
       </div>
     </transition>
@@ -249,6 +268,10 @@ button.hamburger {
   -webkit-text-stroke: 1px #FFF;
 }
 
+.expanded-nav #social {
+  width: 100px;
+}
+
 .expanded-nav .slide-fade-enter-active {
   transition: all .3s ease;
 }
@@ -270,6 +293,9 @@ button.hamburger {
 }
 .expanded-nav .slide-fade-enter-active#contact {
   transition-delay: .4s;
+}
+.expanded-nav .slide-fade-enter-active#social {
+  transition-delay: .5s;
 }
 
 @media (min-width: 375px) {

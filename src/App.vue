@@ -2,7 +2,6 @@
   <div id="app">
     <Nav></Nav>
     <router-view/>
-    <Footer></Footer>
     <ContactForm></ContactForm>
   </div>
 </template>
@@ -13,7 +12,6 @@ import 'bootstrap-vue/dist/bootstrap-vue.css';
 import './assets/sass/styles.scss';
 import './assets/sass/hamburgers.scss';
 import Nav from './components/Nav';
-import Footer from './components/Footer';
 import ContactForm from './components/ContactForm';
 
 export default {
@@ -65,7 +63,6 @@ export default {
   },
   components: {
     Nav,
-    Footer,
     ContactForm,
   },
 };

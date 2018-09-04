@@ -301,6 +301,7 @@
           </router-link>
         </div>
       </div>
+      <Footer></Footer>
     </div>
   </div>
 </template>
@@ -308,6 +309,7 @@
 <script>
 import Typed from 'typed.js';
 import Flickity from 'vue-flickity';
+import Footer from './Footer';
 
 export default {
   name: 'Services',
@@ -339,6 +341,7 @@ export default {
   components: {
     Typed,
     Flickity,
+    Footer,
   },
 };
 </script>
@@ -493,7 +496,9 @@ export default {
   margin-right: 0;
   border-right: none;
 }
-
+.footer {
+  position: relative !important;
+}
 @media (min-width: 576px) {
   .tile {
     width: calc(50% - 0px);

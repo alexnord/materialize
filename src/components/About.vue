@@ -32,12 +32,14 @@
           </b-col>
         </b-row>
       </div>
+      <Footer></Footer>
     </div>
   </div>
 </template>
 
 <script>
 import Typed from 'typed.js';
+import Footer from './Footer';
 
 export default {
   name: 'About',
@@ -74,6 +76,7 @@ export default {
   },
   components: {
     Typed,
+    Footer,
   },
 };
 </script>
@@ -102,10 +105,10 @@ export default {
 .typed {
   min-height: 500px;
 }
-
+.footer {
+  position: relative !important;
+}
 @media (min-width: 1024px) {
-  // .fixed-bg img {
-  //   width: 63vmin;
-  // }
+
 }
 </style>

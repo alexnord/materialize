@@ -9,8 +9,7 @@
       >
         <img
           v-bind:style="{ height: this.$parent.bgHeight, width: this.$parent.bgWidth }"
-          src="../assets/img/ball.png"
-          alt="Warner Bros."
+          src="../assets/img/dna.png"
         />
       </div>
       <div
@@ -80,31 +79,26 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-// .headline-img img {
-//   // background: url(../assets/img/ball.png) no-repeat;
-//   // -webkit-background-size: contain;
-//   // -moz-background-size: contain;
-//   // -o-background-size: contain;
-//   // background-size: contain;
-//   // background-position: center;
-//   // opacity: 0.3;
-// }
-
-// .fixed-bg {
-//   position: fixed;
-//   z-index: -10;
-//   left: 50%;
-//   -webkit-transform: translateX(-50%);
-//   transform: translateX(-50%);
-//   perspective: 1000px;
-// }
-// .fixed-bg img {
-//   width: 75vmin;
-//   transform-style: preserve-3d;
-//   animation: spin 6s linear infinite;
-//   -webkit-transform-style: preserve-3d;
-//   -webkit-animation: spin 6s linear infinite;
-// }
+.headline-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+  img {
+    opacity: .2;
+    transform-style: preserve-3d;
+    animation: spin 6s linear infinite;
+    -webkit-transform-style: preserve-3d;
+    -webkit-animation: spin 6s linear infinite;
+  }
+}
+@keyframes spin {
+  0%   { transform: rotateY(0deg);   }
+  25%  { transform: rotateY(10deg); }
+  50%  { transform: rotateY(15deg);   }
+  75%  { transform: rotateY(10deg); }
+  100% { transform: rotateY(0deg);   }
+}
 .typed {
   min-height: 500px;
 }

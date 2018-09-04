@@ -9,7 +9,7 @@
       >
         <img
           v-bind:style="{ height: this.$parent.bgHeight, width: this.$parent.bgWidth }"
-          src="../assets/img/dna.png"
+          src="../assets/img/devices.png"
         />
       </div>
       <div
@@ -344,10 +344,29 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.headline-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+  img {
+    opacity: .35;
+    transform-style: preserve-3d;
+    animation: spin 6s linear infinite;
+    -webkit-transform-style: preserve-3d;
+    -webkit-animation: spin 6s linear infinite;
+  }
+}
+@keyframes spin {
+  0%   { transform: rotateY(0deg);   }
+  25%  { transform: rotateY(10deg); }
+  50%  { transform: rotateY(0deg);   }
+  75%  { transform: rotateY(-10deg); }
+  100% { transform: rotateY(0deg);   }
+}
 .typed {
   min-height: 430px;
 }
-
 .carousel-cell {
   width: 85%;
 }

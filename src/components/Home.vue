@@ -36,7 +36,7 @@
         </div>
       </transition>
     </div>
-    <Footer></Footer>
+    <Footer v-bind:footerRelative="this.$parent.footerRelative"></Footer>
   </div>
 </template>
 

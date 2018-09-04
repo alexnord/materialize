@@ -1,5 +1,8 @@
 <template>
-  <div class="footer pl-2 pr-2">
+  <div
+    class="footer pl-2 pr-2"
+    v-bind:class="{ 'position-relative': this.footerRelative }"
+  >
     <div class="d-flex justify-content-between">
       <div class="copyright">&copy; {{ new Date().getFullYear() }} Materialize, LLC</div>
       <div class="social d-flex justify-content-center">
@@ -14,6 +17,9 @@
 <script>
 export default {
   name: 'Footer',
+  props: {
+    footerRelative: Boolean,
+  },
   data() {
     return {};
   },

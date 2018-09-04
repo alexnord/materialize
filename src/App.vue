@@ -24,6 +24,7 @@ export default {
       bgPosition: '0px',
       bgWidth: 'unset',
       bgHeight: 'unset',
+      footerRelative: false,
     };
   },
   created() {
@@ -41,6 +42,12 @@ export default {
       this.bgPosition = `${window.innerHeight - 80 - this.navHeight}px`;
 
       this.setBgImageSize(this.navHeight);
+
+      if (window.innerHeight < 565) {
+        this.footerRelative = true;
+      } else {
+        this.footerRelative = false;
+      }
     },
     handleScroll() {
       this.addBg = scrollY > 50;
@@ -60,6 +67,10 @@ export default {
     this.viewportHeight = `${window.innerHeight}px`;
     this.bgPosition = `${window.innerHeight - 80 - this.navHeight}px`;
     this.setBgImageSize(this.navHeight);
+
+    if (window.innerHeight < 565) {
+      this.footerRelative = true;
+    }
   },
   components: {
     Nav,

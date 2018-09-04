@@ -25,12 +25,47 @@
           <span id="description"></span>
         </div>
       </div>
-      <div class="container-fluid black-bg cut-to-top">
+      <b-container fluid class="black-bg cut-to-top">
         <b-row>
-          <b-col cols="12" md="8" offset-md="1">
-            <h2 class="ft-24 circular-book mt-35 pink-font">Leadership</h2>
+          <b-col cols="12" class="text-center">
+            <h2 class="mt-3 pink-font circular-black leadership-headline">Leadership</h2>
           </b-col>
         </b-row>
+        <b-row class="mt-3 leadership pb-4">
+          <b-col cols="12" offset-md="3" md="3">
+            <div class="person">
+              <img src="../assets/img/headshots/alex.jpg" class="img-fluid" alt="Founder - Alex Nordlinger">
+              <div class="name circular-med pink-font">Alex Nordlinger</div>
+              <div class="position circular-book mb-3">Founder</div>
+            </div>
+          </b-col>
+          <b-col cols="12" md="3">
+            <div class="person">
+              <img src="../assets/img/headshots/cody.jpg" class="img-fluid" alt="Managing Director - Cody Rasmus">
+              <div class="name circular-med pink-font">Cody Rasmus</div>
+              <div class="position circular-book">Managing Director</div>
+            </div>
+          </b-col>
+        </b-row>
+      </b-container>
+      <div class="info-block transparent-bg">
+        <div class="info-wrap">
+          <h2
+            class="pink-font circular-black"
+            v-scroll-reveal="{ delay: 175, origin: 'left', distance: '100px' }"
+          >
+            Why work with us?
+          </h2>
+          <p
+            class="circular-book"
+            v-scroll-reveal="{ delay: 175, origin: 'left', distance: '100px' }"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          </p>
+          <div class="cta text-center" v-show="fadeLink">
+            <button id="blue" v-b-modal.contact-form>contact us</button>
+          </div>
+        </div>
       </div>
       <Footer></Footer>
     </div>
@@ -105,10 +140,30 @@ export default {
 .typed {
   min-height: 500px;
 }
+.leadership-headline {
+  font-size: 22px;
+}
+.leadership {
+  .person {
+    img {
+      margin-bottom: 5px;
+    }
+    .name {
+      font-size: 20px;
+    }
+    .position {
+      position: relative;
+      bottom: 6px;
+      font-size: 16px;
+    }
+  }
+}
 .footer {
   position: relative !important;
 }
-@media (min-width: 1024px) {
-
+@media (min-width: 768px) {
+  .leadership-headline {
+    font-size: 28px;
+  }
 }
 </style>

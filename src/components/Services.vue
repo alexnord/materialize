@@ -325,7 +325,6 @@ export default {
   mounted() {
     /* eslint-disable no-new */
     new Typed('#headline', {
-      // strings: ['Materialize is&nbsp;</br>a design and development&nbsp;</br>oriented agency.'],
       strings: ['We make amazing </br> digital products.'],
       typeSpeed: 15,
       loop: false,
@@ -375,21 +374,6 @@ export default {
 }
 .cell-container {
   margin-left: -8%;
-}
-
-.info-block {
-  position: relative;
-  padding: 40px;
-  top: -40px;
-}
-.info-block li {
-  list-style: none;
-}
-.info-wrap p {
-  font-size: 16px;
-}
-.info-wrap a {
-  text-decoration: none;
 }
 
 .our-services {

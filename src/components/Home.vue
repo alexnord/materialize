@@ -32,7 +32,7 @@
       </div>
       <transition name="fade">
         <div class="cta" v-show="fadeLink">
-          <router-link to="/services"><button id="learn-more">our services</button></router-link>
+          <router-link to="/services"><button id="blue">our services</button></router-link>
         </div>
       </transition>
     </div>

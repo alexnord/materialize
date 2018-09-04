@@ -3,7 +3,7 @@
     <div class="d-flex justify-content-between">
       <div class="copyright">&copy; {{ new Date().getFullYear() }} Materialize, LLC</div>
       <div class="social d-flex justify-content-center">
-        <div v-b-modal.contact-form><i class="far fa-paper-plane"></i></div>
+        <!-- <div v-b-modal.contact-form><i class="far fa-paper-plane"></i></div> -->
         <div><a href="https://www.facebook.com/materializelabs/" target="_blank"><i class="fab fa-facebook-square"></i></a></div>
         <div><a href="https://www.linkedin.com/company/materialize/" target="_blank"><i class="fab fa-linkedin"></i></a></div>
       </div>

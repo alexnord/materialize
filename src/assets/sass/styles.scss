@@ -169,6 +169,28 @@ span.typed-cursor {
   margin: 0 auto;
 }
 
+.cta {
+  width: 100%;
+  margin: 40px auto;
+  font-size: 18px;
+  cursor: pointer;
+  transition-delay: 1.7s;
+  transition-duration: 2s;
+}
+.cta button {
+  border-radius: 5px;
+  color: #FFF;
+  padding: 8px 18px;
+  cursor: pointer;
+}
+button#blue {
+  background-color: rgba(8, 189, 189, .8);
+  border: 2px solid rgba(0, 0, 0, 0.12);
+}
+button#blue:hover {
+  background-color: rgba(12, 154, 154, 1)
+}
+
 .black-bg {
 	background-color: rgba(0, 0, 0, .9);
 	color: #FFF;
@@ -181,6 +203,21 @@ span.typed-cursor {
 .cut-to-top {
   position: relative;
   top: -80px;
+}
+
+.info-block {
+  position: relative;
+  padding: 40px;
+  top: -40px;
+}
+.info-block li {
+  list-style: none;
+}
+.info-wrap p {
+  font-size: 16px;
+}
+.info-wrap a {
+  text-decoration: none;
 }
 
 @media (min-width: 375px) {
@@ -212,6 +249,16 @@ span.typed-cursor {
     font-size: 28px;
     margin-top: 60px;
     width: 680px;
+  }
+  .info-wrap p {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .info-wrap {
+    width: 65%;
+    margin: 0 auto;
   }
 }
 

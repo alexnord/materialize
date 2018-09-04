@@ -8,20 +8,6 @@
         <div><a href="https://www.linkedin.com/company/materialize/" target="_blank"><i class="fab fa-linkedin"></i></a></div>
       </div>
     </div>
-
-
-
-<!--     <b-row>
-      <b-col cols="8">
-        <div>&copy; {{ new Date().getFullYear() }} Materialize, LLC</div>
-      </b-col>
-      <b-col cols="4">
-        <div class="social float-right d-flex justify-content-center">
-          <div><i class="fab fa-facebook-square"></i></div>
-          <div><i class="fab fa-linkedin"></i></div>
-        </div>
-      </b-col>
-    </b-row> -->
   </div>
 </template>
 
@@ -50,7 +36,7 @@ export default {
 .social i {
   cursor: pointer;
   margin-left: 10px;
-  font-size: 22px;
+  font-size: 24px;
   &:hover {
     color: #DF0070;
   }

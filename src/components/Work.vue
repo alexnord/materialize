@@ -181,16 +181,16 @@ export default {
   background-color: rgba(223, 0, 112, .8);
 }
 .client-name {
-  font-size: 24px;
+  font-size: 18px;
 }
 .project-type {
-  font-size: 18px;
+  font-size: 16px;
 }
 .project-description {
-  font-size: 18px;
+  font-size: 14px;
 }
 .project-link {
-  font-size: 26px;
+  font-size: 24px;
   height: 100%;
   display: flex;
   justify-content: center;

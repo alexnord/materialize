@@ -9,7 +9,7 @@
       >
         <img
           v-bind:style="{ height: this.$parent.bgHeight, width: this.$parent.bgWidth }"
-          src="../assets/img/dna.png"
+          src="../assets/img/backgrounds/dna.png"
         />
       </div>
       <div

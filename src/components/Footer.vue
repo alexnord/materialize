@@ -25,7 +25,7 @@ export default {
 .footer {
   position: absolute;
   width: 100%;
-  bottom: 5px;
+  bottom: 3px;
 }
 .copyright {
   font-size: 14px;
@@ -43,7 +43,7 @@ export default {
 }
 @media (min-width: 576px) {
   .footer {
-    bottom: 20px;
+    bottom: 10px;
   }
   .copyright {
     margin-left: 40px;

@@ -6,7 +6,7 @@
       class="fixed-bg"
       v-bind:style="{ top: bgPosition }"
     >
-      <img src="../assets/img/plane.png" />
+      <img src="../assets/img/backgrounds/plane.png" />
     </div>
     <div class="wrapper">
       <div

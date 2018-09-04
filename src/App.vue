@@ -49,7 +49,7 @@ export default {
     },
     setBgImageSize() {
       if ((window.innerHeight - 80 - this.navHeight) >= window.innerWidth) {
-        this.bgWidth = '100%';
+        this.bgWidth = '140%';
         this.bgHeight = 'unset';
       } else if ((window.innerHeight - 80 - this.navHeight) < window.innerWidth) {
         this.bgHeight = '80%';

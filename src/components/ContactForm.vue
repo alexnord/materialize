@@ -151,7 +151,7 @@ export default {
         minLength: minLength(2),
       },
       phone: {
-        minLength: minLength(2),
+        minLength: minLength(10),
       },
       message: {
         required,
@@ -197,19 +197,19 @@ export default {
 };
 </script>
 
-<style scoped>
-.recaptcha-wrapper {
-  display: none;
-}
-form button {
-  background-color: rgba(223, 0, 112, .8);
-  width: 100%;
-}
-form button:hover {
-  background-color: rgba(223, 0, 112, .8);
-  width: 100%;
-}
-.error {
-  color: red;
-}
+<style lang="scss" scoped>
+  .recaptcha-wrapper {
+    display: none;
+  }
+  form button {
+    background-color: rgba(223, 0, 112, .8);
+    width: 100%;
+    &.disabled {
+      background-color: #505050;
+      border: 1px solid red;
+    }
+  }
+  .error {
+    color: red;
+  }
 </style>

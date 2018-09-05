@@ -222,9 +222,8 @@ export default {
       }).then(() => {
         this.success = true;
         this.clearContactForm();
-      }).catch((error) => {
-        console.log(error.response.data);
-        console.log('error');
+      }).catch(() => {
+        // console.log(error.response.data);
         this.error = true;
       });
     },

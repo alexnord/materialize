@@ -30,7 +30,7 @@
                     <div class="project-description circular-med white-font">Frontend and backend web development services for Shopify hosted e-commerce store for major fashion retailer.</div>
                   </b-col>
                   <b-col cols="12" md="2" class="d-none d-md-block">
-                    <div class="project-link circular-book white-font">
+                    <div class="project-link circular-book white-font justify-content-end">
                       <div><i class="fas fa-external-link-alt"></i></div>
                     </div>
                   </b-col>
@@ -61,7 +61,7 @@
                     <div class="project-description circular-med white-font">Frontend and backend web development services for Shopify hosted e-commerce store for major fashion retailer.</div>
                   </b-col>
                   <b-col cols="12" md="2" class="d-none d-md-block">
-                    <div class="project-link circular-book white-font">
+                    <div class="project-link circular-book white-font justify-content-end">
                       <div><i class="fas fa-external-link-alt"></i></div>
                     </div>
                   </b-col>
@@ -92,7 +92,7 @@
                     <div class="project-description circular-med white-font">Frontend and backend web development services for Shopify hosted e-commerce store for major fashion retailer.</div>
                   </b-col>
                   <b-col cols="12" md="2" class="d-none d-md-block">
-                    <div class="project-link circular-book white-font">
+                    <div class="project-link circular-book white-font justify-content-end">
                       <div><i class="fas fa-external-link-alt"></i></div>
                     </div>
                   </b-col>
@@ -123,7 +123,7 @@
                     <div class="project-description circular-med white-font">Promotional website built for the soon-to-be-released Life of the Party movie. Provided custom built voting functionality for college students to win the world premiere at their college campus.</div>
                   </b-col>
                   <b-col cols="12" md="2" class="d-none d-md-block">
-                    <div class="project-link circular-book white-font">
+                    <div class="project-link circular-book white-font justify-content-end">
                       <div><i class="fas fa-external-link-alt"></i></div>
                     </div>
                   </b-col>
@@ -193,7 +193,6 @@ export default {
   font-size: 24px;
   height: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 .mobile-project-link {

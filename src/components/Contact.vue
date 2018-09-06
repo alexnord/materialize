@@ -17,7 +17,7 @@
                   </div>
                   <div class="manual-contact">
                     <p class="circular-book">Drop us a line about your project and we will reach out you to.</p>
-                    <div class="mt-5">
+                    <div class="alternative-contact">
                       <p class="circular-book pink-font">Or reach out to us at:</p>
                       <p class="circular-book mt-2">
                         <i class="far fa-envelope pink-font"></i><a href="mailto:hello@materializelabs.com">hello@materializelabs.com</a></p>
@@ -27,8 +27,13 @@
                   </div>
                 </b-col>
                 <b-col cols="12" md="6">
-                  <div class="error text-center mb-3" v-show="this.error">
-                    An error occurred processing your request.
+                  <b-alert class="circular-med text-center" :show="this.error" variant="danger">
+                    An error occurred processing your request. Please try again.
+                  </b-alert>
+                  <div id="success-alert" v-if="this.success">
+                    <b-alert class="circular-med text-center" show variant="success">
+                      Thank you for your inquiry.<br> Someone will contact you shortly.
+                    </b-alert>
                   </div>
                   <b-form @submit="onSubmit" v-show="!this.success">
                     <b-form-group label="Your name"
@@ -137,9 +142,6 @@
                     </b-button>
 
                   </b-form>
-                  <div class="ft-20 circular-book pink-font text-center success" v-show="this.success">
-                    Thank you for your inquiry.<br> Someone will contact you shortly.
-                  </div>
                 </b-col>
               </b-row>
             </div>
@@ -330,6 +332,12 @@ export default {
     display: flex;
     justify-content: center;
   }
+  .alert {
+    margin-top: 20px;
+  }
+  .alternative-contact {
+    margin-top: 25px;
+  }
 
   @media (min-width: 768px) {
     .header {
@@ -348,6 +356,18 @@ export default {
     }
     form {
       margin-top: 0px;
+    }
+    .alternative-contact {
+      margin-top: 35px;
+    }
+    .alert {
+      margin-top: 0px;
+    }
+    #success-alert {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
 </style>

@@ -8,9 +8,9 @@
       ref="contactRef"
       :hide-footer=true
     >
-      <div class="error text-center mb-3 circular-black" v-show="this.error">
-        An error occurred processing your request.
-      </div>
+      <b-alert :show="this.error" variant="danger">
+        An error occurred processing your request. Please try again.
+      </b-alert>
       <form @submit="onSubmit" v-show="!this.success">
         <b-form-input type="text"
                       class="form-control mb-3 circular-book"

@@ -4,15 +4,16 @@
       id="contact-form"
       size="md"
       title="contact us"
+      class="circular-black"
       ref="contactRef"
       :hide-footer=true
     >
-      <div class="error text-center mb-3" v-show="this.error">
+      <div class="error text-center mb-3 circular-black" v-show="this.error">
         An error occurred processing your request.
       </div>
       <form @submit="onSubmit" v-show="!this.success">
         <b-form-input type="text"
-                      class="form-control mb-3"
+                      class="form-control mb-3 circular-book"
                       placeholder="name"
                       @input="$v.form.name.$touch()"
                       :state="$v.form.name.$dirty ? !$v.form.name.$invalid : null"
@@ -30,7 +31,7 @@
         </b-form-invalid-feedback>
 
         <b-form-input type="text"
-                      class="form-control mb-3"
+                      class="form-control mb-3 circular-book"
                       placeholder="email"
                       @input="$v.form.email.$touch()"
                       :state="$v.form.email.$dirty ? !$v.form.email.$invalid : null"
@@ -43,7 +44,7 @@
         </b-form-invalid-feedback>
 
         <b-form-input type="text"
-                      class="form-control mb-3"
+                      class="form-control mb-3 circular-book"
                       placeholder="company"
                       @input="$v.form.company.$touch()"
                       :state="$v.form.company.$dirty ? !$v.form.company.$invalid : null"
@@ -61,7 +62,7 @@
         </b-form-invalid-feedback>
 
         <b-form-input type="text"
-                      class="form-control mb-3"
+                      class="form-control mb-3 circular-book"
                       placeholder="phone (optional)"
                       @input="$v.form.phone.$touch()"
                       :state="$v.form.phone.$dirty ? !$v.form.phone.$invalid : null"
@@ -75,6 +76,7 @@
 
         <b-form-textarea v-model="form.message"
                         placeholder="Message"
+                        class="circular-book"
                         @input="$v.form.message.$touch()"
                         :state="$v.form.message.$dirty ? !$v.form.message.$invalid : null"
                         :rows="4"
@@ -104,7 +106,7 @@
           send
         </b-button>
       </form>
-      <div class="pt-4 pb-4 pl-2 pr-2 text-center ft-20" v-show="this.success">
+      <div class="pt-4 pb-4 pl-2 pr-2 text-center ft-20 pink-font" v-show="this.success">
         Thank you for your inquiry. Someone will contact you shortly.
       </div>
     </b-modal>

@@ -285,7 +285,7 @@
                 <div><img src="../assets/img/services/wb.svg" height="65" alt="Warner Bros." /></div>
                 <div><img src="../assets/img/services/lf.svg" height="65" alt="LF Stores" /></div>
                 <div><img src="../assets/img/services/fox.svg" height="65" alt="20th Century Fox" /></div>
-                <div><img src="../assets/img/services/annenberg.svg" height="65" alt="The Annenberg Foundation" /></div>
+                <!-- <div><img src="../assets/img/services/annenberg.svg" height="65" alt="The Annenberg Foundation" /></div> -->
               </div>
               <div class="d-block d-sm-none clients mt-5 mb-35">
                 <b-row>
@@ -294,7 +294,7 @@
                 </b-row>
                 <b-row class="mt-4">
                   <b-col cols="6"><img src="../assets/img/services/fox.svg" height="70" alt="20th Century Fox" /></b-col>
-                  <b-col cols="6"><img src="../assets/img/services/annenberg.svg" height="70" alt="The Annenberg Foundation" /></b-col>
+                  <!-- <b-col cols="6"><img src="../assets/img/services/annenberg.svg" height="70" alt="The Annenberg Foundation" /></b-col> -->
                 </b-row>
               </div>
             </div>

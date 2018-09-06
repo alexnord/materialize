@@ -60,7 +60,7 @@
             class="circular-book"
             v-scroll-reveal="{ delay: 175, origin: 'left', distance: '100px' }"
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Our team loves bringing ideas to life just as much as improving existing ones. By building beautiful products that are easy to use, we promise your idea will make a big splash. Whether that means saving time through automated back-end systems, improving the buying experience on your site, or the next big app release, we can deliver the best technology and service for your needs.
           </p>
           <div class="cta text-center" v-show="fadeLink">
             <button id="blue" v-b-modal.contact-form>contact us</button>

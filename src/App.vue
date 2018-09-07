@@ -43,10 +43,12 @@ export default {
 
       this.setBgImageSize(this.navHeight);
 
-      if (window.innerHeight < 565) {
+      if (window.innerHeight < 565 && (window.innerWidth > window.innerHeight)) {
+        console.log('relative = true');
         this.footerRelative = true;
       } else {
         this.footerRelative = false;
+        console.log('relative = false');
       }
     },
     handleScroll() {
@@ -68,7 +70,7 @@ export default {
     this.bgPosition = `${window.innerHeight - 80 - this.navHeight}px`;
     this.setBgImageSize(this.navHeight);
 
-    if (window.innerHeight < 565) {
+    if (window.innerHeight < 565 && (window.innerWidth > window.innerHeight)) {
       this.footerRelative = true;
     }
   },

@@ -254,7 +254,6 @@ button.hamburger {
   left: 25%;
   width: 0px;
   text-align: left;
-  margin-top: 30px;
 }
 .expanded-nav a {
   padding: 8px;
@@ -296,6 +295,12 @@ button.hamburger {
 }
 .expanded-nav .slide-fade-enter-active#social {
   transition-delay: .5s;
+}
+
+@media (min-height: 668px) {
+  .nav-content {
+    margin-top: 30px;
+  }
 }
 
 @media (min-width: 375px) {

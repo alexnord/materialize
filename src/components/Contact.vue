@@ -17,7 +17,7 @@
                   </div>
                   <div class="manual-contact">
                     <p class="circular-book">Drop us a line about your project and we will reach out you to.</p>
-                    <div class="alternative-contact">
+                    <div class="alternative-contact d-none d-md-block">
                       <p class="circular-book pink-font">Or reach out to us at:</p>
                       <p class="circular-book mt-2">
                         <i class="far fa-envelope pink-font"></i><a href="mailto:hello@materializelabs.com">hello@materializelabs.com</a></p>
@@ -142,6 +142,13 @@
                     </b-button>
 
                   </b-form>
+                  <div class="d-block d-md-none alternative-contact">
+                      <p class="circular-book pink-font">Or reach out to us at:</p>
+                      <p class="circular-book mt-2">
+                        <i class="far fa-envelope pink-font"></i><a href="mailto:hello@materializelabs.com">hello@materializelabs.com</a></p>
+                      <p class="circular-book"><i class="fas fa-phone pink-font"></i>(310) 699-0125</p>
+                      <p class="circular-book"><i class="fab fa-facebook-messenger pink-font"></i><a href="https://m.me/materializelabs/">FB Messenger</a></p>
+                    </div>
                 </b-col>
               </b-row>
             </div>
@@ -308,20 +315,28 @@ export default {
     p {
       font-size: 20px;
       margin-bottom: 0px !important;
-      i {
-        font-size: 22px;
-        top: 1px;
-        position: relative;
-        margin-right: 10px;
-      }
       a {
         color: #08BDBD;
         text-decoration: underline;
       }
     }
   }
+  .alternative-contact {
+    font-size: 18px;
+    margin-bottom: 0px !important;
+    i {
+      font-size: 22px;
+      top: 1px;
+      position: relative;
+      margin-right: 10px;
+    }
+    a {
+      color: #08BDBD;
+      text-decoration: underline;
+    }
+  }
   form {
-    margin-top: 40px;
+    margin-top: 20px;
   }
   .footer {
     margin-top: 50px;

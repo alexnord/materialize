@@ -139,17 +139,22 @@
 
         </div>
       </b-container>
+      <Footer></Footer>
     </div>
   </div>
 </template>
 
 <script>
+import Footer from './Footer';
+
 export default {
   name: 'Work',
   data() {
     return {};
   },
-  components: {},
+  components: {
+    Footer,
+  },
 };
 </script>
 
@@ -197,6 +202,9 @@ export default {
 }
 .mobile-project-link {
   right: 23px;
+}
+.footer {
+  position: relative !important;
 }
 
 @media (min-width: 768px) {

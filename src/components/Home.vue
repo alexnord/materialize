@@ -23,12 +23,18 @@
       v-bind:style="{ height: viewportHeight, top: 35 + 'px' }"
     >
       <div class="headline">
-        <div class="fixed-width">
-          <span id="headline"></span>
+        <div
+          class="fixed-width"
+          v-scroll-reveal="{ delay: 150, origin: 'bottom', distance: '100px' }"
+        >
+          <span id="headline">a digital product agency dedicated to technical excellence.</span>
         </div>
       </div>
-      <div class="description">
-        <span id="description"></span>
+      <div
+        class="description"
+        v-scroll-reveal="{ delay: 200, origin: 'bottom', distance: '100px' }"
+      >
+        <span id="description">Specializing in high-end digital design and engineering for companies and brands.<br><br>Los Angeles, CA</span>
       </div>
       <transition name="fade">
         <div class="cta" v-show="fadeLink">
@@ -63,16 +69,16 @@ export default {
   },
   mounted() {
     /* eslint-disable no-new */
-    new Typed('#headline', {
-      strings: ['a digital product agency dedicated to technical excellence.'],
-      typeSpeed: 15,
-      loop: false,
-    });
-    new Typed('#description', {
-      strings: ['Specializing in high-end digital design and engineering for companies and brands.</br></br>Los Angeles, CA'],
-      typeSpeed: 10,
-      loop: false,
-    });
+    // new Typed('#headline', {
+    //   strings: ['a digital product agency dedicated to technical excellence.'],
+    //   typeSpeed: 15,
+    //   loop: false,
+    // });
+    // new Typed('#description', {
+    //   strings: ['Specializing in high-end digital design and engineering for companies and brands.</br></br>Los Angeles, CA'],
+    //   typeSpeed: 10,
+    //   loop: false,
+    // });
     /* eslint-enable no-new */
 
     this.fadeLink = true;
@@ -103,8 +109,8 @@ export default {
   margin: 40px auto;
   font-size: 18px;
   cursor: pointer;
-  transition-delay: 1.7s;
-  transition-duration: 2s;
+  transition-delay: .3s;
+  transition-duration: 1.5s;
 }
 .cta button {
   border-radius: 5px;

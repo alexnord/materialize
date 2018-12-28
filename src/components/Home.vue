@@ -27,14 +27,14 @@
           class="fixed-width"
           v-scroll-reveal="{ delay: 150, origin: 'bottom', distance: '100px' }"
         >
-          <span id="headline">a digital product agency dedicated to technical excellence.</span>
+          <span id="headline">a full service digital agency dedicated to technical excellence.</span>
         </div>
       </div>
       <div
         class="description"
         v-scroll-reveal="{ delay: 200, origin: 'bottom', distance: '100px' }"
       >
-        <span id="description">Specializing in high-end digital design and engineering for companies and brands.<br><br>Los Angeles, CA</span>
+        <span id="description">We create amazing consumer experiences for fashion, entertainment and lifestyle brands.<br><br>Los Angeles, CA</span>
       </div>
       <transition name="fade">
         <div class="cta" v-show="fadeLink">

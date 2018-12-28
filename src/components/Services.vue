@@ -36,7 +36,7 @@
               class="ft-24 circular-book mb-35 our-services-copy"
               v-scroll-reveal="{ delay: 175, origin: 'left', distance: '100px' }"
             >
-              We work closely with our clients through every stage of development and create solutions that are tailored for each product that we build. There's no project too large or too small.
+              We work closely with our clients through every stage of development and create tailored digital products designed to exceed their goals. Our services offer a one-stop, holistic solution for robust web development.
             </p>
           </b-col>
         </b-row>
@@ -123,13 +123,13 @@
             <div class="tile">
               <div class="tile-content" v-scroll-reveal="{ delay: 175, origin: 'top', distance: '100px' }">
                 <picture class="tile-icon">
-                  <img src="../assets/img/icons/test.png" alt="testing icon">
+                  <img src="../assets/img/icons/ecommerce.png" alt="ecommerce icon">
                 </picture>
                 <div class="title pink-font">
-                  <p>Testing</p>
+                  <p>E-Commerce</p>
                 </div>
                 <div class="sub-title">
-                  <p>Comprehensive quality assurance testing for 100% peace of mind.</p>
+                  <p>Shopify Plus certified. Seamless customer buying experience on your website and app.</p>
                 </div>
               </div>
             </div>
@@ -161,7 +161,7 @@
             class="circular-book"
             v-scroll-reveal="{ delay: 175, origin: 'left', distance: '100px' }"
           >
-            Our clients range from startups and small companies launching digital products to large corporations requiring enterprise level software solutions. We provide the full spectrum of development needs and can also provide augmentation to projects that are already active.
+            Our clients range from startups and small companies launching digital products to large corporations requiring enterprise level software solutions. We provide the full spectrum of development needs and can augment projects that are already active.
           </p>
 
           <h2
@@ -174,7 +174,7 @@
             class="circular-book"
             v-scroll-reveal="{ delay: 175, origin: 'left', distance: '100px' }"
           >
-            After fully understanding your project goals, we provide a roadmap showing the best technologies, languages, and architecture that will ensure a smooth rollout and impactful user-experience. This roadmap allows us to efficiently move from a project’s infancy to its final delivery with full transparency and clear milestones. Client feedback and collaboration is key; we listen and advise on the best strategic action every step of the way.
+            We start with the end goal in mind. By knowing the goal, we build a roadmap that shows our clients the steps to get there. Client collaboration is key - we listen and advise on the best technologies, languages, and architecture to ensure a smooth rollout and impactful user-experience that will delight your customers. This roadmap allows us to efficiently move from a project’s infancy to its final delivery with full transparency and clear milestones.
           </p>
         </div>
       </div>
@@ -325,12 +325,12 @@ export default {
   mounted() {
     /* eslint-disable no-new */
     new Typed('#headline', {
-      strings: ['We make amazing </br> digital products.'],
+      strings: ['Delivering expert <br> digital + ecommerce solutions.'],
       typeSpeed: 15,
       loop: false,
     });
     new Typed('#description', {
-      strings: ['We build and support websites, apps, and software that make an impact.'],
+      strings: ['We build and support websites, mobile apps and ecommerce experiences that make an impact.'],
       typeSpeed: 10,
       loop: false,
     });

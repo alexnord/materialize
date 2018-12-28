@@ -60,7 +60,7 @@
             class="circular-book"
             v-scroll-reveal="{ delay: 175, origin: 'left', distance: '100px' }"
           >
-            Our team loves bringing ideas to life just as much as improving existing ones. By building beautiful products that are easy to use, we promise your idea will make a big splash. Whether that means saving time through automated back-end systems, improving the buying experience on your site, or the next big app release, we can deliver the best technology and service for your needs.
+            Our team loves bringing digital ideas to life and building on top of existing ones. Operating at the cutting-edge of technology and design makes the products that we build beautifully robust and impactful. Whether your goal is increasing sales with an advanced Shopify integration, saving man hours with an automated back-end system or an amazing mobile app, our team can deliver an amazing product for you.
           </p>
           <div class="cta text-center" v-show="fadeLink">
             <button id="blue" v-b-modal.contact-form>contact us</button>

@@ -32,7 +32,14 @@
           </b-col>
         </b-row>
         <b-row class="mt-3 leadership pb-4">
-          <b-col cols="12" offset-md="2" md="4" offset-lg="3" lg="3">
+          <b-col cols="12" offset-md="4" md="4" offset-lg="4" lg="4">
+            <div class="person">
+              <img src="../assets/img/headshots/alex.jpg" class="img-fluid" alt="Founder - Alex Nordlinger">
+              <div class="name circular-med pink-font">Alex Nordlinger</div>
+              <div class="position circular-book mb-3">Founder</div>
+            </div>
+          </b-col>
+          <!-- <b-col cols="12" offset-md="2" md="4" offset-lg="3" lg="3">
             <div class="person">
               <img src="../assets/img/headshots/alex.jpg" class="img-fluid" alt="Founder - Alex Nordlinger">
               <div class="name circular-med pink-font">Alex Nordlinger</div>
@@ -45,7 +52,7 @@
               <div class="name circular-med pink-font">Cody Rasmus</div>
               <div class="position circular-book">Managing Director</div>
             </div>
-          </b-col>
+          </b-col> -->
         </b-row>
       </b-container>
       <div class="info-block transparent-bg">

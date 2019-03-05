@@ -1,7 +1,7 @@
 # materialize
 
 > Materialize homepage.
-> [https://materializelabs.com](materializelabs.com)
+> [https://materializelabs.com](https://materializelabs.com)
 
 ## Build Setup
 
